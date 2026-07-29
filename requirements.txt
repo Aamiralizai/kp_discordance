@@ -1,0 +1,14 @@
+# Pinned for reproducibility. Regenerate with `pip freeze` after any change.
+numpy==2.4.4
+scipy==1.17.1
+pandas==2.3.3
+scikit-learn==1.8.0
+matplotlib==3.10.8
+statsmodels==0.14.4
+openpyxl==3.1.5
+pyyaml==6.0.2
+
+# External tools (not pip-installable; pin the exact versions used)
+#   Kleborate 3.2.4      conda install -c bioconda -c conda-forge kleborate=3.2.4
+#   Kaptive              bundled with Kleborate 3.2.4
+# A conda environment file is provided as environment.yml

@@ -1,0 +1,9 @@
+# Assembly-retrieval counts that precede the record-level analysis.
+# These stages happen in 01_download_bvbrc.sh / 00_qc_fasta.sh / 04_run_kleborate.sh
+# and are recorded here once. Everything downstream is read from the audit TSV
+# written by 08b_discordance_recordlevel.py.
+records: 11538              # phenotype records retrieved (all anchor drugs)
+genomes_with_pheno: 7521    # unique genomes with a laboratory phenotype
+assemblies: 7488            # assemblies successfully retrieved
+qc_failed: 151              # quarantined: zero-length sequence records
+submitted: 7337             # assemblies submitted to Kleborate

@@ -1,0 +1,63 @@
+# COMPARATORS MATTER. CLSI typically defines resistance as MIC >= x; EUCAST
+# typically defines it as MIC > x. Storing only the numeric threshold
+# misclassifies isolates whose MIC equals the threshold: under EUCAST an exact
+# MIC of 8 mg/L for meropenem is INTERMEDIATE, not resistant. Encoding '>=' for
+# EUCAST previously misclassified every such isolate.
+# Verify BOTH the value and the operator against the source document.
+drug,standard,S_operator,S_value_mgL,R_operator,R_value_mgL,verified,source_document,notes
+# ---------------------------------------------------------------------------
+# BREAKPOINT CURATION TABLE
+#
+# The analysis pipeline WILL REFUSE to analyse any drug whose row has
+# verified=NO. This is deliberate: a single wrong breakpoint value previously
+# produced a fabricated 66.7% discordance figure and an apparent reversal of
+# the study's central drug-specificity finding.
+#
+# For every drug you intend to analyse:
+#   1. open the CLSI M100 edition and EUCAST breakpoint table version you will
+#      cite in the manuscript;
+#   2. read the Enterobacterales breakpoints for that drug;
+#   3. enter S_max_mgL (susceptible if MIC <= this) and R_min_mgL (resistant if
+#      MIC >= this);
+#   4. record the exact document edition/version in source_document;
+#   5. set verified=YES.
+#
+# Do NOT copy values from memory, from another paper, or from this file's
+# pre-filled rows without checking. The pre-filled rows below are placeholders
+# marked NO precisely because they have not been checked.
+#
+# NOTE on EUCAST: several EUCAST tables define S and R as adjacent dilutions
+# with no intermediate category, and some use "susceptible, increased exposure"
+# (I) rather than a true intermediate. Record what the document says.
+# ---------------------------------------------------------------------------
+meropenem,CLSI,<=,1,>=,4,YES,CLSI M100 36th ed. (2026), Table 2A-1 (Enterobacterales excl. Salmonella/Shigella),read from uploaded M100 Ed36 PDF; intermediate = 2 mg/L
+meropenem,EUCAST,<=,2,>,8,YES,EUCAST v16.1 (valid from 2026-06-24), Enterobacterales table,read from uploaded v16.1 xlsx [indications other than meningitis]
+imipenem,CLSI,<=,1,>=,4,YES,CLSI M100 36th ed. (2026), Table 2A-1 (Enterobacterales excl. Salmonella/Shigella),read from uploaded M100 Ed36 PDF; intermediate = 2 mg/L
+imipenem,EUCAST,<=,2,>,4,YES,EUCAST v16.1 (valid from 2026-06-24), Enterobacterales table,read from uploaded v16.1 xlsx [Enterobacterales except Morganellaceae]
+ertapenem,CLSI,<=,0.5,>=,2,YES,CLSI M100 36th ed. (2026), Table 2A-1 (Enterobacterales excl. Salmonella/Shigella),read from uploaded M100 Ed36 PDF; intermediate = 1 mg/L
+ertapenem,EUCAST,<=,0.5,>,0.5,YES,EUCAST v16.1 (valid from 2026-06-24), Enterobacterales table,read from uploaded v16.1 xlsx
+doripenem,CLSI,<=,1,>=,4,YES,CLSI M100 36th ed. (2026), Table 2A-1 (Enterobacterales excl. Salmonella/Shigella),read from uploaded M100 Ed36 PDF; intermediate = 2 mg/L
+ceftazidime,CLSI,<=,4,>=,16,NO,CLSI M100 [edition],cephalosporin
+ceftazidime,EUCAST,<=,1,>,4,YES,EUCAST v16.1 (valid from 2026-06-24), Enterobacterales table,read from uploaded v16.1 xlsx
+ceftriaxone,CLSI,<=,1,>=,4,NO,CLSI M100 [edition],cephalosporin
+ceftriaxone,EUCAST,<=,1,>,2,YES,EUCAST v16.1 (valid from 2026-06-24), Enterobacterales table,read from uploaded v16.1 xlsx [indications other than meningitis]
+cefotaxime,CLSI,<=,1,>=,4,NO,CLSI M100 [edition],cephalosporin
+cefepime,CLSI,<=,2,>=,16,NO,CLSI M100 [edition],cephalosporin; SDD category exists in CLSI
+ceftazidime/avibactam,CLSI,<=,8,>=,16,NO,CLSI M100 [edition],BL/BLI; MIC expressed for ceftazidime component
+ceftolozane/tazobactam,CLSI,<=,2,>=,8,NO,CLSI M100 [edition],BL/BLI
+imipenem/relebactam,CLSI,<=,1,>=,4,NO,CLSI M100 [edition],BL/BLI
+meropenem/vaborbactam,CLSI,<=,4,>=,16,NO,CLSI M100 [edition],BL/BLI
+piperacillin/tazobactam,CLSI,<=,8,>=,32,NO,CLSI M100 [edition],BL/BLI
+amoxicillin/clavulanate,CLSI,<=,8,>=,32,NO,CLSI M100 [edition],BL/BLI
+ampicillin,CLSI,<=,8,>=,32,NO,CLSI M100 [edition],penicillin; Kp intrinsically resistant
+aztreonam,CLSI,<=,4,>=,16,NO,CLSI M100 [edition],monobactam
+ciprofloxacin,CLSI,<=,0.25,>=,1,NO,CLSI M100 [edition],fluoroquinolone; NOT explained by porin/hydrolysis
+levofloxacin,CLSI,<=,0.5,>=,2,NO,CLSI M100 [edition],fluoroquinolone
+gentamicin,CLSI,<=,4,>=,16,NO,CLSI M100 [edition],aminoglycoside; different mechanism
+amikacin,CLSI,<=,16,>=,64,NO,CLSI M100 [edition],aminoglycoside
+tobramycin,CLSI,<=,4,>=,16,NO,CLSI M100 [edition],aminoglycoside
+colistin,EUCAST,<=,2,>,2,NO,EUCAST v16.1 (valid from 2026-06-24), Enterobacterales table,NOT AUTO-VERIFIED: S<=(2) R>(2) - breakpoints in brackets; broth microdilution mandatory
+tigecycline,EUCAST,<=,0.5,>,0.5,NO,EUCAST v16.1 (valid from 2026-06-24), Enterobacterales table,NOT AUTO-VERIFIED: EUCAST breakpoint listed for E. coli and C. koseri only - NOT K. pneumoniae
+trimethoprim/sulfamethoxazole,CLSI,<=,2,>=,4,NO,CLSI M100 [edition],folate pathway; MIC for trimethoprim component
+fosfomycin,CLSI,<=,64,>=,256,NO,CLSI M100 [edition],check species applicability
+nitrofurantoin,CLSI,<=,32,>=,128,NO,CLSI M100 [edition],urinary only

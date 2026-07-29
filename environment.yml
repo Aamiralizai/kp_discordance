@@ -1,0 +1,15 @@
+name: kp-discordance
+channels: [conda-forge, bioconda]
+dependencies:
+  - python=3.11
+  - numpy=2.4.4
+  - scipy=1.17.1
+  - pandas=2.3.3
+  - scikit-learn=1.8.0
+  - matplotlib=3.10.8
+  - statsmodels=0.14.4
+  - openpyxl=3.1.5
+  - pyyaml=6.0.2
+  - pip
+# Genotyping runs in a separate environment to avoid dependency conflicts:
+#   conda create -n kleborate -c bioconda -c conda-forge kleborate=3.2.4

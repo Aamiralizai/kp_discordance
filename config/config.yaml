@@ -1,0 +1,31 @@
+project: kp-multiscale-amr
+anchor:
+  organism: Klebsiella pneumoniae
+  mechanism: carbapenem resistance
+  reference_enzyme: KPC-3
+  # ANCHOR SET FROM REAL DATA COVERAGE (7,136 genomes / 5,647 MICs)
+  reference_drug: meropenem
+  validation_drug: imipenem          # 3,861 genomes / 3,614 MICs — cross-drug test
+  exploratory_drugs:                  # too sparse to anchor on
+    - ceftazidime/avibactam           # 291 genomes / 80 MICs
+    - imipenem/relebactam             # 31 genomes
+paths:
+  genomes: data/raw/genomes
+  phenotypes: data/raw/phenotypes
+  enzyme_kinetics: data/raw/enzyme_kinetics
+  time_kill: data/raw/time_kill
+  interim: data/interim
+  processed: data/processed
+  results: results
+model:
+  t_end_h: 24.0
+  standard_inoculum_cfu: 5.0e5
+  conc_ladder_mgL: [0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048]
+gwas:
+  method: pyseer
+  correct_population_structure: true   # REQUIRED
+
+labels:
+  target: log2_mic                    # quantitative regression (preferred)
+  fallback: resistant_phenotype       # S/I/R if MIC missing
+  handle_censored: true               # '>=64' / '<0.5' need censored-aware fitting
