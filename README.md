@@ -18,13 +18,9 @@ The rebuild runs the regression tests first and aborts if any fail, empties
 `results/logs/latest_summary.txt` (a short digest) and
 `results/manuscript_results.json`.
 
-**Reconcile the manuscript against `results/manuscript_results.json` only.**
-Any value not present there has not been regenerated.
 
 ## Design rules
 
-Each was learned by getting it wrong first; the regression tests in `tests/`
-encode them.
 
 1. **Filter phenotype records before aggregating per genome.** Applying
    method or standard restrictions after collapsing to one row per genome
