@@ -47,7 +47,6 @@ The rebuild runs the regression tests first and aborts if any fail, empties
     scripts/kp_defs.py        single source of genotype definitions
     tests/                    regression tests — run before any rebuild
     results/                  generated; not committed
-    manuscript/               manuscript, supplementary, reference library
     archive/deprecated/       superseded code retained for provenance only
 
 ## Verified breakpoints
