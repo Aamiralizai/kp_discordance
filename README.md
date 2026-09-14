@@ -10,10 +10,10 @@ A record-level pipeline that links BV-BRC phenotype records to Kleborate
 genotypes, classifies susceptibility from interval-censored MICs, and
 quantifies discordance in both directions.
 
-    bash run_all.sh          # clean rebuild of every table, figure and table
+    bash run_all.sh           
     KEEP=1 bash run_all.sh   # keep existing results
 
-The rebuild runs the regression tests first and aborts if any fail, empties
+The pipeline runs the regression tests first and aborts if any fail, empties
 `results/`, and regenerates everything in dependency order. It writes
 `results/logs/latest_summary.txt` (a short digest) and
 `results/manuscript_results.json`.
