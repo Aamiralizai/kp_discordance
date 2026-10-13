@@ -1,0 +1,7 @@
+clonal_group	qc_verdict	n	resistant	pct	ci_lo	ci_hi
+CG258	PASS	195	27	13.8	9.7	19.4
+CG258	WARN	87	12	13.8	8.1	22.6
+CG101	PASS	15	0	0.0	-0.0	20.4
+CG101	WARN	20	1	5.0	0.9	23.6
+other	PASS	1152	42	3.6	2.7	4.9
+other	WARN	483	32	6.6	4.7	9.2

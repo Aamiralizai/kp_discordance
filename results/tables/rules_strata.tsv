@@ -1,0 +1,65 @@
+tier	stratum	carb_pos	n	n_resistant	n_susceptible	resistance_pct	ci_lower	ci_upper	predicts_resistant	low_support	n_sequence_types	family	porin	lineage
+T0_gene_only	carb_pos=0	0.0	1952	114	1838	5.8	4.9	7.0	0	no	339			
+T0_gene_only	carb_pos=1	1.0	1241	1117	124	90.0	88.2	91.6	1	no	91			
+T1_family	family=none		1952	114	1838	5.8	4.9	7.0	0	no	339	none		
+T1_family	family=KPC		883	847	36	95.9	94.4	97.0	1	no	51	KPC		
+T1_family	family=OXA-48-like		181	116	65	64.1	56.9	70.7	1	no	38	OXA-48-like		
+T1_family	family=NDM		107	106	1	99.1	94.9	99.8	1	no	21	NDM		
+T1_family	family=VIM		44	23	21	52.3	37.9	66.2	1	no	10	VIM		
+T1_family	family=multiple		19	18	1	94.7	75.4	99.1	1	no	11	multiple		
+T1_family	family=other		7	7	0	100.0	64.6	100.0	1	yes	4	other		
+T2_family_porin	family=none | porin=intact		1215	25	1190	2.1	1.4	3.0	0	no	311	none	intact	
+T2_family_porin	family=none | porin=ompK35_only		438	19	419	4.3	2.8	6.7	0	no	34	none	ompK35_only	
+T2_family_porin	family=KPC | porin=ompK35_only		427	410	17	96.0	93.7	97.5	1	no	20	KPC	ompK35_only	
+T2_family_porin	family=KPC | porin=ompK36_disrupted		392	386	6	98.5	96.7	99.3	1	no	17	KPC	ompK36_disrupted	
+T2_family_porin	family=none | porin=ompK36_disrupted		299	70	229	23.4	19.0	28.5	0	no	46	none	ompK36_disrupted	
+T2_family_porin	family=OXA-48-like | porin=ompK36_disrupted		77	75	2	97.4	91.0	99.3	1	no	11	OXA-48-like	ompK36_disrupted	
+T2_family_porin	family=OXA-48-like | porin=intact		72	21	51	29.2	19.9	40.5	0	no	32	OXA-48-like	intact	
+T2_family_porin	family=KPC | porin=intact		64	51	13	79.7	68.3	87.7	1	no	31	KPC	intact	
+T2_family_porin	family=NDM | porin=ompK35_only		52	51	1	98.1	89.9	99.7	1	no	14	NDM	ompK35_only	
+T2_family_porin	family=NDM | porin=intact		36	36	0	100.0	90.4	100.0	1	no	9	NDM	intact	
+T2_family_porin	family=OXA-48-like | porin=ompK35_only		32	20	12	62.5	45.3	77.1	1	no	7	OXA-48-like	ompK35_only	
+T2_family_porin	family=VIM | porin=intact		32	12	20	37.5	22.9	54.7	0	no	9	VIM	intact	
+T2_family_porin	family=NDM | porin=ompK36_disrupted		19	19	0	100.0	83.2	100.0	1	no	5	NDM	ompK36_disrupted	
+T2_family_porin	family=multiple | porin=ompK36_disrupted		9	9	0	100.0	70.1	100.0	1	yes	4	multiple	ompK36_disrupted	
+T2_family_porin	family=VIM | porin=ompK35_only		7	6	1	85.7	48.7	97.4	1	yes	3	VIM	ompK35_only	
+T2_family_porin	family=multiple | porin=intact		6	5	1	83.3	43.6	97.0	1	yes	5	multiple	intact	
+T2_family_porin	family=VIM | porin=ompK36_disrupted		5	5	0	100.0	56.6	100.0	1	yes	2	VIM	ompK36_disrupted	
+T2_family_porin	family=multiple | porin=ompK35_only		4	4	0	100.0	51.0	100.0	1	yes	3	multiple	ompK35_only	
+T2_family_porin	family=other | porin=ompK36_disrupted		4	4	0	100.0	51.0	100.0	1	yes	3	other	ompK36_disrupted	
+T2_family_porin	family=other | porin=intact		3	3	0	100.0	43.9	100.0	1	yes	1	other	intact	
+T3_family_porin_lineage	family=none | porin=intact | lineage=non-CG258		1126	15	1111	1.3	0.8	2.2	0	no	308	none	intact	non-CG258
+T3_family_porin_lineage	family=KPC | porin=ompK35_only | lineage=CG258		358	350	8	97.8	95.7	98.9	1	no	4	KPC	ompK35_only	CG258
+T3_family_porin_lineage	family=none | porin=ompK35_only | lineage=non-CG258		285	13	272	4.6	2.7	7.6	0	no	30	none	ompK35_only	non-CG258
+T3_family_porin_lineage	family=none | porin=ompK36_disrupted | lineage=non-CG258		263	50	213	19.0	14.7	24.2	0	no	41	none	ompK36_disrupted	non-CG258
+T3_family_porin_lineage	family=KPC | porin=ompK36_disrupted | lineage=CG258		223	220	3	98.7	96.1	99.5	1	no	4	KPC	ompK36_disrupted	CG258
+T3_family_porin_lineage	family=KPC | porin=ompK36_disrupted | lineage=non-CG258		169	166	3	98.2	94.9	99.4	1	no	13	KPC	ompK36_disrupted	non-CG258
+T3_family_porin_lineage	family=none | porin=ompK35_only | lineage=CG258		153	6	147	3.9	1.8	8.3	0	no	4	none	ompK35_only	CG258
+T3_family_porin_lineage	family=none | porin=intact | lineage=CG258		89	10	79	11.2	6.2	19.5	0	no	3	none	intact	CG258
+T3_family_porin_lineage	family=OXA-48-like | porin=ompK36_disrupted | lineage=non-CG258		74	72	2	97.3	90.7	99.3	1	no	10	OXA-48-like	ompK36_disrupted	non-CG258
+T3_family_porin_lineage	family=KPC | porin=ompK35_only | lineage=non-CG258		69	60	9	87.0	77.0	93.0	1	no	16	KPC	ompK35_only	non-CG258
+T3_family_porin_lineage	family=OXA-48-like | porin=intact | lineage=non-CG258		62	21	41	33.9	23.3	46.3	0	no	30	OXA-48-like	intact	non-CG258
+T3_family_porin_lineage	family=KPC | porin=intact | lineage=non-CG258		54	42	12	77.8	65.1	86.8	1	no	29	KPC	intact	non-CG258
+T3_family_porin_lineage	family=none | porin=ompK36_disrupted | lineage=CG258		36	20	16	55.6	39.6	70.5	1	no	5	none	ompK36_disrupted	CG258
+T3_family_porin_lineage	family=NDM | porin=ompK35_only | lineage=non-CG258		33	32	1	97.0	84.7	99.5	1	no	13	NDM	ompK35_only	non-CG258
+T3_family_porin_lineage	family=VIM | porin=intact | lineage=non-CG258		32	12	20	37.5	22.9	54.7	0	no	9	VIM	intact	non-CG258
+T3_family_porin_lineage	family=OXA-48-like | porin=ompK35_only | lineage=non-CG258		29	19	10	65.5	47.3	80.1	1	no	6	OXA-48-like	ompK35_only	non-CG258
+T3_family_porin_lineage	family=NDM | porin=intact | lineage=non-CG258		20	20	0	100.0	83.9	100.0	1	no	6	NDM	intact	non-CG258
+T3_family_porin_lineage	family=NDM | porin=ompK35_only | lineage=CG258		19	19	0	100.0	83.2	100.0	1	no	1	NDM	ompK35_only	CG258
+T3_family_porin_lineage	family=NDM | porin=ompK36_disrupted | lineage=non-CG258		17	17	0	100.0	81.6	100.0	1	no	4	NDM	ompK36_disrupted	non-CG258
+T3_family_porin_lineage	family=NDM | porin=intact | lineage=CG258		16	16	0	100.0	80.6	100.0	1	no	3	NDM	intact	CG258
+T3_family_porin_lineage	family=KPC | porin=intact | lineage=CG258		10	9	1	90.0	59.6	98.2	1	no	2	KPC	intact	CG258
+T3_family_porin_lineage	family=OXA-48-like | porin=intact | lineage=CG258		10	0	10	0.0	0.0	27.8	0	no	2	OXA-48-like	intact	CG258
+T3_family_porin_lineage	family=multiple | porin=ompK36_disrupted | lineage=non-CG258		8	8	0	100.0	67.6	100.0	1	yes	3	multiple	ompK36_disrupted	non-CG258
+T3_family_porin_lineage	family=VIM | porin=ompK35_only | lineage=non-CG258		7	6	1	85.7	48.7	97.4	1	yes	3	VIM	ompK35_only	non-CG258
+T3_family_porin_lineage	family=VIM | porin=ompK36_disrupted | lineage=non-CG258		5	5	0	100.0	56.6	100.0	1	yes	2	VIM	ompK36_disrupted	non-CG258
+T3_family_porin_lineage	family=multiple | porin=intact | lineage=CG258		4	3	1	75.0	30.1	95.4	1	yes	3	multiple	intact	CG258
+T3_family_porin_lineage	family=multiple | porin=ompK35_only | lineage=non-CG258		4	4	0	100.0	51.0	100.0	1	yes	3	multiple	ompK35_only	non-CG258
+T3_family_porin_lineage	family=OXA-48-like | porin=ompK35_only | lineage=CG258		3	1	2	33.3	6.1	79.2	0	yes	1	OXA-48-like	ompK35_only	CG258
+T3_family_porin_lineage	family=OXA-48-like | porin=ompK36_disrupted | lineage=CG258		3	3	0	100.0	43.9	100.0	1	yes	1	OXA-48-like	ompK36_disrupted	CG258
+T3_family_porin_lineage	family=other | porin=intact | lineage=non-CG258		3	3	0	100.0	43.9	100.0	1	yes	1	other	intact	non-CG258
+T3_family_porin_lineage	family=other | porin=ompK36_disrupted | lineage=non-CG258		3	3	0	100.0	43.9	100.0	1	yes	2	other	ompK36_disrupted	non-CG258
+T3_family_porin_lineage	family=NDM | porin=ompK36_disrupted | lineage=CG258		2	2	0	100.0	34.2	100.0	1	yes	1	NDM	ompK36_disrupted	CG258
+T3_family_porin_lineage	family=multiple | porin=intact | lineage=non-CG258		2	2	0	100.0	34.2	100.0	1	yes	2	multiple	intact	non-CG258
+T3_family_porin_lineage	family=multiple | porin=ompK36_disrupted | lineage=CG258		1	1	0	100.0	20.7	100.0	1	yes	1	multiple	ompK36_disrupted	CG258
+T3_family_porin_lineage	family=other | porin=ompK36_disrupted | lineage=CG258		1	1	0	100.0	20.7	100.0	1	yes	1	other	ompK36_disrupted	CG258

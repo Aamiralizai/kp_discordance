@@ -1,0 +1,279 @@
+genome_id	ST	carb_pos	carb_family	carb_allele	porin	porin_disrupted	esbl	lo	hi	lo_inc	hi_inc	n_records	method	standard	platform	year	call
+573.12796	ST15	True	NDM	NDM-1	none	False	True	32.0	32.0	True	True	1	Broth dilution	CLSI			R
+573.12920	ST258	False	none	none	ompK35_loss	False	False	0.0	0.25	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.12952	ST1017	False	none	none	none	False	True	0.0	0.25	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.12983	ST1164	False	none	none	none	False	False	0.0	0.25	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13046	ST429	True	KPC	KPC-2	none	False	False	8.0	inf	False	False	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.13077	ST307	False	none	none	ompK35_loss	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13109	ST307	True	KPC	KPC-2	ompK36_loop3	True	True	8.0	inf	False	False	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.13141	ST628	False	none	none	ompK36_reduced_expression	True	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13206	ST258	True	KPC	KPC-2	ompK35_loss	False	True	2.0	2.0	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	I
+573.13238	ST258	True	KPC	KPC-2	ompK36_loop3	True	True	8.0	inf	False	False	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.13268	ST307	False	none	none	ompK36_loop3	True	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13269	ST111	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13300	ST16	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13331	ST551	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13930	ST307-1LV	True	KPC	KPC-2	ompK36_loop3	True	True	8.0	8.0	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.13365	ST15	True	KPC	KPC-2	none	False	False	8.0	8.0	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.13961	ST2975	True	KPC	KPC-2	ompK35_loss	False	True	8.0	inf	False	False	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.13396	ST307-1LV	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13992	ST307	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13556	ST2351	False	none	none	ompK36_loss	True	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14150	ST20	False	none	none	none	False	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13618	ST1887	False	none	none	ompK36_loss	True	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14275	ST307-1LV	False	none	none	ompK35_loss	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13711	ST437	False	none	none	none	False	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13742	ST13	False	none	none	ompK36_reduced_expression	True	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14338	ST2352-2LV	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14369	ST16	False	none	none	ompK35_loss	False	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13805	ST405-1LV	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13868	ST147	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14464	ST2975	False	none	none	ompK35_loss	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.15107	ST258	True	KPC	KPC-3	ompK35_loss	False	True	8.0	8.0	True	True	1	Broth dilution	CLSI			R
+573.24243	ST14	True	NDM+OXA-48-like	NDM-1;OXA-232	ompK36_loop3	True	True	64.0	64.0	True	True	1	Broth dilution	CLSI			R
+573.24338	ST340	True	KPC	KPC-3	none	False	False	16.0	inf	False	False	1	Broth dilution	CLSI			R
+573.24373	ST147	True	NDM	NDM-1	ompK36_loop3	True	True	64.0	inf	False	False	1	Broth dilution	CLSI			R
+72407.201	ST258-1LV	True	KPC	KPC-3	ompK35_loss	False	True	8.0	8.0	True	True	1	Broth dilution	CLSI		2013	R
+72407.224	ST512-1LV	True	KPC	KPC-3	ompK36_loop3	True	False	8.0	inf	False	False	1	Broth dilution	CLSI		2013	R
+573.12984	ST636	False	none	none	none	False	False	0.0	0.25	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13047	ST348	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13301	ST280	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13366	ST39	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13588	ST15	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13619	ST307	True	KPC	KPC-2	ompK35_loss	False	True	4.0	4.0	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.14214	ST14	True	NDM	NDM-1	ompK36_loop3	True	True	8.0	inf	False	False	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.14245	ST392	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14276	ST462	False	none	none	none	False	True	8.0	inf	False	False	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.13774	ST101	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.24276	ST101	True	OXA-48-like	OXA-48	ompK36_loop3	True	True	32.0	32.0	True	True	1	Broth dilution	CLSI			R
+573.24339	ST11	True	KPC	KPC-3	ompK36_loop3	True	True	32.0	inf	False	False	1	Broth dilution	CLSI			R
+573.24407	ST258	False	none	none	ompK36_loss	True	True	16.0	inf	False	False	1	Broth dilution	CLSI			R
+573.24440	ST258-1LV	True	KPC	KPC-3	ompK36_loop3	True	False	64.0	inf	False	False	1	Broth dilution	CLSI			R
+72407.203	ST258-1LV	True	KPC	KPC-2	ompK35_loss	False	True	8.0	inf	False	False	1	Broth dilution	CLSI		2013	R
+573.12859	ST133	False	none	none	none	False	False	0.0	0.25	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.12891	ST6821	False	none	none	none	False	True	0.0	0.25	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.12954	ST45	False	none	none	none	False	True	0.0	0.25	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.12985	ST2599	False	none	none	none	False	False	0.0	0.25	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13143	ST37	True	NDM+OXA-48-like	NDM-1;OXA-48	ompK35_loss	False	True	8.0	inf	False	False	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.13302	ST1427	False	none	none	none	False	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13932	ST147	False	none	none	ompK35_loss	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13963	ST42	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14027	ST884	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14120	ST295	False	none	none	none	False	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13589	ST25	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13651	ST3660	True	KPC	KPC-2	none	False	False	4.0	4.0	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.14277	ST3792	True	KPC	KPC-2	ompK35_loss	False	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14372	ST36	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13870	ST336	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14435	ST1107	True	KPC	KPC-2	none	False	True	4.0	4.0	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.24277	ST34	True	OXA-48-like	OXA-181	ompK35_loss	False	True	2.0	2.0	True	True	1	Broth dilution	CLSI			I
+573.24340	ST258	True	KPC	KPC-3	ompK36_loop3	True	False	64.0	inf	False	False	1	Broth dilution	CLSI			R
+573.24408	ST15	True	KPC	KPC-3	none	False	False	4.0	inf	True	False	1	Broth dilution	CLSI			R
+573.5766	ST147	True	VIM	VIM-27	ompK36_loop3	True	True	64.0	inf	True	False	1	Broth dilution	CLSI		2016	R
+573.12923	ST1824	False	none	none	none	False	False	0.5	0.5	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.12955	ST432	False	none	none	none	False	False	0.5	0.5	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13081	ST551-1LV	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13144	ST16	False	none	none	ompK36_loss	True	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13177	ST258	True	KPC	KPC-8	ompK35_loss	False	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13241	ST187	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13335	ST788	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13964	ST273	False	none	none	ompK35_loss	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13995	ST321	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13465	ST37	False	none	none	ompK36_reduced_expression	True	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13527	ST628	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13745	ST2202	False	none	none	ompK36_loss	True	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.17908	ST14	False	none	none	ompK36_loop3	True	True	4.0	4.0	True	True	1	Broth dilution	CLSI			R
+573.24376	ST163	False	none	none	ompK36_loss	True	False	8.0	inf	False	False	1	Broth dilution	CLSI			R
+573.24442	ST1626	False	none	none	ompK36_loss	True	True	0.0	0.5	False	False	1	Broth dilution	CLSI			S
+573.7030	ST17	False	none	none	none	False	False	1.0	1.0	True	True	1	Broth dilution	CLSI			S
+72407.148	ST258-1LV	False	none	none	ompK35_loss	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI		2013	S
+573.12861	ST2267	False	none	none	none	False	False	0.5	0.5	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.12924	ST492	False	none	none	none	False	True	1.0	1.0	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13304	ST3691	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14217	ST307	True	GES	GES-19	ompK36_loop3	True	False	2.0	2.0	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	I
+573.24377	ST11	False	none	none	none	False	True	2.0	2.0	True	True	1	Broth dilution	CLSI			I
+573.12988	ST1933	False	none	none	none	False	True	0.5	0.5	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13146	ST476	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13370	ST14	False	none	none	none	False	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13935	ST1440	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13401	ST35	False	none	none	none	False	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13498	ST1694	False	none	none	none	False	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13623	ST13	True	KPC	KPC-2	ompK36_reduced_expression	True	True	4.0	4.0	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.14375	ST6522	False	none	none	none	False	True	2.0	2.0	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	I
+573.24248	ST147	True	OXA-48-like	OXA-181	ompK36_loop3	True	True	4.0	4.0	True	True	1	Broth dilution	CLSI			R
+573.24280	ST525	False	none	none	ompK36_loss	True	True	1.0	1.0	True	True	1	Broth dilution	CLSI			S
+573.24378	ST512	True	KPC	KPC-3	ompK36_loop3	True	False	32.0	inf	False	False	1	Broth dilution	CLSI			R
+573.24411	ST147	False	none	none	ompK36_loss	True	True	4.0	inf	True	False	1	Broth dilution	CLSI			R
+573.24444	ST307	True	KPC	KPC-2	none	False	True	16.0	inf	False	False	1	Broth dilution	CLSI			R
+573.5769	ST11	True	OXA-48-like	OXA-48	ompK36_reduced_expression	True	True	4.0	inf	True	False	1	Broth dilution	CLSI		2016	R
+573.7032	ST37	True	NDM	NDM-1	ompK35_loss	False	True	8.0	8.0	True	True	1	Broth dilution	CLSI			R
+574.20	ST2167	True	KPC	KPC-3	ompK35_loss	False	False	64.0	inf	False	False	1	Broth dilution	CLSI			R
+573.12863	ST4731	False	none	none	none	False	False	0.0	0.25	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.12926	ST774	False	none	none	none	False	False	0.5	0.5	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13020	ST107	False	none	none	none	False	False	0.5	0.5	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13115	ST985	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13275	ST134	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13306	ST3811	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13936	ST3792	False	none	none	ompK35_loss	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13967	ST1823	False	none	none	none	False	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13530	ST307	True	GES	GES-19;GES-20	ompK36_loop3	True	False	2.0	2.0	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	I
+573.14219	ST405	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13748	ST557	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.17927	ST1224	True	IMP	IMP-4	ompK36_loss	True	True	4.0	4.0	True	True	1	Broth dilution	CLSI			R
+573.24313	ST14	True	OXA-48-like	OXA-232	ompK36_loop3	True	True	4.0	4.0	True	True	1	Broth dilution	CLSI			R
+573.7033	ST327	False	none	none	ompK35_loss	False	True	1.0	1.0	True	True	1	Broth dilution	CLSI			S
+72407.215	ST258-1LV	True	KPC	KPC-3	ompK36_reduced_expression	True	True	8.0	inf	False	False	1	Broth dilution	CLSI		2013	R
+72407.237	ST258	True	KPC	KPC-2	ompK36_reduced_expression	True	True	8.0	inf	False	False	1	Broth dilution	CLSI		2013	R
+72407.262	ST258	True	KPC	KPC-3	ompK36_reduced_expression	True	True	8.0	8.0	True	True	1	Broth dilution	CLSI		2013	R
+573.13403	ST412	True	KPC	KPC-2	none	False	False	8.0	8.0	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.14032	ST48	False	none	none	ompK35_loss	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13656	ST6618	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14503	ST16	True	KPC	KPC-2	none	False	True	8.0	inf	False	False	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.24251	ST16	True	OXA-48-like	OXA-232	ompK36_loop3	True	True	8.0	8.0	True	True	1	Broth dilution	CLSI			R
+573.24446	ST15	False	none	none	ompK36_reduced_expression	True	True	0.0	1.0	False	True	1	Broth dilution	CLSI			S
+72407.217	ST258-1LV	False	none	none	ompK36_loop3	True	False	0.0	1.0	False	False	1	Broth dilution	CLSI		2013	S
+573.12928	ST466	False	none	none	none	False	False	0.0	0.25	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.12960	ST1686	False	none	none	ompK36_loss	True	False	0.5	0.5	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13022	ST200	False	none	none	none	False	False	2.0	2.0	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	I
+573.13117	ST37	True	KPC	KPC-2	ompK35_loss	False	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13118	ST219	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13182	ST405	False	none	none	ompK35_loss	False	True	8.0	inf	False	False	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.13532	ST37	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13626	ST307	False	none	none	ompK36_loss	True	True	4.0	4.0	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.14221	ST42-1LV	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.24315	ST43	True	OXA-48-like	OXA-181	ompK36_loop3	True	True	4.0	4.0	True	True	1	Broth dilution	CLSI			R
+573.24347	ST418	True	KPC	KPC-3	ompK35_loss	False	False	8.0	inf	False	False	1	Broth dilution	CLSI			R
+573.24381	ST3635	False	none	none	none	False	False	0.0	0.5	False	False	1	Broth dilution	CLSI			S
+573.14001	ST16	True	KPC	KPC-2	ompK35_loss	False	False	8.0	inf	False	False	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.13471	ST29	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14160	ST3113	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14191	ST15	False	none	none	ompK35_loss	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13627	ST234	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.24348	ST485	True	KPC	KPC-3	none	False	False	4.0	inf	True	False	1	Broth dilution	CLSI			R
+573.24416	ST1213	True	KPC	KPC-3	none	False	False	32.0	inf	False	False	1	Broth dilution	CLSI			R
+573.5779	ST437	True	KPC	KPC-2	ompK36_loss	True	False	64.0	inf	False	False	1	Broth dilution	CLSI		2016	R
+573.7362	ST11	True	NDM	NDM-1	ompK35_loss	False	True	32.0	32.0	True	True	1	Broth dilution	CLSI			R
+573.12899	ST2217	False	none	none	none	False	True	0.5	0.5	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13056	ST261	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13344	ST2133	False	none	none	ompK36_loss	True	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13752	ST37	True	OXA-48-like	OXA-48	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14411	ST151	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14443	ST791	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14506	ST3578	False	none	none	none	False	False	8.0	inf	False	False	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.18088	ST11	False	none	none	ompK36_loss	True	True	16.0	16.0	True	True	1	Broth dilution	CLSI			R
+573.24449	ST1966	False	none	none	ompK36_loss	True	False	16.0	inf	False	False	1	Broth dilution	CLSI			R
+72407.166	ST379-1LV	True	KPC	KPC-3	ompK35_loss	False	False	8.0	8.0	True	True	1	Broth dilution	CLSI		2013	R
+573.12869	ST323	False	none	none	none	False	True	0.0	0.25	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13057	ST2185	False	none	none	none	False	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13442	ST1412	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13473	ST273	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13567	ST22	False	none	none	none	False	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.9721	ST234	True	KPC	KPC-3	none	False	True	16.0	16.0	True	True	1	Broth dilution	CLSI			R
+72407.167	ST379	True	KPC	KPC-3	ompK35_loss	False	False	8.0	8.0	True	True	1	Broth dilution	CLSI		2013	R
+573.13026	ST65	False	none	none	none	False	False	2.0	2.0	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	I
+573.13058	ST461	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13630	ST2570	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14225	ST307-1LV	True	KPC	KPC-2	ompK35_loss	False	True	8.0	inf	False	False	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.13723	ST15-1LV	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13754	ST1758	False	none	none	none	False	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13817	ST45-1LV	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.12902	ST6615	False	none	none	none	False	False	0.0	0.25	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.12934	ST753	False	none	none	none	False	False	0.5	0.5	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13123	ST37	True	KPC	KPC-2	none	False	False	8.0	8.0	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.12872	ST412	False	none	none	none	False	False	0.0	0.25	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13411	ST6635	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14070	ST1213	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14101	ST1296	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13570	ST2703	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13601	ST307	True	KPC	KPC-94	ompK36_loop3	True	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14227	ST307-1LV	False	none	none	ompK36_loop3	True	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13851	ST327	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.24321	ST231	True	NDM	NDM-1	ompK35_loss	False	True	16.0	inf	True	False	1	Broth dilution	CLSI	VITEK 2		R
+573.24354	ST34	True	KPC	KPC-3	none	False	False	4.0	inf	True	False	1	Broth dilution	CLSI			R
+573.13253	ST1808	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13284	ST896	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13349	ST5340	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13789	ST17	True	KPC	KPC-3	none	False	False	2.0	2.0	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	I
+573.12874	ST393	False	none	none	none	False	True	0.0	0.25	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.12968	ST502	False	none	none	none	False	False	0.0	0.25	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13350	ST323	True	KPC	KPC-2	none	False	True	8.0	8.0	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.13572	ST471	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14229	ST17	True	KPC	KPC-2	none	False	False	8.0	8.0	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.18541	ST11	True	KPC	KPC-2	ompK36_loop3	True	False	16.0	inf	True	False	1	Broth dilution	CLSI			R
+573.12938	ST1876	False	none	none	none	False	True	0.0	0.25	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13916	ST307-2LV	True	KPC	KPC-2	ompK36_loop3	True	True	8.0	inf	False	False	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.14135	ST611	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.25569	ST383	True	VIM	VIM-19	none	False	True	32.0	32.0	True	True	1	Broth dilution	CLSI		2016	R
+573.12939	ST3161	False	none	none	none	False	False	0.0	0.25	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13064	ST16	False	none	none	ompK36_reduced_expression	True	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13352	ST15	True	OXA-48-like	OXA-48	ompK35_loss	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13636	ST15	False	none	none	ompK36_loss	True	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14231	ST14-1LV	True	NDM	NDM-1	ompK36_loop3	True	True	8.0	inf	False	False	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.14420	ST1962	False	none	none	none	False	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14201	ST1777	False	none	none	none	False	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14326	ST307-1LV	False	none	none	ompK36_loss	True	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.24263	ST15	True	OXA-48-like	OXA-48	none	False	True	2.0	2.0	True	True	1	Broth dilution	CLSI			I
+573.25927	ST23	True	KPC	KPC-2	none	False	False	2.0	2.0	True	True	1	Broth dilution	CLSI			I
+573.13321	ST6616	False	none	none	none	False	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.24361	ST37-1LV	True	KPC	KPC-3	ompK35_loss	False	True	4.0	inf	True	False	1	Broth dilution	CLSI			R
+573.12771	ST45	True	KPC	KPC-2	ompK36_loss	True	True	8.0	8.0	True	True	1	Broth dilution	CLSI			R
+573.13004	ST6071	False	none	none	none	False	False	0.5	0.5	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13386	ST874	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14108	ST716	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13763	ST13	False	none	none	none	False	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13795	ST307-1LV	True	KPC	KPC-2	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13889	ST147-1LV	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.24265	ST437	True	NDM+OXA-48-like	NDM-5;OXA-232	none	False	True	32.0	32.0	True	True	1	Broth dilution	CLSI			R
+573.24395	ST252	True	KPC	KPC-3	none	False	False	4.0	inf	True	False	1	Broth dilution	CLSI			R
+573.12772	ST258	True	KPC	KPC-3	ompK36_loss	True	False	64.0	inf	False	False	1	Broth dilution	CLSI			R
+573.12974	ST5306	False	none	none	none	False	True	0.5	0.5	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13100	ST418	False	none	none	ompK35_loss	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13198	ST42	True	KPC	KPC-2	none	False	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14014	ST395-1LV	False	none	none	ompK35_loss	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13515	ST37	False	none	none	ompK35_loss	False	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14297	ST1444	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13764	ST76	False	none	none	none	False	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.15042	ST163	True	NDM	NDM-1	none	False	True	16.0	16.0	True	True	1	Broth dilution	CLSI			R
+573.19877	ST11	True	KPC	KPC-3	ompK35_loss	False	False	16.0	16.0	True	True	1	Broth dilution	CLSI			R
+573.24396	ST11	True	KPC	KPC-3	none	False	False	16.0	inf	False	False	1	Broth dilution	CLSI			R
+573.12773	ST147	True	NDM	NDM-7	ompK36_loop3	True	True	64.0	inf	False	False	1	Broth dilution	CLSI			R
+573.12881	ST966	False	none	none	none	False	False	0.5	0.5	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13420	ST37	True	OXA-48-like	OXA-48	ompK35_loss	False	True	4.0	4.0	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.13641	ST895	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14236	ST307	True	KPC	KPC-3	ompK36_loop3	True	True	8.0	inf	False	False	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.20059	ST2938	True	VIM	VIM-1	none	False	True	4.0	4.0	True	True	1	Broth dilution	CLSI			R
+573.24397	ST14	True	KPC	KPC-2	none	False	False	4.0	inf	True	False	1	Broth dilution	CLSI			R
+573.24431	ST6632	False	none	none	none	False	True	8.0	inf	False	False	1	Broth dilution	CLSI			R
+573.13102	ST869	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13325	ST1377-2LV	False	none	none	none	False	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13422	ST661	False	none	none	none	False	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14237	ST1602	False	none	none	ompK36_loss	True	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.20060	ST101	True	VIM	VIM-1	ompK35_loss	False	True	8.0	8.0	True	True	1	Broth dilution	CLSI			R
+573.13924	ST978	False	none	none	ompK36_loss	True	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13705	ST1228	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.20061	ST36	True	OXA-48-like	OXA-48	none	False	False	4.0	4.0	True	True	1	Broth dilution	CLSI			R
+573.24399	ST258	True	KPC	KPC-2	ompK36_loss	True	False	64.0	inf	False	False	1	Broth dilution	CLSI			R
+573.13009	ST48	False	none	none	none	False	False	0.0	0.25	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13457	ST560-1LV	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14301	ST14	True	NDM	NDM-1	ompK35_loss	False	False	8.0	inf	False	False	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.20062	ST16	False	none	none	ompK36_loop3	True	True	8.0	8.0	True	True	1	Broth dilution	CLSI			R
+573.24400	ST309	False	none	none	none	False	False	0.0	0.5	False	False	1	Broth dilution	CLSI			S
+573.7022	ST1	False	none	none	ompK35_loss	False	True	1.0	1.0	True	True	1	Broth dilution	CLSI			S
+573.12780	ST147	True	NDM	NDM-1	ompK35_loss	False	True	16.0	16.0	True	True	1	Broth dilution	CLSI			R
+573.12979	ST5056	False	none	none	none	False	True	0.0	0.25	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13296	ST784	False	none	none	none	False	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13614	ST3537	True	KPC	KPC-2	ompK36_loss	True	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13707	ST307	True	NDM	NDM-1	ompK35_loss	False	True	8.0	inf	False	False	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.20063	ST3603	True	KPC	KPC-3	ompK35_loss	False	False	64.0	64.0	True	True	1	Broth dilution	CLSI			R
+573.24369	ST580	False	none	none	none	False	True	0.0	0.5	False	False	1	Broth dilution	CLSI			S
+573.7023	ST244	False	none	none	ompK36_loss	True	True	0.0	0.5	False	True	1	Broth dilution	CLSI			S
+573.13584	ST258	False	none	none	ompK36_reduced_expression	True	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.14493	ST26	False	none	none	none	False	False	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.20064	ST340	False	none	none	ompK36_loss	True	True	2.0	2.0	True	True	1	Broth dilution	CLSI			I
+573.12782	ST11	True	NDM	NDM-1	none	False	True	16.0	16.0	True	True	1	Broth dilution	CLSI			R
+573.14431	ST4097	True	KPC	KPC-2	none	False	False	8.0	8.0	True	True	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.7025	ST461	False	none	none	ompK36_loss	True	False	4.0	4.0	True	True	1	Broth dilution	CLSI			R
+573.12783	ST1161	False	none	none	ompK36_loss	True	True	8.0	8.0	True	True	1	Broth dilution	CLSI			R
+573.13929	ST29-1LV	False	none	none	none	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S
+573.13492	ST340	False	none	none	none	False	False	8.0	inf	False	False	1	Broth dilution	CLSI	BD Phoenix	2017	R
+573.14432	ST656	False	none	none	ompK35_loss	False	True	0.0	1.0	False	True	1	Broth dilution	CLSI	BD Phoenix	2017	S

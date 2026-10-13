@@ -1,0 +1,18 @@
+family	porin	label	n	n_susc	pct	ci_lo	ci_hi
+VIM	none	intact	34	20	58.8	42.2	73.6
+OXA-48-like	none	intact	77	53	68.8	57.8	78.1
+OXA-48-like	ompK35_loss	OmpK35 truncation	39	12	30.8	18.6	46.4
+OXA-48-like	ompK36_loop3	OmpK36 loop-3 insertion	87	2	2.3	0.6	8.0
+IMP	none	intact	35	3	8.6	3.0	22.4
+IMP	ompK35_loss	OmpK35 truncation	20	8	40.0	21.9	61.3
+KPC	none	intact	134	14	10.4	6.3	16.8
+KPC	ompK35_loss	OmpK35 truncation	546	18	3.3	2.1	5.2
+KPC	ompK36_reduced_expression	OmpK36 c.25C>T (reduced expression)	10	0	0.0	0.0	27.8
+KPC	ompK36_loop3	OmpK36 loop-3 insertion	709	6	0.8	0.4	1.8
+KPC	ompK36_loss	OmpK36 truncation	16	1	6.2	1.1	28.3
+NDM	none	intact	72	1	1.4	0.2	7.5
+NDM	ompK35_loss	OmpK35 truncation	129	2	1.6	0.4	5.5
+NDM	ompK36_loop3	OmpK36 loop-3 insertion	18	0	0.0	0.0	17.6
+KPC+NDM	ompK35_loss	OmpK35 truncation	53	0	0.0	0.0	6.8
+NDM+OXA-48-like	none	intact	11	0	0.0	0.0	25.9
+NDM+OXA-48-like	ompK36_loop3	OmpK36 loop-3 insertion	56	0	0.0	0.0	6.4

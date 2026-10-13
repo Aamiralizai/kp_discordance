@@ -1,0 +1,11 @@
+group	metric	n_discordant	median_discordant	n_other	median_other	p_value	q_value
+resistant, carbapenemase-negative	n50_bp	114	223949.0	3079	202435.0	0.0008090575247321703	0.0026968584157739013
+resistant, carbapenemase-negative	n_contigs	114	94.0	3079	103.0	0.003992843302510002	0.009982108256275005
+resistant, carbapenemase-negative	genome_size_bp	114	5529196.0	3079	5540335.0	0.38382985586629315	0.38382985586629315
+resistant, carbapenemase-negative	contamination_pct	114	0.0	3079	0.0	0.08049816355042919	0.10062270443803648
+resistant, carbapenemase-negative	completeness_pct	114	100.0	3079	100.0	0.019798318807673094	0.03299719801278849
+susceptible, carbapenemase-positive	n50_bp	124	242207.5	3069	200845.0	4.975065037751773e-05	0.00024875325188758864
+susceptible, carbapenemase-positive	n_contigs	124	103.5	3069	102.0	0.16988796342308754	0.1887644038034306
+susceptible, carbapenemase-positive	genome_size_bp	124	5616929.0	3069	5535249.0	1.0983021600581387e-09	1.0983021600581387e-08
+susceptible, carbapenemase-positive	contamination_pct	124	0.0	3069	0.0	0.014284877223690757	0.028569754447381513
+susceptible, carbapenemase-positive	completeness_pct	124	100.0	3069	100.0	0.028211327572910186	0.04030189653272883

@@ -1,0 +1,25 @@
+stratum	n_derivation	n_resistant_derivation	resistance_pct_derivation	ci_lower_derivation	ci_upper_derivation	family	porin	n_external	n_resistant_external	resistance_pct_external	ci_lower_external	ci_upper_external	low_support	delta_pct	ci_overlap
+family=KPC | porin=intact	64.0	51.0	79.7	68.3	87.7	KPC	intact	37.0	33.0	89.2	75.3	95.7	no	9.5	True
+family=KPC | porin=ompK35_only	427.0	410.0	96.0	93.7	97.5	KPC	ompK35_only	46.0	41.0	89.1	77.0	95.3	no	-6.9	True
+family=KPC | porin=ompK36_disrupted	392.0	386.0	98.5	96.7	99.3	KPC	ompK36_disrupted	54.0	54.0	100.0	93.4	100.0	no	1.5	True
+family=KPC | porin=unknown						KPC	unknown	1.0	1.0	100.0	20.7	100.0	yes		True
+family=NDM | porin=intact	36.0	36.0	100.0	90.4	100.0	NDM	intact	47.0	43.0	91.5	80.1	96.6	no	-8.5	True
+family=NDM | porin=ompK35_only	52.0	51.0	98.1	89.9	99.7	NDM	ompK35_only	26.0	25.0	96.2	81.1	99.3	no	-1.9	True
+family=NDM | porin=ompK36_disrupted	19.0	19.0	100.0	83.2	100.0	NDM	ompK36_disrupted	11.0	11.0	100.0	74.1	100.0	no	0.0	True
+family=NDM | porin=unknown						NDM	unknown	1.0	1.0	100.0	20.7	100.0	yes		True
+family=OXA-48-like | porin=intact	72.0	21.0	29.2	19.9	40.5	OXA-48-like	intact	40.0	10.0	25.0	14.2	40.2	no	-4.2	True
+family=OXA-48-like | porin=ompK35_only	32.0	20.0	62.5	45.3	77.1	OXA-48-like	ompK35_only	10.0	7.0	70.0	39.7	89.2	no	7.5	True
+family=OXA-48-like | porin=ompK36_disrupted	77.0	75.0	97.4	91.0	99.3	OXA-48-like	ompK36_disrupted	31.0	29.0	93.5	79.3	98.2	no	-3.9	True
+family=OXA-48-like | porin=unknown						OXA-48-like	unknown	2.0	2.0	100.0	34.2	100.0	yes		True
+family=VIM | porin=intact	32.0	12.0	37.5	22.9	54.7	VIM	intact	4.0	3.0	75.0	30.1	95.4	yes	37.5	True
+family=VIM | porin=ompK35_only	7.0	6.0	85.7	48.7	97.4										True
+family=VIM | porin=ompK36_disrupted	5.0	5.0	100.0	56.6	100.0										True
+family=multiple | porin=intact	6.0	5.0	83.3	43.6	97.0	multiple	intact	9.0	9.0	100.0	70.1	100.0	yes	16.7	True
+family=multiple | porin=ompK35_only	4.0	4.0	100.0	51.0	100.0	multiple	ompK35_only	3.0	3.0	100.0	43.9	100.0	yes	0.0	True
+family=multiple | porin=ompK36_disrupted	9.0	9.0	100.0	70.1	100.0	multiple	ompK36_disrupted	23.0	23.0	100.0	85.7	100.0	no	0.0	True
+family=multiple | porin=unknown						multiple	unknown	10.0	10.0	100.0	72.2	100.0	no		True
+family=none | porin=intact	1215.0	25.0	2.1	1.4	3.0	none	intact	355.0	6.0	1.7	0.8	3.6	no	-0.4	True
+family=none | porin=ompK35_only	438.0	19.0	4.3	2.8	6.7	none	ompK35_only	14.0	2.0	14.3	4.0	39.9	no	10.0	True
+family=none | porin=ompK36_disrupted	299.0	70.0	23.4	19.0	28.5	none	ompK36_disrupted	17.0	13.0	76.5	52.7	90.4	no	53.1	False
+family=other | porin=intact	3.0	3.0	100.0	43.9	100.0	other	intact	1.0	0.0	0.0	0.0	79.3	yes	-100.0	True
+family=other | porin=ompK36_disrupted	4.0	4.0	100.0	51.0	100.0										True

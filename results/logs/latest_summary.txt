@@ -1,0 +1,73 @@
+kp-multiscale-amr — run summary
+timestamp   : 20261013_135630
+host        : vm
+python      : Python 3.13.16
+conda env   : <none>
+full log    : results/logs/run_20261013_135630.log
+
+--- verified breakpoints ---
+  meropenem    CLSI    S<=1     R>=4      CLSI M100 36th ed. (2026)
+  meropenem    EUCAST  S<=2     R>8      EUCAST v16.1 (valid from 2026-06-24)
+  imipenem     CLSI    S<=1     R>=4      CLSI M100 36th ed. (2026)
+  imipenem     EUCAST  S<=2     R>4      EUCAST v16.1 (valid from 2026-06-24)
+  ertapenem    CLSI    S<=0.5   R>=2      CLSI M100 36th ed. (2026)
+  ertapenem    EUCAST  S<=0.5   R>0.5    EUCAST v16.1 (valid from 2026-06-24)
+  doripenem    CLSI    S<=1     R>=4      CLSI M100 36th ed. (2026)
+  ceftazidime  EUCAST  S<=1     R>4      EUCAST v16.1 (valid from 2026-06-24)
+  ceftriaxone  EUCAST  S<=1     R>2      EUCAST v16.1 (valid from 2026-06-24)
+
+--- step outcomes ---
+  OK   python tests/test_classification.py
+  OK   bash tests/test_run_all_gate.sh
+  OK   python scripts/08b_discordance_recordlevel.py --drug meropenem --standard CLSI --method Broth dilution --breakpoints CLSI --tag _clsi_bmd
+  OK   python scripts/08b_discordance_recordlevel.py --drug imipenem --standard CLSI --method Broth dilution --breakpoints CLSI --tag _clsi_bmd
+  OK   python scripts/08b_discordance_recordlevel.py --drug meropenem --standard CLSI --method Broth dilution --breakpoints EUCAST --tag _clsi_bmd_eucast
+  OK   python scripts/08b_discordance_recordlevel.py --drug imipenem --standard CLSI --method Broth dilution --breakpoints EUCAST --tag _clsi_bmd_eucast
+  OK   python scripts/08b_discordance_recordlevel.py --drug meropenem --standard CLSI --method Broth dilution --breakpoints CLSI --dedup --tag _clsi_bmd_dedup
+  OK   python scripts/08b_discordance_recordlevel.py --drug imipenem --standard CLSI --method Broth dilution --breakpoints CLSI --dedup --tag _clsi_bmd_dedup
+  OK   python scripts/08b_discordance_recordlevel.py --drug meropenem --breakpoints CLSI --tag _unstratified
+  OK   python scripts/08b_discordance_recordlevel.py --drug imipenem --breakpoints CLSI --tag _unstratified
+  OK   python scripts/09_discordance_sensitivity.py --drug meropenem --tag _clsi_bmd
+  OK   python scripts/09_discordance_sensitivity.py --drug imipenem --tag _clsi_bmd
+  OK   python scripts/11_extensions.py --drug meropenem --tag _clsi_bmd
+  OK   python scripts/12_flow_diagram.py
+  OK   python scripts/12b_flow_diagram_typeset.py
+  OK   python scripts/10_figures.py --drug meropenem --tag _clsi_bmd
+  OK   python scripts/10_figures.py --drug imipenem --tag _clsi_bmd
+  OK   python scripts/10_figures.py --drug meropenem --tag _clsi_bmd_eucast
+  OK   python scripts/10_figures.py --drug meropenem --tag _unstratified
+  OK   python scripts/10_figures.py --drug meropenem --tag _clsi_bmd_dedup
+  OK   python scripts/14_results_manifest.py
+  OK   python scripts/15_figure3_robustness.py
+  OK   python scripts/16_figure4_false_resistant.py
+  OK   python scripts/13_supplementary.py
+  OK   python scripts/17_rule_derivation.py --drug meropenem
+  OK   python scripts/17_rule_derivation.py --drug imipenem --tag _imipenem
+  OK   python scripts/18_discordance_investigation.py --drug meropenem --qc data/interim/assembly_qc_metrics.tsv
+  OK   python scripts/19_external_validation.py --drug meropenem
+  OK   python scripts/00g_effective_integrity_report.py
+  OK   python scripts/25_genome_ledger.py
+  OK   python scripts/27_derivation_gain_bootstrap.py --drug meropenem
+  OK   python scripts/24_species_and_integrity_sensitivity.py
+  OK   python scripts/23_external_summary.py
+
+--- headline numbers (from manuscript_results.json) ---
+  primary (CLSI, broth dilution)         binary  3,193  gene+ susceptible 10.0% [8.4-11.8]
+  imipenem (CLSI, broth dilution)        binary  1,793  gene+ susceptible 5.3% [3.9-7.2]
+  meropenem (EUCAST breakpoints)         binary  3,075  gene+ susceptible 18.5% [16.4-20.9]
+  imipenem (EUCAST breakpoints)          binary  1,748  gene+ susceptible 8.7% [6.8-11.0]
+  meropenem deduplicated                 binary    597  gene+ susceptible 23.1% [17.8-29.4]
+  meropenem unstratified                 binary  4,901  gene+ susceptible 6.9% [5.9-8.1]
+
+--- generated files ---
+  tables       : 86
+  figures (svg): 8
+  supplementary: 20
+    Figure1_study_flow.svg
+    Figure2_main_meropenem_CLSI.svg
+    Figure3_robustness_meropenem.svg
+    Figure4_carbapenemase_negative_meropenem.svg
+    FigureS1_imipenem_CLSI.svg
+    FigureS2_meropenem_unstratified.svg
+    FigureS3_meropenem_deduplicated.svg
+    FigureS4_meropenem_EUCAST.svg

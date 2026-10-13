@@ -1,0 +1,17 @@
+estimate	tier	PPV	delta_PPV	NPV	delta_NPV	sensitivity	delta_sensitivity	specificity	delta_specificity	accuracy	delta_accuracy	misclassified	misclassified_baseline	net_reclassified_correctly
+apparent	T0_gene_only	94.7	0.0	96.7	0.0	95.1	0.0	96.5	0.0	95.9	0.0	73	73	0
+apparent	T1_family	94.7	0.0	96.7	0.0	95.1	0.0	96.5	0.0	95.9	0.0	73	73	0
+apparent	T2_family_porin	94.7	0.0	96.7	0.0	95.1	0.0	96.5	0.0	95.9	0.0	73	73	0
+apparent	T3_family_porin_lineage	94.7	0.0	96.7	0.0	95.1	0.0	96.5	0.0	95.9	0.0	73	73	0
+cv_stratified	T0_gene_only	94.7	0.0	96.7	0.0	95.1	0.0	96.5	0.0	95.9	0.0	73	73	0
+cv_stratified	T1_family	94.7	0.0	96.7	0.0	95.1	0.0	96.5	0.0	95.9	0.0	73	73	0
+cv_stratified	T2_family_porin	94.7	0.0	96.6	-0.1	95.0	-0.1	96.5	0.0	95.9	0.0	74	73	-1
+cv_stratified	T3_family_porin_lineage	94.2	-0.5	96.7	0.0	95.1	0.0	96.1	-0.4	95.7	-0.2	77	73	-4
+cv_grouped_by_ST	T0_gene_only	94.7	0.0	96.7	0.0	95.1	0.0	96.5	0.0	95.9	0.0	73	73	0
+cv_grouped_by_ST	T1_family	94.7	0.0	96.7	0.0	95.1	0.0	96.5	0.0	95.9	0.0	73	73	0
+cv_grouped_by_ST	T2_family_porin	94.7	0.0	96.6	-0.1	94.8	-0.3	96.5	0.0	95.8	-0.1	75	73	-2
+cv_grouped_by_ST	T3_family_porin_lineage	94.2	-0.5	96.7	0.0	95.1	0.0	96.1	-0.4	95.7	-0.2	77	73	-4
+cv_grouped_unbalanced	T0_gene_only	94.7	0.0	96.7	0.0	95.1	0.0	96.5	0.0	95.9	0.0	73	73	0
+cv_grouped_unbalanced	T1_family	94.7	0.0	96.7	0.0	95.1	0.0	96.5	0.0	95.9	0.0	73	73	0
+cv_grouped_unbalanced	T2_family_porin	94.7	0.0	96.7	0.0	95.1	0.0	96.5	0.0	95.9	0.0	73	73	0
+cv_grouped_unbalanced	T3_family_porin_lineage	94.2	-0.5	96.9	0.2	95.4	0.3	96.1	-0.4	95.8	-0.1	75	73	-2

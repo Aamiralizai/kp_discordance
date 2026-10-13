@@ -1,0 +1,299 @@
+cohort	genome_id	kleborate_family	kleborate_allele	contigs	proteins_predicted	proteins_screened_main_band	short_orfs_screened	best_carbapenemase_reference	best_identity_pct	best_reference_coverage_pct	protein_aa	reference_aa	verdict_main_band	best_short_orf_identity_pct	fragment_locus_verdict
+A_carbNeg_resistant	573.12783	none	none	3	5491	3211	1510	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.13063	none	none	85	5079	3074	1262	blaPJM-1	40.6	64.9	278	302	distant	40.2	
+A_carbNeg_resistant	573.13160	none	none	98	5184	3114	1320	blaPJM-1	40.6	64.9	278	302	distant	49.0	
+A_carbNeg_resistant	573.13182	none	none	98	5492	3250	1431	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.13183	none	none	104	5283	3177	1310	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.13288	none	none	94	5237	3132	1325	blaL1	40.6	24.4	286	291	distant		
+A_carbNeg_resistant	573.13364	none	none	131	5156	3128	1283	blaPJM-1	40.6	64.9	278	302	distant		
+A_carbNeg_resistant	573.13441	none	none	118	5161	3106	1300	blaPJM-1	40.6	64.9	278	302	distant	56.0	
+A_carbNeg_resistant	573.13447	none	none	157	5363	3172	1405	blaPJM-1	40.6	64.9	278	302	distant		
+A_carbNeg_resistant	573.13492	none	none	80	5289	3185	1367	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.13544	none	none	88	5160	3109	1303	blaPJM-1	40.6	64.9	278	302	distant	49.0	
+A_carbNeg_resistant	573.13552	none	none	101	5122	3077	1317	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.13564	none	none	104	5264	3140	1356	blaPJM-1	40.6	64.9	278	302	distant		
+A_carbNeg_resistant	573.13626	none	none	86	5272	3162	1347	blaPJM-1	40.6	64.9	278	302	distant		
+A_carbNeg_resistant	573.13796	none	none	85	5204	3128	1328	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.13799	none	none	199	5430	3185	1459	blaPJM-1	40.6	64.9	278	302	distant	94.9	assembly_break
+A_carbNeg_resistant	573.13866	none	none	69	5035	3073	1236	blaPJM-1	40.6	64.9	278	302	distant		
+A_carbNeg_resistant	573.13951	none	none	102	5259	3150	1356	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.14002	none	none	82	5277	3146	1360	blaPJM-1	40.6	64.9	278	302	distant		
+A_carbNeg_resistant	573.14066	none	none	140	5377	3192	1413	blaL1	40.6	24.4	288	291	distant	40.2	
+A_carbNeg_resistant	573.14179	none	none	99	5279	3136	1368	blaPJM-1	40.6	64.9	278	302	distant		
+A_carbNeg_resistant	573.14212	none	none	87	5193	3110	1335	blaPJM-1	40.6	64.9	278	302	distant	40.2	
+A_carbNeg_resistant	573.14223	none	none	188	5877	3388	1645	blaL1	40.6	24.4	288	291	distant	100.0	assembly_break
+A_carbNeg_resistant	573.14252	none	none	104	5130	3091	1289	blaPJM-1	40.6	64.9	278	302	distant	40.2	
+A_carbNeg_resistant	573.14276	none	none	68	5272	3188	1325	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.14286	none	none	94	5197	3115	1322	blaPJM-1	40.6	64.9	278	302	distant	56.1	
+A_carbNeg_resistant	573.14294	none	none	143	5347	3190	1355	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.14303	none	none	92	5174	3110	1315	blaPJM-1	40.6	64.9	278	302	distant	40.2	
+A_carbNeg_resistant	573.14308	none	none	85	5188	3103	1348	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.14310	none	none	98	5176	3107	1316	blaPJM-1	40.6	64.9	278	302	distant	49.0	
+A_carbNeg_resistant	573.14417	none	none	86	5186	3113	1323	blaPJM-1	40.6	64.9	278	302	distant		
+A_carbNeg_resistant	573.14469	none	none	83	5101	3098	1276	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.14506	none	none	59	5286	3184	1344	blaL1	40.9	33.7	290	291	distant		
+A_carbNeg_resistant	573.15044	none	none	5	5563	3322	1494	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.17908	none	none	3	5377	3230	1371	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.18088	none	none	7	6033	3472	1738	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.20062	none	none	7	5742	3356	1577	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.20064	none	none	7	5742	3385	1584	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.20673	none	none	220	5300	3153	1351	blaL1	40.6	24.4	286	291	distant		
+A_carbNeg_resistant	573.20711	none	none	76	5250	3162	1353	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.20721	none	none	50	4942	3034	1209	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.20722	none	none	50	5004	3064	1240	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.20728	none	none	120	5503	3226	1509	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.20783	none	none	116	5529	3236	1499	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.20947	none	none	95	5705	3313	1587	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.20956	none	none	97	5706	3311	1589	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.20970	none	none	91	5446	3217	1418	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.20979	none	none	67	5180	3137	1326	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.20983	none	none	67	5179	3133	1331	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.20985	none	none	75	5319	3175	1395	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.20995	none	none	80	5207	3144	1335	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.21003	none	none	85	5173	3121	1322	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.21084	none	none	89	5540	3252	1496	blaPJM-1	40.6	64.9	278	302	distant		
+A_carbNeg_resistant	573.21138	none	none	247	5815	3276	1679	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.21206	none	none	77	5218	3124	1332	blaPJM-1	40.6	64.9	278	302	distant		
+A_carbNeg_resistant	573.21217	none	none	96	5424	3238	1430	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.21299	none	none	77	5357	3204	1413	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.21307	none	none	75	5265	3163	1346	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.21327	none	none	73	5362	3203	1417	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.21338	none	none	101	5353	3201	1398	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.21369	none	none	101	5377	3224	1401	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.21387	none	none	69	5273	3171	1376	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.21391	none	none	102	5413	3228	1424	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.21393	none	none	113	5253	3120	1347	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.21395	none	none	100	5392	3221	1407	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.21405	none	none	69	5306	3194	1380	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.21406	none	none	116	5125	3083	1326	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.21415	none	none	58	5347	3210	1374	blaL1	40.6	24.4	286	291	distant		
+A_carbNeg_resistant	573.21438	none	none	107	5395	3227	1420	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.21450	none	none	107	5393	3229	1415	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.21453	none	none	119	5446	3207	1464	blaPJM-1	41.1	64.9	278	302	distant		
+A_carbNeg_resistant	573.21454	none	none	49	5112	3058	1303	blaL1	40.6	24.4	294	291	distant		
+A_carbNeg_resistant	573.21542	none	none	91	5460	3196	1463	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.21551	none	none	56	4980	2981	1266	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.21562	none	none	102	5185	3108	1316	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.21566	none	none	87	5272	3178	1317	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.21572	none	none	80	5474	3248	1475	blaL1	40.6	24.4	288	291	distant	100.0	assembly_break
+A_carbNeg_resistant	573.21622	none	none	46	5031	3090	1206	blaPJM-1	40.6	64.9	278	302	distant		
+A_carbNeg_resistant	573.21638	none	none	91	5172	3127	1275	blaPJM-1	40.6	64.9	278	302	distant		
+A_carbNeg_resistant	573.21662	none	none	58	5194	3153	1283	blaL1	40.6	24.4	288	291	distant	40.7	
+A_carbNeg_resistant	573.21677	none	none	85	5359	3189	1386	blaNDM-1	100.0	67.9	184	271	partial_catalogued		assembly_break
+A_carbNeg_resistant	573.21678	none	none	88	5379	3188	1412	blaPJM-1	40.6	64.9	278	302	distant		
+A_carbNeg_resistant	573.21691	none	none	176	5714	3286	1572	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.21859	none	none	98	5171	3106	1298	blaL1	40.6	24.4	286	291	distant		
+A_carbNeg_resistant	573.21876	none	none	347	5477	3161	1477	blaPJM-1	40.6	64.9	278	302	distant		
+A_carbNeg_resistant	573.21948	none	none	105	5399	3200	1435	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.22017	none	none	89	5460	3212	1462	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.22088	none	none	113	5175	3145	1268	blaL1	40.6	24.4	286	291	distant		
+A_carbNeg_resistant	573.22090	none	none	113	5178	3144	1277	blaL1	40.6	24.4	286	291	distant		
+A_carbNeg_resistant	573.24245	none	none	82	5110	3099	1251	blaPJM-1	40.6	64.9	278	302	distant		
+A_carbNeg_resistant	573.24264	none	none	93	5189	3124	1316	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.24267	none	none	212	5531	3205	1536	blaL1	40.6	24.4	288	291	distant	40.2	
+A_carbNeg_resistant	573.24280	none	none	114	5621	3271	1538	blaPJM-1	40.6	64.9	278	302	distant	38.9	
+A_carbNeg_resistant	573.24288	none	none	88	5233	3139	1320	blaPJM-1	40.6	64.9	278	302	distant		
+A_carbNeg_resistant	573.24289	none	none	113	5273	3155	1336	blaPJM-1	40.6	64.9	278	302	distant		
+A_carbNeg_resistant	573.24291	none	none	129	5402	3205	1389	blaPJM-1	40.6	64.9	278	302	distant		
+A_carbNeg_resistant	573.24303	none	none	75	5318	3182	1345	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.24307	none	none	161	5827	3371	1593	blaPJM-1	40.6	64.9	278	302	distant		
+A_carbNeg_resistant	573.24309	none	none	122	5452	3227	1417	blaL1	40.6	24.4	286	291	distant		
+A_carbNeg_resistant	573.24314	none	none	162	5525	3215	1511	blaL1	40.6	24.4	288	291	distant	68.7	
+A_carbNeg_resistant	573.24376	none	none	163	5259	3120	1371	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.24407	none	none	126	5173	3081	1343	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.24411	none	none	134	5384	3181	1418	blaPJM-1	40.6	64.9	278	302	distant		
+A_carbNeg_resistant	573.24431	none	none	131	5464	3227	1454	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	573.24449	none	none	98	5263	3182	1318	blaL1	42.2	37.6	288	290	distant		
+A_carbNeg_resistant	573.7033	none	none	10	5298	3140	1413	blaL1	40.6	24.4	288	291	distant	40.2	
+A_carbNeg_resistant	72407.217	none	none	142	5555	3264	1495	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	72407.265	none	none	112	5342	3180	1389	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	72407.513	none	none	49	5028	3084	1217	blaPJM-1	40.6	64.9	278	302	distant		
+A_carbNeg_resistant	72407.514	none	none	55	5414	3232	1412	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	72407.541	none	none	113	5641	3306	1528	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	72407.559	none	none	124	5737	3340	1574	blaL1	40.6	24.4	288	291	distant	77.6	divergent_chromosomal_homologue
+A_carbNeg_resistant	72407.578	none	none	59	5357	3177	1425	blaL1	40.6	24.4	288	291	distant		
+A_carbNeg_resistant	72407.591	none	none	114	5502	3212	1512	blaPJM-1	41.1	64.9	278	302	distant		
+B_carbPos_susceptible	573.13046	KPC	KPC-2	95	5227	3128	1344	blaKPC-2	100.0	99.7	293	294	exact	40.2	
+B_carbPos_susceptible	573.13093	KPC	KPC-2	114	5457	3219	1459	blaKPC-2	100.0	99.7	293	294	exact	40.2	
+B_carbPos_susceptible	573.13117	KPC	KPC-2	88	5338	3191	1382	blaKPC-2	100.0	99.7	293	294	exact		
+B_carbPos_susceptible	573.13123	KPC	KPC-2	90	5176	3130	1306	blaKPC-2	100.0	99.7	293	294	exact	40.7	
+B_carbPos_susceptible	573.13198	KPC	KPC-2	142	5477	3184	1503	blaKPC-2	100.0	99.7	293	294	exact	40.2	
+B_carbPos_susceptible	573.13199	KPC	KPC-2	90	5438	3180	1484	blaKPC-2	100.0	99.7	293	294	exact	40.2	
+B_carbPos_susceptible	573.13287	KPC	KPC-2	112	5223	3120	1358	blaKPC-2	100.0	99.7	293	294	exact	40.2	
+B_carbPos_susceptible	573.13323	OXA-48-like	OXA-48	136	5436	3230	1417	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.13342	KPC	KPC-2	147	5521	3233	1482	blaKPC-2	100.0	99.7	293	294	exact	40.2	
+B_carbPos_susceptible	573.13352	OXA-48-like	OXA-48	188	5425	3205	1424	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.13551	KPC	KPC-2	109	5260	3143	1351	blaKPC-2	100.0	99.7	293	294	exact	40.2	
+B_carbPos_susceptible	573.13601	KPC	KPC-94	107	5223	3127	1329	blaKPC-166	100.0	99.7	292	293	exact	40.2	
+B_carbPos_susceptible	573.13614	KPC	KPC-2	101	5384	3226	1356	blaKPC-2	100.0	99.7	293	294	exact		
+B_carbPos_susceptible	573.13639	KPC	KPC-2	78	5147	3103	1294	blaKPC-2	100.0	99.7	293	294	exact	40.2	
+B_carbPos_susceptible	573.13752	OXA-48-like	OXA-48	140	5472	3251	1416	blaOXA-48	100.0	99.6	265	266	exact	40.7	
+B_carbPos_susceptible	573.13755	KPC	KPC-2	135	5479	3223	1462	blaKPC-2	100.0	99.7	293	294	exact	40.2	
+B_carbPos_susceptible	573.13787	KPC	KPC-2	93	5570	3278	1490	blaKPC-2	100.0	99.7	293	294	exact		
+B_carbPos_susceptible	573.13795	KPC	KPC-2	279	5967	3380	1717	blaKPC-2	100.0	99.7	293	294	exact	40.2	
+B_carbPos_susceptible	573.13840	KPC	KPC-2	145	5433	3203	1445	blaKPC-2	100.0	99.7	293	294	exact	40.2	
+B_carbPos_susceptible	573.14146	KPC	KPC-2	141	5426	3206	1448	blaKPC-2	100.0	99.7	293	294	exact	40.2	
+B_carbPos_susceptible	573.14154	KPC	KPC-2	122	5373	3175	1415	blaKPC-2	100.0	99.7	293	294	exact	40.2	
+B_carbPos_susceptible	573.14175	KPC	KPC-2	141	5417	3209	1434	blaKPC-2	100.0	99.7	293	294	exact	40.2	
+B_carbPos_susceptible	573.14178	KPC	KPC-2	141	5417	3202	1438	blaKPC-2	100.0	99.7	293	294	exact	40.2	
+B_carbPos_susceptible	573.14210	KPC	KPC-2	92	5248	3137	1335	blaKPC-2	100.0	99.7	293	294	exact	40.2	
+B_carbPos_susceptible	573.14229	KPC	KPC-2	76	5292	3182	1336	blaKPC-2	100.0	99.7	293	294	exact	40.2	
+B_carbPos_susceptible	573.14253	KPC	KPC-2	91	5272	3144	1359	blaKPC-2	100.0	99.7	293	294	exact	40.2	
+B_carbPos_susceptible	573.14277	KPC	KPC-2	113	5368	3181	1415	blaKPC-2	100.0	99.7	293	294	exact	40.2	
+B_carbPos_susceptible	573.14291	KPC	KPC-2	79	5168	3106	1311	blaKPC-2	100.0	99.7	293	294	exact	40.2	
+B_carbPos_susceptible	573.14307	KPC	KPC-2	112	5407	3200	1438	blaKPC-2	100.0	99.7	293	294	exact	40.2	
+B_carbPos_susceptible	573.14320	KPC	KPC-2	92	5365	3178	1425	blaKPC-2	100.0	99.7	293	294	exact	40.2	
+B_carbPos_susceptible	573.14435	KPC	KPC-2	87	5281	3147	1358	blaKPC-2	100.0	99.7	293	294	exact	40.2	
+B_carbPos_susceptible	573.14444	KPC	KPC-8	130	5448	3215	1445	blaKPC-8	100.0	99.7	293	294	exact	40.2	
+B_carbPos_susceptible	573.14503	KPC	KPC-2	98	5358	3185	1411	blaKPC-2	100.0	99.7	293	294	exact	40.2	
+B_carbPos_susceptible	573.20456	OXA-48-like	OXA-48	105	5461	3214	1475	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.20474	OXA-48-like	OXA-48	100	5333	3145	1396	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.20501	OXA-48-like	OXA-48	93	5336	3172	1375	blaOXA-48	100.0	99.6	265	266	exact	100.0	assembly_break
+B_carbPos_susceptible	573.20670	OXA-48-like	OXA-48	104	5328	3196	1333	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.20682	VIM	VIM-1	272	6108	3452	1748	blaVIM-1	100.0	99.6	306	267	exact		
+B_carbPos_susceptible	573.20742	OXA-48-like	OXA-48	87	5411	3206	1410	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.20757	OXA-48-like	OXA-48	125	5365	3158	1408	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.20797	OXA-48-like	OXA-48	137	5747	3318	1599	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.20802	OXA-48-like	OXA-48	134	5743	3313	1598	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.20821	VIM	VIM-4	91	5337	3149	1425	blaVIM-4	100.0	99.6	266	267	exact		
+B_carbPos_susceptible	573.20822	VIM	VIM-4	65	5114	3075	1297	blaVIM-4	100.0	99.6	266	267	exact		
+B_carbPos_susceptible	573.20896	OXA-48-like	OXA-48	138	5614	3234	1551	blaOXA-48	100.0	99.6	265	266	exact	42.6	
+B_carbPos_susceptible	573.20926	OXA-48-like	OXA-48	225	5695	3232	1614	blaOXA-48	100.0	99.6	265	266	exact	38.2	
+B_carbPos_susceptible	573.20933	OXA-48-like	OXA-48	306	5723	3255	1640	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.20938	OXA-48-like	OXA-48	210	5556	3234	1539	blaOXA-48	100.0	94.7	252	266	partial_catalogued		
+B_carbPos_susceptible	573.20974	OXA-48-like	OXA-48	138	5522	3223	1479	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.20976	OXA-48-like	OXA-48	112	5443	3207	1447	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21070	OXA-48-like	OXA-48	81	5550	3267	1449	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21105	OXA-48-like	OXA-48	134	5253	3116	1380	blaOXA-48	100.0	99.6	265	266	exact	51.8	
+B_carbPos_susceptible	573.21114	OXA-48-like	OXA-48	54	5259	3157	1348	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21124	OXA-48-like	OXA-48	119	5643	3279	1519	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21127	OXA-48-like	OXA-48	134	5578	3259	1501	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21132	OXA-48-like	OXA-48	140	5589	3250	1514	blaOXA-48	100.0	99.6	265	266	exact	33.3	
+B_carbPos_susceptible	573.21133	OXA-48-like	OXA-48	90	5519	3246	1475	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21135	OXA-48-like	OXA-48	108	5608	3289	1515	blaOXA-48	100.0	99.6	265	266	exact	41.2	
+B_carbPos_susceptible	573.21151	OXA-48-like	OXA-48	92	5307	3177	1352	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21153	OXA-48-like	OXA-48	134	5462	3195	1477	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21171	OXA-48-like	OXA-48	168	5483	3192	1489	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21178	OXA-48-like	OXA-48	103	5430	3227	1436	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21180	OXA-48-like	OXA-48	119	5460	3221	1420	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21218	OXA-48-like	OXA-48	63	5233	3125	1336	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21229	OXA-48-like	OXA-48	97	5572	3266	1524	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21236	OXA-48-like	OXA-48	75	5458	3217	1433	blaOXA-48	100.0	99.6	265	266	exact	41.2	
+B_carbPos_susceptible	573.21241	OXA-48-like	OXA-48	96	5402	3182	1424	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21242	OXA-48-like	OXA-48	68	5216	3119	1343	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21254	VIM	VIM-1	41	5418	3208	1434	blaVIM-1	100.0	99.6	266	267	exact		
+B_carbPos_susceptible	573.21256	OXA-48-like	OXA-162	100	5427	3204	1420	blaOXA-162	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21269	OXA-48-like	OXA-48	82	5497	3270	1416	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21351	OXA-48-like	OXA-48	70	5324	3198	1352	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21443	OXA-48-like	OXA-48	86	5652	3277	1554	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21479	OXA-48-like	OXA-48	132	5935	3377	1684	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21490	OXA-48-like	OXA-204	95	5566	3267	1512	blaOXA-204	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21492	OXA-48-like	OXA-48	85	5406	3219	1395	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21493	OXA-48-like	OXA-48	58	5250	3164	1333	blaOXA-48	100.0	99.6	265	266	exact	40.7	
+B_carbPos_susceptible	573.21552	OXA-48-like	OXA-48	82	5312	3194	1376	blaOXA-48	100.0	99.6	265	266	exact	61.6	
+B_carbPos_susceptible	573.21560	OXA-48-like	OXA-48	105	5477	3231	1458	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21569	OXA-48-like	OXA-48	88	5469	3236	1469	blaOXA-48	100.0	99.6	265	266	exact	52.5	
+B_carbPos_susceptible	573.21570	OXA-48-like	OXA-48	68	5452	3233	1458	blaOXA-48	100.0	99.6	265	266	exact	52.5	
+B_carbPos_susceptible	573.21574	OXA-48-like	OXA-48	98	5438	3191	1463	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21577	OXA-48-like	OXA-48	146	5663	3336	1500	blaOXA-48	100.0	99.6	265	266	exact	49.0	
+B_carbPos_susceptible	573.21612	KPC	KPC-3	120	5440	3171	1474	blaKPC-3	100.0	99.7	293	294	exact	41.2	
+B_carbPos_susceptible	573.21620	KPC	KPC-3	181	5577	3251	1519	blaKPC-3	100.0	99.7	293	294	exact	41.2	
+B_carbPos_susceptible	573.21625	KPC	KPC-3	142	5044	3022	1282	blaKPC-3	100.0	99.0	291	294	partial_catalogued	37.9	
+B_carbPos_susceptible	573.21646	KPC	KPC-3	162	5661	3293	1556	blaKPC-3	100.0	99.7	293	294	exact	41.2	
+B_carbPos_susceptible	573.21663	OXA-48-like	OXA-48	61	5291	3146	1380	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21722	VIM	VIM-1	74	5312	3152	1385	blaVIM-1	100.0	99.6	306	267	exact		
+B_carbPos_susceptible	573.21802	KPC	KPC-3	338	5656	3235	1601	blaKPC-3	100.0	99.7	293	294	exact	40.7	
+B_carbPos_susceptible	573.21879	VIM	VIM-1	55	5186	3155	1276	blaVIM-1	100.0	99.6	266	267	exact		
+B_carbPos_susceptible	573.21936	OXA-48-like	OXA-48	78	5372	3221	1397	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21943	VIM	VIM-4	92	5304	3183	1333	blaVIM-4	100.0	99.6	266	267	exact		
+B_carbPos_susceptible	573.21944	OXA-48-like	OXA-48	138	5575	3242	1518	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21949	VIM	VIM-4	75	5270	3170	1318	blaVIM-4	100.0	99.6	266	267	exact		
+B_carbPos_susceptible	573.21955	VIM	VIM-4	96	5300	3187	1326	blaVIM-4	100.0	99.6	266	267	exact		
+B_carbPos_susceptible	573.21958	OXA-48-like	OXA-48	126	5414	3220	1439	blaOXA-48	100.0	99.6	265	266	exact	100.0	assembly_break
+B_carbPos_susceptible	573.21963	OXA-48-like	OXA-48	244	5529	3198	1478	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21964	OXA-48-like	OXA-48	322	5614	3225	1575	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21967	OXA-48-like	OXA-48	82	5376	3220	1400	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.21970	VIM	VIM-4	99	5328	3180	1354	blaVIM-4	100.0	99.6	266	267	exact		
+B_carbPos_susceptible	573.21973	KPC+OXA-48-like	KPC-2;OXA-48	256	5759	3320	1647	blaKPC-2	100.0	99.7	293	294	exact	100.0	assembly_break
+B_carbPos_susceptible	573.21982	VIM	VIM-4	90	5092	3084	1245	blaVIM-4	100.0	99.6	266	267	exact		
+B_carbPos_susceptible	573.21985	VIM	VIM-4	87	5416	3221	1389	blaVIM-4	100.0	99.6	266	267	exact		
+B_carbPos_susceptible	573.21989	VIM	VIM-4	89	5286	3175	1325	blaVIM-4	100.0	99.6	266	267	exact		
+B_carbPos_susceptible	573.21991	VIM	VIM-4	95	5288	3179	1327	blaVIM-4	100.0	99.6	266	267	exact		
+B_carbPos_susceptible	573.21993	VIM	VIM-4	107	5384	3211	1380	blaVIM-4	100.0	99.6	266	267	exact		
+B_carbPos_susceptible	573.21996	VIM	VIM-4	92	5342	3195	1356	blaVIM-4	100.0	99.6	266	267	exact	56.3	
+B_carbPos_susceptible	573.22001	VIM	VIM-4	122	5521	3255	1455	blaVIM-4	100.0	99.6	266	267	exact		
+B_carbPos_susceptible	573.22003	VIM	VIM-4	60	5261	3166	1320	blaVIM-4	100.0	99.6	266	267	exact		
+B_carbPos_susceptible	573.22004	VIM	VIM-4	109	5345	3185	1363	blaVIM-4	100.0	99.6	266	267	exact		
+B_carbPos_susceptible	573.22019	OXA-48-like	OXA-48	110	5387	3204	1396	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.22020	VIM	VIM-4	99	5391	3207	1386	blaVIM-4	100.0	99.6	266	267	exact		
+B_carbPos_susceptible	573.22024	VIM	VIM-4	130	5384	3196	1390	blaVIM-4	100.0	99.6	266	267	exact		
+B_carbPos_susceptible	573.22061	OXA-48-like	OXA-48	136	5457	3222	1427	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.22067	OXA-48-like	OXA-48	96	5327	3147	1388	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.22069	OXA-48-like	OXA-48	250	5481	3181	1487	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.22073	OXA-48-like	OXA-48	85	5307	3191	1383	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.22075	OXA-48-like	OXA-48	95	5328	3152	1385	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.22080	OXA-48-like	OXA-48	99	5445	3214	1418	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.22086	OXA-48-like	OXA-48	135	5278	3153	1348	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	573.24263	OXA-48-like	OXA-48	128	5388	3193	1387	blaOXA-48	100.0	99.6	265	266	exact		
+B_carbPos_susceptible	72407.168	KPC	KPC-3	128	5518	3253	1472	blaKPC-3	100.0	99.7	293	294	exact	40.2	
+B_carbPos_susceptible	72407.519	NDM	NDM-1	73	5307	3184	1352	blaNDM-1	100.0	99.6	270	271	exact	99.4	internal_truncation
+D_control_sample	573.12894	none	none	293	5300	3149	1376	blaPJM-1	40.6	64.9	278	302	distant		
+D_control_sample	573.12912	none	none	304	5572	3301	1488	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.12925	none	none	332	5052	3077	1237	blaL1	41.9	33.7	288	291	distant		
+D_control_sample	573.12952	none	none	349	5198	3118	1325	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.13000	none	none	329	5373	3217	1386	blaL1	40.6	24.4	286	291	distant		
+D_control_sample	573.13031	none	none	71	5178	3127	1293	blaL1	40.6	24.4	294	291	distant	30.8	
+D_control_sample	573.13051	none	none	169	5289	3156	1378	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.13066	none	none	115	5319	3166	1387	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.13069	none	none	129	5594	3267	1542	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.13086	none	none	109	5372	3185	1417	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.13265	none	none	84	5182	3110	1319	blaPJM-1	40.6	64.9	278	302	distant	49.0	
+D_control_sample	573.13314	none	none	81	5217	3166	1297	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.13371	none	none	176	5484	3219	1468	blaPJM-1	40.6	64.9	278	302	distant		
+D_control_sample	573.13445	none	none	154	5246	3146	1343	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.13509	none	none	93	5190	3123	1318	blaPJM-1	40.6	64.9	278	302	distant		
+D_control_sample	573.13538	none	none	87	5264	3136	1367	blaPJM-1	40.6	64.9	278	302	distant		
+D_control_sample	573.13557	none	none	94	5189	3116	1318	blaPJM-1	40.6	64.9	278	302	distant		
+D_control_sample	573.13653	none	none	111	5192	3102	1351	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.13779	none	none	99	5349	3192	1376	blaPJM-1	40.6	64.9	278	302	distant		
+D_control_sample	573.13803	none	none	91	5185	3131	1323	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.13832	none	none	78	5264	3143	1357	blaPJM-1	40.6	64.9	278	302	distant		
+D_control_sample	573.13893	none	none	121	5428	3223	1449	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.13999	none	none	138	5317	3157	1407	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.14016	none	none	76	5173	3104	1307	blaPJM-1	40.6	64.9	278	302	distant		
+D_control_sample	573.14018	none	none	101	5203	3114	1329	blaPJM-1	40.6	64.9	278	302	distant	56.0	
+D_control_sample	573.14027	none	none	111	5341	3183	1394	blaPJM-1	40.6	64.9	278	302	distant	40.7	
+D_control_sample	573.14042	none	none	87	5172	3112	1308	blaPJM-1	40.6	64.9	278	302	distant	49.0	
+D_control_sample	573.14083	none	none	103	5196	3117	1324	blaPJM-1	40.6	64.9	278	302	distant	55.2	
+D_control_sample	573.14130	none	none	90	5171	3108	1313	blaPJM-1	40.6	64.9	278	302	distant	49.0	
+D_control_sample	573.14143	none	none	97	5194	3112	1323	blaPJM-1	40.6	64.9	278	302	distant	56.0	
+D_control_sample	573.14180	none	none	93	5236	3092	1381	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.14367	none	none	92	5290	3145	1367	blaPJM-1	40.6	64.9	278	302	distant		
+D_control_sample	573.14451	none	none	136	5379	3176	1428	blaL1	40.6	24.4	288	291	distant	40.2	
+D_control_sample	573.20676	none	none	107	5549	3206	1537	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.20684	none	none	94	5196	3129	1293	blaPJM-1	40.6	64.9	278	302	distant		
+D_control_sample	573.20792	none	none	68	5413	3205	1432	blaPJM-1	40.6	64.9	278	302	distant		
+D_control_sample	573.20844	none	none	258	5415	3162	1452	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.20996	none	none	82	5442	3216	1461	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.21087	none	none	129	5452	3225	1463	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.21200	none	none	42	5094	3104	1251	blaPEDO-1	34.8	41.1	215	287	distant	43.2	
+D_control_sample	573.21278	none	none	64	5098	3122	1254	blaL1	40.6	24.4	286	291	distant		
+D_control_sample	573.21289	none	none	66	5082	3083	1235	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.21367	none	none	100	5349	3208	1398	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.21376	none	none	58	5266	3181	1359	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.21434	none	none	54	5052	3091	1219	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.21523	none	none	40	4727	2949	1075	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.21529	none	none	106	4953	2981	1221	blaPJM-1	40.6	64.9	278	302	distant		
+D_control_sample	573.21558	none	none	41	4858	2994	1154	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.21657	none	none	95	5407	3215	1398	blaPJM-1	40.6	64.9	278	302	distant		
+D_control_sample	573.21727	none	none	60	5310	3180	1343	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.21848	none	none	72	5229	3155	1320	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.22037	none	none	111	5435	3200	1430	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.22059	none	none	85	5352	3220	1361	blaPJM-1	40.6	64.9	278	302	distant		
+D_control_sample	573.22072	none	none	122	5367	3168	1427	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	573.24400	none	none	90	5176	3129	1287	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	72407.500	none	none	24	5138	3108	1296	blaPJM-1	40.6	64.9	278	302	distant		
+D_control_sample	72407.516	none	none	79	5415	3220	1407	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	72407.558	none	none	98	5338	3201	1372	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	72407.593	none	none	58	5268	3169	1347	blaL1	40.6	24.4	288	291	distant		
+D_control_sample	72407.594	none	none	45	5147	3139	1272	blaPJM-1	40.6	64.9	278	302	distant		

@@ -1,0 +1,2 @@
+# SHA-256 checksums of version-pinned QC inputs
+656bbb0916f287b1ab47168743cea009dc799d8c99c6ce37fb48ca29e171579c  config/qc_thresholds.csv

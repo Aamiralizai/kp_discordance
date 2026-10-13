@@ -1,0 +1,20 @@
+metric_or_lineage	warn_count_or_n
+# WARN carbapenemase-negative resistant isolates	45
+# median CheckM completeness (%)	99.8
+warn_metric:completeness_pct	24
+warn_metric:n_cds	19
+warn_metric:gc_content_pct	9
+warn_metric:genome_size_bp	3
+warn_metric:n50_bp	1
+warn_metric:n_contigs	1
+warn_metric:contamination_pct	1
+lineage_ST:ST307	6
+lineage_ST:ST437	4
+lineage_ST:ST258-1LV	3
+lineage_ST:ST258	2
+lineage_ST:ST14	2
+lineage_ST:ST147	2
+lineage_ST:ST16	2
+lineage_ST:ST11	2
+lineage_ST:ST30	1
+lineage_ST:ST1804	1

@@ -1,0 +1,3 @@
+analysis_set	n_binary	carbapenemase_positive_n	carbapenemase_positive_susceptible_n	pct	ci_lo	ci_hi	carbapenemase_negative_n	carbapenemase_negative_resistant_n	pct_r	ci_lo_r	ci_hi_r	PPV	accuracy
+primary (K. pneumoniae species complex, as reported)	3193	1241	124	10.0	8.4	11.8	1952	114	5.8	4.9	7.0	0.900	0.925
+K. pneumoniae sensu stricto	3176	1234	123	10.0	8.4	11.8	1942	114	5.9	4.9	7.0	0.900	0.925

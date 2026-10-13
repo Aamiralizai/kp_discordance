@@ -1,0 +1,33 @@
+# Assembly-retrieval counts that precede the record-level analysis.
+# These stages happen in 01_download_bvbrc.sh / 00_qc_fasta.sh / 04_run_kleborate.sh
+# and are recorded here once. Everything downstream is read from the audit TSV
+# written by 08b_discordance_recordlevel.py.
+records: 11214              # meropenem + imipenem records; recomputed by
+                            # 12_flow_diagram.py from the audit tables, which
+                            # override this value if they disagree
+genomes_with_pheno: 7521    # unique genomes with a laboratory phenotype
+assemblies: 7488            # assemblies successfully retrieved
+qc_failed: 151              # quarantined: zero-length sequence records
+submitted: 7337             # assemblies submitted to Kleborate
+
+# Genotyping and linkage counts that PRECEDE the assembly-QC filter.
+# 05b_apply_qc_filter.py filters the Kleborate table before run_all.sh, so the
+# audit TSV written by 08b sees only QC-retained genomes and cannot report the
+# pre-QC stages. They are recorded here, each derived from a shipped table:
+#   typed             rows in kleborate_*_output.prefilter.tsv
+#   confirmed_kp      of those, species containing "pneumoniae" (08b's rule)
+#   linked_*_preqc    species-confirmed genomes with >=1 CLSI broth-dilution
+#                     record for that drug, before the QC filter
+typed: 7336
+confirmed_kp: 7245
+linked_mero_preqc: 3570
+linked_imi_preqc: 1963
+
+# Assemblies Kleborate assigned to a species group outside the K. pneumoniae
+# complex. They are typed, but they leave the complex table and are reported in
+# Kleborate's own per-group outputs, so they are neither "retained" nor
+# "species-excluded" in the complex table. Derived from the row counts of
+#   data/processed/kleborate_escherichia_output.tsv              (1)
+#   data/processed/kleborate_klebsiella_oxytoca_complex_output.tsv (1)
+# Both are about 11 Mb, roughly twice the expected genome size.
+other_species_group: 2

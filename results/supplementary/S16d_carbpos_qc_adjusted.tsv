@@ -1,0 +1,3 @@
+model	term	odds_ratio	ci_lo	ci_hi	p_value	n
+crude	WARN vs PASS	0.48	0.32	0.71	0.00022	1241
+adjusted for family, porin and clonal group	WARN vs PASS	0.47	0.28	0.77	0.00289	1241

@@ -1,0 +1,44 @@
+Provenance of the uncatalogued-allele search
+============================================
+
+The release manifest records the environment that wrote it, which is not the
+environment every stage of this search ran in. The two are set out here so the
+manifest cannot be read as a claim it does not support.
+
+Stages that called genes and aligned them
+-----------------------------------------
+  scripts/28_allele_search.py    -> results/allele_search/hits.jsonl
+  scripts/29_short_orf_check.py  -> results/allele_search/short_orfs.jsonl
+  scripts/30_fragment_loci.py    -> results/allele_search/fragment_loci.jsonl
+
+  ran on   Linux-6.8.0-138-generic-x86_64-with-glibc2.35
+  python   3.10.12
+  pyrodigal 3.7.1
+  pyswrd    0.3.1
+
+These three stages read the assemblies, which are 19 GB and are not part of the
+release, so they were run where the assemblies are held. They use pyrodigal and
+pyswrd only. They import none of numpy, scipy, pandas, scikit-learn,
+statsmodels or matplotlib, so the pins for those packages do not bear on their
+output.
+
+Stages that build the tables
+----------------------------
+  scripts/31_allele_search_summary.py -> results/supplementary/S19a_allele_search_summary.tsv
+  scripts/32_allele_search_tables.py  -> results/supplementary/S19b_carbapenemase_gene_fragments.tsv
+                                         results/supplementary/S19c_allele_search_per_genome.tsv
+
+These read only the three .jsonl files and carb_calls.json, and they were run
+in both environments. Under python 3.10.12 above and under python 3.13.16 with
+every requirements.txt pin satisfied, all three tables come out byte-identical,
+verified by sha256. The classification itself lives in
+scripts/allele_classify.py and is reapplied from the stored identity and
+coverage each time a table is built, so the tables do not depend on the verdict
+written during the original run.
+
+Reference set
+-------------
+  AMRFinderPlus protein references, release 2026-08-07.1
+  results/allele_search/ref/AMRProt.fa
+  sha256 41d5ebf4f807c9590f27de7dd23c9f037afb4d8efd613790c54847fb1fc2896b
+  10078 records

@@ -1,0 +1,8 @@
+determinant	present_n	resistant_pct_present	OR	p
+OmpK36 disruption	299	23.4	11.18	1.3e-31
+Acquired ESBL	1327	7.5	3.56	7.8e-07
+Chromosomal beta-lactamase	1726	6.0	1.38	0.45
+SHV mutations	870	7.8	1.91	0.00093
+Inhibitor-resistant beta-lactamase	18	0.0	0.00	0.62
+# carbapenemase-negative binary isolates: 1952
+# genomes without a Kleborate record (chr/SHV/inhR treated absent): 0

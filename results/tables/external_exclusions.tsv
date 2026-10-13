@@ -1,0 +1,7 @@
+stage	n
+ncbi_isolates_scanned	166142
+no_meropenem_ast	164879
+overlap_with_derivation_excluded	245
+call_not_S_or_R_excluded	31
+duplicate_biosample_collapsed	1
+external_cohort_final	986

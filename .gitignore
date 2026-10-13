@@ -1,0 +1,19 @@
+# Retrieved inputs too large to redistribute. README.md names the script that
+# fetches each one from its pinned source.
+data/external/
+data/raw/genomes/
+data/raw/assemblies/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS and editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

@@ -1,0 +1,49 @@
+drug	field	level	n_records
+meropenem	laboratory_typing_method	Broth dilution	5167
+meropenem	laboratory_typing_method	MIC	1222
+meropenem	laboratory_typing_method	<not reported>	726
+meropenem	laboratory_typing_method	Disk diffusion	174
+meropenem	laboratory_typing_method_version	<not reported>	7289
+meropenem	laboratory_typing_platform	<not reported>	4488
+meropenem	laboratory_typing_platform	BD Phoenix	1660
+meropenem	laboratory_typing_platform	VITEK 2	1086
+meropenem	laboratory_typing_platform	E-test	35
+meropenem	laboratory_typing_platform	Sensititre	20
+meropenem	testing_standard	CLSI	4904
+meropenem	testing_standard	EUCAST	1477
+meropenem	testing_standard	<not reported>	904
+meropenem	testing_standard	EUCAST,CLSI	4
+meropenem	testing_standard_year	<not reported>	2363
+meropenem	testing_standard_year	2017	1684
+meropenem	testing_standard_year	2015	1553
+meropenem	testing_standard_year	2021	801
+meropenem	testing_standard_year	2016	292
+meropenem	testing_standard_year	2012	169
+meropenem	testing_standard_year	2020	157
+meropenem	testing_standard_year	2010	122
+meropenem	testing_standard_year	2013	84
+meropenem	testing_standard_year	2018	64
+imipenem	laboratory_typing_method	Broth dilution	2516
+imipenem	laboratory_typing_method	MIC	833
+imipenem	laboratory_typing_method	Agar dilution	246
+imipenem	laboratory_typing_method	Disk diffusion	244
+imipenem	laboratory_typing_method	<not reported>	86
+imipenem	laboratory_typing_method_version	<not reported>	3925
+imipenem	laboratory_typing_platform	<not reported>	2081
+imipenem	laboratory_typing_platform	BD Phoenix	1666
+imipenem	laboratory_typing_platform	VITEK 2	143
+imipenem	laboratory_typing_platform	E-test	35
+imipenem	testing_standard	CLSI	2945
+imipenem	testing_standard	EUCAST	624
+imipenem	testing_standard	<not reported>	303
+imipenem	testing_standard	CLSI, EUCAST	49
+imipenem	testing_standard	EUCAST,CLSI	4
+imipenem	testing_standard_year	2017	1670
+imipenem	testing_standard_year	2021	850
+imipenem	testing_standard_year	<not reported>	660
+imipenem	testing_standard_year	2016	302
+imipenem	testing_standard_year	2012	169
+imipenem	testing_standard_year	2020	157
+imipenem	testing_standard_year	2013	84
+imipenem	testing_standard_year	2018	32
+imipenem	testing_standard_year	2015	1

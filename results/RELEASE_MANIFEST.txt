@@ -1,0 +1,257 @@
+kp-multiscale-amr — release manifest
+
+label        : Snapshot accompanying the Microbial Genomics submission
+written      : 2026-10-15T18:19:44+0800
+host         : vm
+platform     : Linux-6.18.44-fc-v114-x86_64-with-glibc2.39
+python       : 3.13.16
+git commit   : no commit yet, this manifest is written into the snapshot it describes
+python       : Python 3.13.16
+packages     : pandas 2.3.3, numpy 2.4.4, scipy 1.15.3, statsmodels 0.14.4, matplotlib 3.10.8, sklearn 1.8.0, pyrodigal 3.7.1, pyswrd 0.3.1
+pins         : installed packages match requirements.txt
+
+--- step outcomes from the run that produced these results ---
+    OK   python tests/test_classification.py
+    OK   bash tests/test_run_all_gate.sh
+    OK   python scripts/08b_discordance_recordlevel.py --drug meropenem --standard CLSI --method Broth dilution --breakpoints CLSI --tag _clsi_bmd
+    OK   python scripts/08b_discordance_recordlevel.py --drug imipenem --standard CLSI --method Broth dilution --breakpoints CLSI --tag _clsi_bmd
+    OK   python scripts/08b_discordance_recordlevel.py --drug meropenem --standard CLSI --method Broth dilution --breakpoints EUCAST --tag _clsi_bmd_eucast
+    OK   python scripts/08b_discordance_recordlevel.py --drug imipenem --standard CLSI --method Broth dilution --breakpoints EUCAST --tag _clsi_bmd_eucast
+    OK   python scripts/08b_discordance_recordlevel.py --drug meropenem --standard CLSI --method Broth dilution --breakpoints CLSI --dedup --tag _clsi_bmd_dedup
+    OK   python scripts/08b_discordance_recordlevel.py --drug imipenem --standard CLSI --method Broth dilution --breakpoints CLSI --dedup --tag _clsi_bmd_dedup
+    OK   python scripts/08b_discordance_recordlevel.py --drug meropenem --breakpoints CLSI --tag _unstratified
+    OK   python scripts/08b_discordance_recordlevel.py --drug imipenem --breakpoints CLSI --tag _unstratified
+    OK   python scripts/09_discordance_sensitivity.py --drug meropenem --tag _clsi_bmd
+    OK   python scripts/09_discordance_sensitivity.py --drug imipenem --tag _clsi_bmd
+    OK   python scripts/11_extensions.py --drug meropenem --tag _clsi_bmd
+    OK   python scripts/12_flow_diagram.py
+    OK   python scripts/12b_flow_diagram_typeset.py
+    OK   python scripts/10_figures.py --drug meropenem --tag _clsi_bmd
+    OK   python scripts/10_figures.py --drug imipenem --tag _clsi_bmd
+    OK   python scripts/10_figures.py --drug meropenem --tag _clsi_bmd_eucast
+    OK   python scripts/10_figures.py --drug meropenem --tag _unstratified
+    OK   python scripts/10_figures.py --drug meropenem --tag _clsi_bmd_dedup
+    OK   python scripts/14_results_manifest.py
+    OK   python scripts/15_figure3_robustness.py
+    OK   python scripts/16_figure4_false_resistant.py
+    OK   python scripts/13_supplementary.py
+    OK   python scripts/17_rule_derivation.py --drug meropenem
+    OK   python scripts/17_rule_derivation.py --drug imipenem --tag _imipenem
+    OK   python scripts/18_discordance_investigation.py --drug meropenem --qc data/interim/assembly_qc_metrics.tsv
+    OK   python scripts/19_external_validation.py --drug meropenem
+    OK   python scripts/00g_effective_integrity_report.py
+    OK   python scripts/25_genome_ledger.py
+    OK   python scripts/27_derivation_gain_bootstrap.py --drug meropenem
+    OK   python scripts/24_species_and_integrity_sensitivity.py
+    OK   python scripts/23_external_summary.py
+
+--- code ---
+  957472d2078ad0fa         2,226  scripts/00_qc_fasta.sh
+  f22b21de8ce30a48        14,819  scripts/00b_qc_assembly.py
+  0c96c372b46663a6         3,129  scripts/00c_run_checkm2.sh
+  52e567ead79af654        11,567  scripts/00d_fetch_ncbi_qc.py
+  c6d4f5578e5a5945         9,171  scripts/00e_fetch_bvbrc_qc.py
+  bdcd558e7459cef0         7,567  scripts/00f_check_download_integrity.py
+  b1d04d62ced0aaca         4,066  scripts/00g_effective_integrity_report.py
+  f83b48b7d6a48039         5,000  scripts/01_download_bvbrc.py
+  b6a90e1d4a10a85c         3,625  scripts/01_download_bvbrc.sh
+  2346af91839fc0b5         3,346  scripts/01b_retry_missing.sh
+  b03f189304a8ccab         3,325  scripts/01c_retry_curl.sh
+  4aa16c8132cedaad        10,299  scripts/01d_redownload_verified.py
+  063c7f5d71b2e112         1,790  scripts/02_download_ncbi.sh
+  3030318e9728f618         4,734  scripts/03_build_dataset.py
+  1656f1e55c5f199b         4,325  scripts/04_run_kleborate.sh
+  b4755f4eed805ead         7,275  scripts/04c_fix_truncated_genomes.sh
+  eb94cfcc8a2b3d70         3,846  scripts/05_merge_kleborate.py
+  5640592df36c09cc         5,377  scripts/05b_apply_qc_filter.py
+  08814aa08dfcb785         9,715  scripts/05c_refilter_results_qc.py
+  d5417b8dbad935df        13,746  scripts/06_genotype_mic_analysis.py
+  ddbc5500ef167707        16,020  scripts/07_interaction_analysis.py
+  1baec807d7d8d23f        20,032  scripts/08b_discordance_recordlevel.py
+  4452995fe8bf17e4        31,922  scripts/09_discordance_sensitivity.py
+  fb3d8515a5a19394        18,084  scripts/10_figures.py
+  7fd8190fa3e6aaae        14,994  scripts/11_extensions.py
+  1eaa13a0eee6c4ac        16,289  scripts/12_flow_diagram.py
+  03957184110c4efc        11,924  scripts/12b_flow_diagram_typeset.py
+  d86c502d9089f6c7         9,132  scripts/13_supplementary.py
+  bb74f14692cd2a37         4,273  scripts/14_results_manifest.py
+  c54a6a673250862a         8,783  scripts/15_figure3_robustness.py
+  6b7402dffa465563         9,525  scripts/16_figure4_false_resistant.py
+  c4df6194bb3599e4        23,983  scripts/17_rule_derivation.py
+  674c3f097f6fa4be        13,488  scripts/18_discordance_investigation.py
+  baed949ca1a0d0b7        32,514  scripts/19_external_validation.py
+  9dec0e202df00dac         4,710  scripts/19a_fetch_derivation_accessions.py
+  ffa5806b768b20fd         2,985  scripts/19b_fetch_ncbi_pathogen.sh
+  75d2eda97279127f         3,764  scripts/19c_refresh_derivation_strata.py
+  84e84b28f0e34b93         9,082  scripts/20_qc_stratified_discordance.py
+  80586a5d68ce7611         4,936  scripts/21_table4_determinants.py
+  3af0906a2468798c         3,275  scripts/22_compare_truncation_fix.py
+  8f894bd54979a8a0         2,922  scripts/23_external_summary.py
+  95720d17de1ede58         5,667  scripts/24_species_and_integrity_sensitivity.py
+  5de14bc473105e17        10,366  scripts/25_genome_ledger.py
+  d6f323b69b995505         9,618  scripts/26_release_manifest.py
+  d2f3956dce8f98fe         8,740  scripts/27_derivation_gain_bootstrap.py
+  c50da8f91e943684         7,434  scripts/28_allele_search.py
+  8ca76e8f8922cc5d         4,995  scripts/29_short_orf_check.py
+  daabc4606243486a         5,361  scripts/30_fragment_loci.py
+  e6104f558be6e0f7         5,336  scripts/31_allele_search_summary.py
+  aa1d00f26d3c69d0         7,901  scripts/32_allele_search_tables.py
+  204087fea17c3f1b         2,039  scripts/allele_classify.py
+  efd55e88c00059e2         3,376  scripts/figstyle.py
+  63ad0006bf7c40de         9,723  scripts/kp_defs.py
+  5c0b4ac5c25066c5         7,896  scripts/render_svg.py
+  b750fcd191b9a3d2         2,573  scripts/replace_figures.py
+  dec8e35977a4f185         3,412  scripts/survey_drugs.py
+  ded131d7499e238b         3,400  tests/test_classification.py
+  dc22b17a94fc370a         4,163  tests/test_run_all_gate.sh
+  7729c36aaf2acdd7         5,511  tools/accept_changes.py
+  95c122cba71db704         2,841  tools/fix_element_order.py
+  182fa6bf5d28825b         5,131  config/breakpoints.csv
+  44a14bb7ea1e412d         2,007  config/config.yaml
+  e2228f523d5228bf         1,964  config/flow_counts.yaml
+  656bbb0916f287b1         3,591  config/qc_thresholds.csv
+  62f0b5a5cdb6c71c        21,887  assets/Figure1_study_flow_template.svg
+  (65 file(s))
+
+--- frozen inputs ---
+  87695ce2a200c656         7,512  data/processed/kleborate_escherichia_output.tsv
+  c729253e422c3321         7,505  data/processed/kleborate_klebsiella_oxytoca_complex_output.tsv
+  29cfe3e771c3afb7     4,079,204  data/processed/kleborate_klebsiella_pneumo_complex_output.prefilter.tsv
+  cd5d005d786cf23a     3,004,264  data/processed/kleborate_klebsiella_pneumo_complex_output.tsv
+  a72a987492ec2162       758,175  data/interim/assembly_qc_metrics.tsv
+  d89479132813126c     8,044,512  data/raw/phenotypes/kp_amr_anchor.tsv
+  51acb8ada85a29ab       134,530  data/raw/genomes_redownload/manifest.tsv
+  (7 file(s))
+
+--- generated results ---
+  47324de5e450f23b           368  results/tables/derivation_gain_bootstrap.tsv
+  436232e439f96c66           950  results/tables/derivation_gain_fold_sensitivity.tsv
+  16e5e354802317ab           154  results/tables/discordance_breakpoint_proximity.tsv
+  26394d9f4176e7c8         1,181  results/tables/discordance_by_allele.tsv
+  cea938b528fc61f1         1,746  results/tables/discordance_lineage_enrichment.tsv
+  a815437246d614c4         1,214  results/tables/discordance_vs_assembly_quality.tsv
+  6dbb7c89cdb5389a           326  results/tables/extA_false_resistant.tsv
+  b22cf405c0c35de9           587  results/tables/extB_incremental_value.tsv
+  0e448e73a1f7cfa8           362  results/tables/extC_ppv_projection.tsv
+  332edc7ddb1f7472         5,307  results/tables/external_bioprojects.tsv
+  f5fa083d5a5d3012           184  results/tables/external_exclusions.tsv
+  96ceb76fbdebad39       251,768  results/tables/external_isolates.tsv
+  bdab527484c4cbe9        10,527  results/tables/external_leave_one_project_out.tsv
+  7bbf93227d46aad4        12,164  results/tables/external_performance.tsv
+  e472f95b726e58dc           600  results/tables/external_porin_gain_bootstrap.tsv
+  ddb3e22d46f76bce         1,636  results/tables/external_strata.tsv
+  ae3e4967abd20b8a         2,748  results/tables/external_stratum_comparison.tsv
+  55128704e63c846f     1,180,214  results/tables/genome_ledger.tsv
+  ddcbc2f9a6d8d14e         1,315  results/tables/genome_ledger_summary.txt
+  beff92aa44fd6509           501  results/tables/recordlevel_audit_imipenem_clsi_bmd.tsv
+  e23c8ab3c68a2222           497  results/tables/recordlevel_audit_imipenem_clsi_bmd_dedup.tsv
+  f8e3fbcd3f2e8453           502  results/tables/recordlevel_audit_imipenem_clsi_bmd_eucast.tsv
+  dc83832e5ae64c1c           508  results/tables/recordlevel_audit_imipenem_unstratified.tsv
+  f21681b6526338ac           503  results/tables/recordlevel_audit_meropenem_clsi_bmd.tsv
+  f66e546f96e5366f           498  results/tables/recordlevel_audit_meropenem_clsi_bmd_dedup.tsv
+  cc8a3fac82cd03c1           503  results/tables/recordlevel_audit_meropenem_clsi_bmd_eucast.tsv
+  a414ef335e308b80           508  results/tables/recordlevel_audit_meropenem_unstratified.tsv
+  f6155406e3ed70dc           114  results/tables/recordlevel_by_family_imipenem_clsi_bmd.tsv
+  cff4445c97c2d9ed           115  results/tables/recordlevel_by_family_imipenem_clsi_bmd_dedup.tsv
+  4406231c2f73e888           117  results/tables/recordlevel_by_family_imipenem_clsi_bmd_eucast.tsv
+  758ac2cf1435c315           164  results/tables/recordlevel_by_family_imipenem_unstratified.tsv
+  ba7535342a44ddcd           177  results/tables/recordlevel_by_family_meropenem_clsi_bmd.tsv
+  6aaf4e89d8fbe3be           142  results/tables/recordlevel_by_family_meropenem_clsi_bmd_dedup.tsv
+  77639e09342898b8           179  results/tables/recordlevel_by_family_meropenem_clsi_bmd_eucast.tsv
+  7f0041951f30f9fb           227  results/tables/recordlevel_by_family_meropenem_unstratified.tsv
+  5ae2bbd040582af5           590  results/tables/recordlevel_conflicts_imipenem_unstratified.tsv
+  3186d183844753fe         1,637  results/tables/recordlevel_conflicts_meropenem_unstratified.tsv
+  007303902ea20d8f       201,691  results/tables/recordlevel_discordance_imipenem_clsi_bmd.tsv
+  b92cab1dc1d598a1        30,023  results/tables/recordlevel_discordance_imipenem_clsi_bmd_dedup.tsv
+  b61d279dde769db0       201,851  results/tables/recordlevel_discordance_imipenem_clsi_bmd_eucast.tsv
+  25f1bf38687dd659       337,882  results/tables/recordlevel_discordance_imipenem_unstratified.tsv
+  ac1d8df41e97cf70       357,191  results/tables/recordlevel_discordance_meropenem_clsi_bmd.tsv
+  a7c18f5a68ffc187        67,095  results/tables/recordlevel_discordance_meropenem_clsi_bmd_dedup.tsv
+  b088304743794b1f       357,375  results/tables/recordlevel_discordance_meropenem_clsi_bmd_eucast.tsv
+  d281b07e652ca1fd       520,100  results/tables/recordlevel_discordance_meropenem_unstratified.tsv
+  598b2ec5c7f138f6           149  results/tables/recordlevel_fisher_imipenem_clsi_bmd.tsv
+  8f3b055cb953077d           114  results/tables/recordlevel_fisher_imipenem_clsi_bmd_dedup.tsv
+  d3b78511cb8c350d           150  results/tables/recordlevel_fisher_imipenem_clsi_bmd_eucast.tsv
+  3a3618a194e99bc9           149  results/tables/recordlevel_fisher_imipenem_unstratified.tsv
+  4e856c6c223987e6           265  results/tables/recordlevel_fisher_meropenem_clsi_bmd.tsv
+  2554bc03eaba38ae           203  results/tables/recordlevel_fisher_meropenem_clsi_bmd_dedup.tsv
+  f89fc2309e6d7400           298  results/tables/recordlevel_fisher_meropenem_clsi_bmd_eucast.tsv
+  41bc24af102a5270           306  results/tables/recordlevel_fisher_meropenem_unstratified.tsv
+  d14acf8b3acc0a38           369  results/tables/recordlevel_mechanism_imipenem_clsi_bmd.tsv
+  9d5d3d9ebb216e69           190  results/tables/recordlevel_mechanism_imipenem_clsi_bmd_dedup.tsv
+  24fcd589dc166bdc           305  results/tables/recordlevel_mechanism_imipenem_clsi_bmd_eucast.tsv
+  990394a128334ef5           591  results/tables/recordlevel_mechanism_imipenem_unstratified.tsv
+  4191f3d8ddd7b1e0           549  results/tables/recordlevel_mechanism_meropenem_clsi_bmd.tsv
+  b625d9a155eb363b           325  results/tables/recordlevel_mechanism_meropenem_clsi_bmd_dedup.tsv
+  d0f361f5b8418a5d           552  results/tables/recordlevel_mechanism_meropenem_clsi_bmd_eucast.tsv
+  6ffe92f915379f8e           943  results/tables/recordlevel_mechanism_meropenem_unstratified.tsv
+  5a514546ae5a96fa         2,807  results/tables/rules_by_carbapenemase_status.tsv
+  874e170aa8aaeed3         2,641  results/tables/rules_by_carbapenemase_status_imipenem.tsv
+  cee3c22a8d01dd66         1,606  results/tables/rules_comparison.tsv
+  aa2d2f040169f1bb         1,557  results/tables/rules_comparison_imipenem.tsv
+  74e94a3861657a6e         6,352  results/tables/rules_decision_list.tsv
+  ead23b3e5b7e8822         5,447  results/tables/rules_decision_list_imipenem.tsv
+  e4f13a21bec2f3d5         2,761  results/tables/rules_performance.tsv
+  87a0fb83c71256b6         2,689  results/tables/rules_performance_imipenem.tsv
+  4d58fb0996744515         5,838  results/tables/rules_stability.tsv
+  b4022b5ca60029eb         4,986  results/tables/rules_stability_imipenem.tsv
+  04b8eb1bc92f5e73         7,483  results/tables/rules_strata.tsv
+  279a7a6823d70421         6,411  results/tables/rules_strata_imipenem.tsv
+  ee3ec51316520d7a           253  results/tables/sensitivity_breakpoints_imipenem.tsv
+  ee3ec51316520d7a           253  results/tables/sensitivity_breakpoints_imipenem_clsi_bmd.tsv
+  be269d176d269dd1           261  results/tables/sensitivity_breakpoints_meropenem.tsv
+  be269d176d269dd1           261  results/tables/sensitivity_breakpoints_meropenem_clsi_bmd.tsv
+  f6341a5574e10c2b           173  results/tables/sensitivity_fdr_imipenem.tsv
+  f6341a5574e10c2b           173  results/tables/sensitivity_fdr_imipenem_clsi_bmd.tsv
+  4b16f23d5326d0fe           297  results/tables/sensitivity_fdr_meropenem.tsv
+  4b16f23d5326d0fe           297  results/tables/sensitivity_fdr_meropenem_clsi_bmd.tsv
+  073da2d8d60a1c92           389  results/tables/sensitivity_leaveoneout_imipenem_clsi_bmd.tsv
+  f1b266509728e7fe           775  results/tables/sensitivity_leaveoneout_meropenem_clsi_bmd.tsv
+  89ce5c8d631408fe           360  results/tables/sensitivity_regression_imipenem_clsi_bmd.tsv
+  6ca9d43ad7851d6b           663  results/tables/sensitivity_regression_meropenem_clsi_bmd.tsv
+  ae49726b27fa44e4           382  results/tables/table4_determinants.tsv
+  cb6614a37aff69aa            71  results/tables/table4_esbl_ompk36_interaction.tsv
+  90d185b3213ed9c1           900  results/supplementary/S10_regression_estimates.tsv
+  4d30ca77e08bde8b         1,092  results/supplementary/S11_leave_one_ST_out.tsv
+  77d3fd26bffecfa4           572  results/supplementary/S16_qc_stratified_discordance.tsv
+  4781f35a109c0b28           523  results/supplementary/S16b_warn_carbneg_profile.tsv
+  7395fabbb2ee82e8           242  results/supplementary/S16c_carbneg_by_lineage_qc.tsv
+  d91da38e82afdc0f           179  results/supplementary/S16d_carbpos_qc_adjusted.tsv
+  b0f09709c63837ad         9,253  results/supplementary/S17_truncation_fix_comparison.tsv
+  b60fb41fc83bdb7a           401  results/supplementary/S18_species_integrity_sensitivity.tsv
+  d9b9a6a14b9b575f            72  results/supplementary/S18b_non_pneumoniae_composition.tsv
+  9b1a49a438f3eaf8           481  results/supplementary/S19a_allele_search_summary.tsv
+  59f7794b4019c885         1,547  results/supplementary/S19b_carbapenemase_gene_fragments.tsv
+  afe8df7c5bbd0b4b        29,817  results/supplementary/S19c_allele_search_per_genome.tsv
+  cba105bf61fbe549       265,799  results/supplementary/S1_derivation_accessions.tsv
+  d93518fee8c8b533       306,442  results/supplementary/S1_genome_level_data.tsv
+  5ad0c8bb1835634d         1,169  results/supplementary/S2_discordance_by_family.tsv
+  8d1cbfc3b8b752ce         1,270  results/supplementary/S3_porin_breakdown.tsv
+  65d8d91b71b2b5ec         1,216  results/supplementary/S4_sensitivity.tsv
+  9c798e3ead83703b         2,223  results/supplementary/S6_provenance.tsv
+  347788232e833d1e           586  results/supplementary/S7_classification_rules.tsv
+  ed9832ecf4b7659e           361  results/supplementary/S8_ppv_projection.tsv
+  55caeb4e0a397c85           322  results/supplementary/S9_carbnegative_resistance.tsv
+  602e0e841e2f3069       225,011  results/supplementary/Supplementary_Tables.xlsx
+  e124128f831736c6           110  results/supplementary/missing_qc_composition.tsv
+  5e802504f8b238b9        21,384  results/figures/Figure1_study_flow.svg
+  625a7b7abc66efb3       199,772  results/figures/Figure2_main_meropenem_CLSI.svg
+  89ceb1051bd8c08f        60,866  results/figures/Figure3_robustness_meropenem.svg
+  edbc5e7b6e5c39a0        44,051  results/figures/Figure4_carbapenemase_negative_meropenem.svg
+  172c25e4d27255ba       135,065  results/figures/FigureS1_imipenem_CLSI.svg
+  a03e1b710e7a5e58       279,324  results/figures/FigureS2_meropenem_unstratified.svg
+  33e3d5381932cee5       104,703  results/figures/FigureS3_meropenem_deduplicated.svg
+  2b58843d55bfa9df       199,976  results/figures/FigureS4_meropenem_EUCAST.svg
+  87f7d5005db08fde       534,853  results/qc_concordance/fasta_integrity_effective.tsv
+  1f56d81f3cbb3a1e       328,642  results/qc_concordance/fasta_integrity_report.tsv
+  412516f241015aa3         2,085  results/allele_search/PROVENANCE.txt
+  3f7b29359832e322       100,945  results/allele_search/carb_calls.json
+  b0e5e91576b0f143        42,527  results/allele_search/cohorts.json
+  b2c374e9f840a469         4,512  results/allele_search/fragment_loci.jsonl
+  c043cf5664e6b492       698,076  results/allele_search/hits.jsonl
+  7b4b07a61db84b0e        49,352  results/allele_search/short_orfs.jsonl
+  41d5ebf4f807c959     4,695,584  results/allele_search/ref/AMRProt.fa
+  1b9d174e3c18b928            77  results/allele_search/ref/AMRProt.fa.sha256
+  91be13b9510e1833           867  results/allele_search/ref/README.md
+  43ad0274317a2cbf            13  results/allele_search/ref/version.txt
+  (130 file(s))

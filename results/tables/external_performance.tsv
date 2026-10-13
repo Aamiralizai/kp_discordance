@@ -1,0 +1,61 @@
+subset	tier	drug	unseen_strata	count_partial	qc_filtered	n	TP	FP	TN	FN	PPV	PPV_lo	PPV_hi	NPV	NPV_lo	NPV_hi	sensitivity	sensitivity_lo	sensitivity_hi	specificity	specificity_lo	specificity_hi	accuracy	accuracy_lo	accuracy_hi	left_out	left_out_n	left_out_n_in_source	source_cohort
+all_external	T0_gene_only	meropenem	0	False	False	986	306	217	373	90	58.5	54.2	62.7	80.6	76.7	83.9	77.3	72.9	81.1	63.2	59.3	67.0	68.9	65.9	71.7				
+all_external	T1_family	meropenem	0	False	False	986	306	217	373	90	58.5	54.2	62.7	80.6	76.7	83.9	77.3	72.9	81.1	63.2	59.3	67.0	68.9	65.9	71.7				
+all_external	T2_family_porin	meropenem	0	False	False	986	292	185	405	104	61.2	56.8	65.5	79.6	75.8	82.8	73.7	69.2	77.8	68.6	64.8	72.3	70.7	67.8	73.4				
+excluding_flagged_bioprojects	T0_gene_only	meropenem	0	False	False	742	305	51	365	21	85.7	81.7	88.9	94.6	91.8	96.4	93.6	90.4	95.7	87.7	84.2	90.6	90.3	88.0	92.2				
+excluding_flagged_bioprojects	T1_family	meropenem	0	False	False	742	305	51	365	21	85.7	81.7	88.9	94.6	91.8	96.4	93.6	90.4	95.7	87.7	84.2	90.6	90.3	88.0	92.2				
+excluding_flagged_bioprojects	T2_family_porin	meropenem	0	False	False	742	292	20	396	34	93.6	90.3	95.8	92.1	89.2	94.3	89.6	85.8	92.4	95.2	92.7	96.9	92.7	90.6	94.4				
+excluding_partial_qc_failures	T0_gene_only	meropenem	0	False	False	976	303	213	370	90	58.7	54.4	62.9	80.4	76.6	83.8	77.1	72.7	81.0	63.5	59.5	67.3	69.0	66.0	71.8				
+excluding_partial_qc_failures	T1_family	meropenem	0	False	False	976	303	213	370	90	58.7	54.4	62.9	80.4	76.6	83.8	77.1	72.7	81.0	63.5	59.5	67.3	69.0	66.0	71.8				
+excluding_partial_qc_failures	T2_family_porin	meropenem	0	False	False	976	289	181	402	104	61.5	57.0	65.8	79.4	75.7	82.7	73.5	69.0	77.7	69.0	65.1	72.6	70.8	67.9	73.6				
+leave_out_PRJNA1322038	T0_gene_only	meropenem	0	False	False	742	305	51	365	21	85.7	81.7	88.9	94.6	91.8	96.4	93.6	90.4	95.7	87.7	84.2	90.6	90.3	88.0	92.2	PRJNA1322038	244.0	0.0	excluding_flagged_bioprojects
+leave_out_PRJNA1322038	T1_family	meropenem	0	False	False	742	305	51	365	21	85.7	81.7	88.9	94.6	91.8	96.4	93.6	90.4	95.7	87.7	84.2	90.6	90.3	88.0	92.2	PRJNA1322038	244.0	0.0	excluding_flagged_bioprojects
+leave_out_PRJNA1322038	T2_family_porin	meropenem	0	False	False	742	292	20	396	34	93.6	90.3	95.8	92.1	89.2	94.3	89.6	85.8	92.4	95.2	92.7	96.9	92.7	90.6	94.4	PRJNA1322038	244.0	0.0	excluding_flagged_bioprojects
+leave_out_PRJNA278886	T0_gene_only	meropenem	0	False	False	616	295	51	256	14	85.3	81.1	88.6	94.8	91.5	96.9	95.5	92.5	97.3	83.4	78.8	87.1	89.4	86.8	91.6	PRJNA278886	126.0	126.0	excluding_flagged_bioprojects
+leave_out_PRJNA278886	T1_family	meropenem	0	False	False	616	295	51	256	14	85.3	81.1	88.6	94.8	91.5	96.9	95.5	92.5	97.3	83.4	78.8	87.1	89.4	86.8	91.6	PRJNA278886	126.0	126.0	excluding_flagged_bioprojects
+leave_out_PRJNA278886	T2_family_porin	meropenem	0	False	False	616	282	20	287	27	93.4	90.0	95.7	91.4	87.8	94.0	91.3	87.6	93.9	93.5	90.2	95.7	92.4	90.0	94.2	PRJNA278886	126.0	126.0	excluding_flagged_bioprojects
+leave_out_PRJNA717739	T0_gene_only	meropenem	0	False	False	645	285	49	292	19	85.3	81.1	88.7	93.9	90.7	96.1	93.8	90.4	96.0	85.6	81.5	89.0	89.5	86.8	91.6	PRJNA717739	97.0	97.0	excluding_flagged_bioprojects
+leave_out_PRJNA717739	T1_family	meropenem	0	False	False	645	285	49	292	19	85.3	81.1	88.7	93.9	90.7	96.1	93.8	90.4	96.0	85.6	81.5	89.0	89.5	86.8	91.6	PRJNA717739	97.0	97.0	excluding_flagged_bioprojects
+leave_out_PRJNA717739	T2_family_porin	meropenem	0	False	False	645	278	18	323	26	93.9	90.6	96.1	92.6	89.3	94.9	91.4	87.8	94.1	94.7	91.8	96.6	93.2	91.0	94.9	PRJNA717739	97.0	97.0	excluding_flagged_bioprojects
+leave_out_PRJNA1160997	T0_gene_only	meropenem	0	False	False	658	246	26	365	21	90.4	86.4	93.4	94.6	91.8	96.4	92.1	88.3	94.8	93.4	90.4	95.4	92.9	90.6	94.6	PRJNA1160997	84.0	84.0	excluding_flagged_bioprojects
+leave_out_PRJNA1160997	T1_family	meropenem	0	False	False	658	246	26	365	21	90.4	86.4	93.4	94.6	91.8	96.4	92.1	88.3	94.8	93.4	90.4	95.4	92.9	90.6	94.6	PRJNA1160997	84.0	84.0	excluding_flagged_bioprojects
+leave_out_PRJNA1160997	T2_family_porin	meropenem	0	False	False	658	235	15	376	32	94.0	90.3	96.3	92.2	89.1	94.4	88.0	83.6	91.4	96.2	93.8	97.7	92.9	90.6	94.6	PRJNA1160997	84.0	84.0	excluding_flagged_bioprojects
+leave_out_PRJNA1271593	T0_gene_only	meropenem	0	False	False	697	305	51	320	21	85.7	81.7	88.9	93.8	90.8	95.9	93.6	90.4	95.7	86.3	82.4	89.4	89.7	87.2	91.7	PRJNA1271593	45.0	45.0	excluding_flagged_bioprojects
+leave_out_PRJNA1271593	T1_family	meropenem	0	False	False	697	305	51	320	21	85.7	81.7	88.9	93.8	90.8	95.9	93.6	90.4	95.7	86.3	82.4	89.4	89.7	87.2	91.7	PRJNA1271593	45.0	45.0	excluding_flagged_bioprojects
+leave_out_PRJNA1271593	T2_family_porin	meropenem	0	False	False	697	292	20	351	34	93.6	90.3	95.8	91.2	87.9	93.6	89.6	85.8	92.4	94.6	91.8	96.5	92.3	90.0	94.0	PRJNA1271593	45.0	45.0	excluding_flagged_bioprojects
+leave_out_PRJNA308116	T0_gene_only	meropenem	0	False	False	704	279	47	358	20	85.6	81.4	89.0	94.7	92.0	96.5	93.3	89.9	95.6	88.4	84.9	91.2	90.5	88.1	92.4	PRJNA308116	38.0	38.0	excluding_flagged_bioprojects
+leave_out_PRJNA308116	T1_family	meropenem	0	False	False	704	279	47	358	20	85.6	81.4	89.0	94.7	92.0	96.5	93.3	89.9	95.6	88.4	84.9	91.2	90.5	88.1	92.4	PRJNA308116	38.0	38.0	excluding_flagged_bioprojects
+leave_out_PRJNA308116	T2_family_porin	meropenem	0	False	False	704	266	18	387	33	93.7	90.2	96.0	92.1	89.2	94.4	89.0	84.9	92.0	95.6	93.1	97.2	92.8	90.6	94.4	PRJNA308116	38.0	38.0	excluding_flagged_bioprojects
+leave_out_PRJNA1156689	T0_gene_only	meropenem	0	False	False	704	305	51	327	21	85.7	81.7	88.9	94.0	91.0	96.0	93.6	90.4	95.7	86.5	82.7	89.6	89.8	87.3	91.8	PRJNA1156689	38.0	38.0	excluding_flagged_bioprojects
+leave_out_PRJNA1156689	T1_family	meropenem	0	False	False	704	305	51	327	21	85.7	81.7	88.9	94.0	91.0	96.0	93.6	90.4	95.7	86.5	82.7	89.6	89.8	87.3	91.8	PRJNA1156689	38.0	38.0	excluding_flagged_bioprojects
+leave_out_PRJNA1156689	T2_family_porin	meropenem	0	False	False	704	292	20	358	34	93.6	90.3	95.8	91.3	88.1	93.7	89.6	85.8	92.4	94.7	92.0	96.5	92.3	90.1	94.1	PRJNA1156689	38.0	38.0	excluding_flagged_bioprojects
+leave_out_PRJNA785542	T0_gene_only	meropenem	0	False	False	721	290	47	365	19	86.1	81.9	89.3	95.1	92.4	96.8	93.9	90.6	96.0	88.6	85.2	91.3	90.8	88.5	92.7	PRJNA785542	21.0	21.0	excluding_flagged_bioprojects
+leave_out_PRJNA785542	T1_family	meropenem	0	False	False	721	290	47	365	19	86.1	81.9	89.3	95.1	92.4	96.8	93.9	90.6	96.0	88.6	85.2	91.3	90.8	88.5	92.7	PRJNA785542	21.0	21.0	excluding_flagged_bioprojects
+leave_out_PRJNA785542	T2_family_porin	meropenem	0	False	False	721	277	16	396	32	94.5	91.3	96.6	92.5	89.6	94.7	89.6	85.7	92.6	96.1	93.8	97.6	93.3	91.3	94.9	PRJNA785542	21.0	21.0	excluding_flagged_bioprojects
+leave_out_PRJNA1219142	T0_gene_only	meropenem	0	False	False	723	286	51	365	21	84.9	80.6	88.3	94.6	91.8	96.4	93.2	89.8	95.5	87.7	84.2	90.6	90.0	87.6	92.0	PRJNA1219142	19.0	19.0	excluding_flagged_bioprojects
+leave_out_PRJNA1219142	T1_family	meropenem	0	False	False	723	286	51	365	21	84.9	80.6	88.3	94.6	91.8	96.4	93.2	89.8	95.5	87.7	84.2	90.6	90.0	87.6	92.0	PRJNA1219142	19.0	19.0	excluding_flagged_bioprojects
+leave_out_PRJNA1219142	T2_family_porin	meropenem	0	False	False	723	273	20	396	34	93.2	89.7	95.5	92.1	89.2	94.3	88.9	84.9	92.0	95.2	92.7	96.9	92.5	90.4	94.2	PRJNA1219142	19.0	19.0	excluding_flagged_bioprojects
+leave_out_PRJNA529587	T0_gene_only	meropenem	0	False	False	725	305	51	348	21	85.7	81.7	88.9	94.3	91.5	96.2	93.6	90.4	95.7	87.2	83.6	90.1	90.1	87.7	92.0	PRJNA529587	17.0	17.0	excluding_flagged_bioprojects
+leave_out_PRJNA529587	T1_family	meropenem	0	False	False	725	305	51	348	21	85.7	81.7	88.9	94.3	91.5	96.2	93.6	90.4	95.7	87.2	83.6	90.1	90.1	87.7	92.0	PRJNA529587	17.0	17.0	excluding_flagged_bioprojects
+leave_out_PRJNA529587	T2_family_porin	meropenem	0	False	False	725	292	20	379	34	93.6	90.3	95.8	91.8	88.7	94.0	89.6	85.8	92.4	95.0	92.4	96.7	92.6	90.4	94.2	PRJNA529587	17.0	17.0	excluding_flagged_bioprojects
+leave_out_PRJNA635420	T0_gene_only	meropenem	0	False	False	725	288	51	365	21	85.0	80.8	88.4	94.6	91.8	96.4	93.2	89.8	95.5	87.7	84.2	90.6	90.1	87.7	92.0	PRJNA635420	17.0	17.0	excluding_flagged_bioprojects
+leave_out_PRJNA635420	T1_family	meropenem	0	False	False	725	288	51	365	21	85.0	80.8	88.4	94.6	91.8	96.4	93.2	89.8	95.5	87.7	84.2	90.6	90.1	87.7	92.0	PRJNA635420	17.0	17.0	excluding_flagged_bioprojects
+leave_out_PRJNA635420	T2_family_porin	meropenem	0	False	False	725	275	20	396	34	93.2	89.8	95.6	92.1	89.2	94.3	89.0	85.0	92.0	95.2	92.7	96.9	92.6	90.4	94.2	PRJNA635420	17.0	17.0	excluding_flagged_bioprojects
+leave_out_PRJNA1427745	T0_gene_only	meropenem	0	False	False	726	298	42	365	21	87.6	83.7	90.7	94.6	91.8	96.4	93.4	90.1	95.7	89.7	86.3	92.3	91.3	89.1	93.2	PRJNA1427745	16.0	16.0	excluding_flagged_bioprojects
+leave_out_PRJNA1427745	T1_family	meropenem	0	False	False	726	298	42	365	21	87.6	83.7	90.7	94.6	91.8	96.4	93.4	90.1	95.7	89.7	86.3	92.3	91.3	89.1	93.2	PRJNA1427745	16.0	16.0	excluding_flagged_bioprojects
+leave_out_PRJNA1427745	T2_family_porin	meropenem	0	False	False	726	285	17	390	34	94.4	91.2	96.5	92.0	89.0	94.2	89.3	85.5	92.3	95.8	93.4	97.4	93.0	90.9	94.6	PRJNA1427745	16.0	16.0	excluding_flagged_bioprojects
+leave_out_PRJNA1070647	T0_gene_only	meropenem	0	False	False	728	305	51	351	21	85.7	81.7	88.9	94.4	91.5	96.3	93.6	90.4	95.7	87.3	83.7	90.2	90.1	87.7	92.1	PRJNA1070647	14.0	14.0	excluding_flagged_bioprojects
+leave_out_PRJNA1070647	T1_family	meropenem	0	False	False	728	305	51	351	21	85.7	81.7	88.9	94.4	91.5	96.3	93.6	90.4	95.7	87.3	83.7	90.2	90.1	87.7	92.1	PRJNA1070647	14.0	14.0	excluding_flagged_bioprojects
+leave_out_PRJNA1070647	T2_family_porin	meropenem	0	False	False	728	292	20	382	34	93.6	90.3	95.8	91.8	88.8	94.1	89.6	85.8	92.4	95.0	92.4	96.8	92.6	90.4	94.3	PRJNA1070647	14.0	14.0	excluding_flagged_bioprojects
+leave_out_PRJNA523429	T0_gene_only	meropenem	0	False	False	729	296	51	362	20	85.3	81.2	88.6	94.8	92.1	96.6	93.7	90.4	95.9	87.7	84.1	90.5	90.3	87.9	92.2	PRJNA523429	13.0	13.0	excluding_flagged_bioprojects
+leave_out_PRJNA523429	T1_family	meropenem	0	False	False	729	296	51	362	20	85.3	81.2	88.6	94.8	92.1	96.6	93.7	90.4	95.9	87.7	84.1	90.5	90.3	87.9	92.2	PRJNA523429	13.0	13.0	excluding_flagged_bioprojects
+leave_out_PRJNA523429	T2_family_porin	meropenem	0	False	False	729	283	20	393	33	93.4	90.0	95.7	92.3	89.3	94.4	89.6	85.7	92.5	95.2	92.6	96.8	92.7	90.6	94.4	PRJNA523429	13.0	13.0	excluding_flagged_bioprojects
+leave_out_PRJNA288601	T0_gene_only	meropenem	0	False	False	729	293	50	365	21	85.4	81.3	88.8	94.6	91.8	96.4	93.3	90.0	95.6	88.0	84.5	90.7	90.3	87.9	92.2	PRJNA288601	13.0	13.0	excluding_flagged_bioprojects
+leave_out_PRJNA288601	T1_family	meropenem	0	False	False	729	293	50	365	21	85.4	81.3	88.8	94.6	91.8	96.4	93.3	90.0	95.6	88.0	84.5	90.7	90.3	87.9	92.2	PRJNA288601	13.0	13.0	excluding_flagged_bioprojects
+leave_out_PRJNA288601	T2_family_porin	meropenem	0	False	False	729	280	19	396	34	93.6	90.3	95.9	92.1	89.2	94.3	89.2	85.2	92.1	95.4	93.0	97.0	92.7	90.6	94.4	PRJNA288601	13.0	13.0	excluding_flagged_bioprojects
+leave_out_PRJNA523433	T0_gene_only	meropenem	0	False	False	731	300	51	359	21	85.5	81.4	88.8	94.5	91.7	96.4	93.5	90.2	95.7	87.6	84.0	90.4	90.2	87.8	92.1	PRJNA523433	11.0	11.0	excluding_flagged_bioprojects
+leave_out_PRJNA523433	T1_family	meropenem	0	False	False	731	300	51	359	21	85.5	81.4	88.8	94.5	91.7	96.4	93.5	90.2	95.7	87.6	84.0	90.4	90.2	87.8	92.1	PRJNA523433	11.0	11.0	excluding_flagged_bioprojects
+leave_out_PRJNA523433	T2_family_porin	meropenem	0	False	False	731	287	20	390	34	93.5	90.2	95.7	92.0	89.0	94.2	89.4	85.6	92.3	95.1	92.6	96.8	92.6	90.5	94.3	PRJNA523433	11.0	11.0	excluding_flagged_bioprojects
+leave_out_PRJNA835887	T0_gene_only	meropenem	0	False	False	731	305	51	354	21	85.7	81.7	88.9	94.4	91.6	96.3	93.6	90.4	95.7	87.4	83.8	90.3	90.2	87.8	92.1	PRJNA835887	11.0	11.0	excluding_flagged_bioprojects
+leave_out_PRJNA835887	T1_family	meropenem	0	False	False	731	305	51	354	21	85.7	81.7	88.9	94.4	91.6	96.3	93.6	90.4	95.7	87.4	83.8	90.3	90.2	87.8	92.1	PRJNA835887	11.0	11.0	excluding_flagged_bioprojects
+leave_out_PRJNA835887	T2_family_porin	meropenem	0	False	False	731	292	20	385	34	93.6	90.3	95.8	91.9	88.9	94.1	89.6	85.8	92.4	95.1	92.5	96.8	92.6	90.5	94.3	PRJNA835887	11.0	11.0	excluding_flagged_bioprojects

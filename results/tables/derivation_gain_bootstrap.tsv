@@ -1,0 +1,3 @@
+metric	rule_a	rule_b	value_a	value_b	difference	ci_lo	ci_hi	n_sequence_types	n_isolates	n_resamples	method
+accuracy	T0_gene_only	T2_family_porin	92.5	93.4	0.9	-0.2	2.4	366	3193	2000	sequence-type cluster bootstrap on grouped-CV predictions
+PPV	T0_gene_only	T2_family_porin	90.0	95.4	5.4	2.4	13.5	366	3193	2000	sequence-type cluster bootstrap on grouped-CV predictions
