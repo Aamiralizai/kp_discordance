@@ -38,8 +38,7 @@ The pipeline runs the regression tests first and aborts if any fail, empties
 ## Design rules
 
 
-0. **A downloaded assembly is not trustworthy until it is checked against the
-   deposited record.** This project learned it the hard way. 3,453 of 7,360
+0. **Downloaded assembly.** This project learned it the hard way. 3,453 of 7,360
    assemblies (46.9%) were truncated FTPS transfers: the download stopped
    mid-sequence and the client still exited 0. Each file was a parseable FASTA,
    so the structural check passed, and the deposited QualiBact metrics passed
