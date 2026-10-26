@@ -1,0 +1,6 @@
+drug	stratum	group	n	susceptible_as_published	pct_as_published	ci_lo_as_published	ci_hi_as_published	susceptible_strict	pct_strict	ci_lo_strict	ci_hi_strict	strict_definition
+meropenem	clsi_bmd	all carbapenemase-positive	1241	124	10.0	8.4	11.8	37	3.0	2.2	4.1	MIC <= 0.5 mg/L
+meropenem	clsi_bmd	KPC	883	36	4.1	3.0	5.6	4	0.5	0.2	1.2	MIC <= 0.5 mg/L
+meropenem	clsi_bmd	NDM	107	1	0.9	0.2	5.1	1	0.9	0.2	5.1	MIC <= 0.5 mg/L
+meropenem	clsi_bmd	OXA-48-like	181	65	35.9	29.3	43.1	22	12.2	8.2	17.7	MIC <= 0.5 mg/L
+meropenem	clsi_bmd	VIM	44	21	47.7	33.8	62.1	9	20.5	11.2	34.5	MIC <= 0.5 mg/L

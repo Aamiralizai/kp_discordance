@@ -1,0 +1,9 @@
+direction	qc_verdict	n	events	pct	ci_lo	ci_hi
+carbapenemase-positive susceptible	PASS	622	82	13.2	10.7	16.1
+carbapenemase-positive susceptible	WARN	619	42	6.8	5.1	9.0
+carbapenemase-positive susceptible	PASS+WARN	1241	124	10.0	8.4	11.8
+carbapenemase-negative resistant	PASS	1362	69	5.1	4.0	6.4
+carbapenemase-negative resistant	WARN	590	45	7.6	5.7	10.1
+carbapenemase-negative resistant	PASS+WARN	1952	114	5.8	4.9	7.0
+# carbapenemase-positive susceptible PASS-vs-WARN Fisher OR=0.48 p=2.02e-04
+# carbapenemase-negative resistant PASS-vs-WARN Fisher OR=1.55 p=3.50e-02

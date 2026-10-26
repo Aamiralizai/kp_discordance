@@ -1,0 +1,7 @@
+drug	n_records_retrieved	n_concentration_records	censoring	n	pct
+meropenem	7289	5675	left_censored	2784	49.0573
+meropenem	7289	5675	right_censored	1528	26.9251
+meropenem	7289	5675	exact	1363	24.0176
+imipenem	3925	3609	left_censored	1837	50.9005
+imipenem	3925	3609	right_censored	849	23.5245
+imipenem	3925	3609	exact	923	25.575

@@ -1,0 +1,21 @@
+QC-gated rerun — 12 October 2026
+Produced by applying scripts/05b_apply_qc_filter.py (QualiBact PASS+WARN kept;
+FAIL and genomes with no QC record dropped) then a clean bash run_all.sh.
+
+Genotype set: 7,328 typed -> 5,342 kept (dropped 281 QC-FAIL + 1,705 no QC record).
+
+Headline, pre-QC -> QC-gated (meropenem CLSI broth dilution primary):
+  carbapenemase-positive susceptible   9.0% -> 8.0%  (binary 3,409 -> 3,193)
+  imipenem CLSI                        6.5% -> 5.8%  (1,922 -> 1,793)
+  meropenem EUCAST                    15.6% -> 14.6% (3,278 -> 3,075)
+  imipenem EUCAST                      9.8% -> 9.0%  (1,883 -> 1,748)
+  meropenem deduplicated              23.1% -> 20.9% (719 -> 675)
+  meropenem unstratified               6.2% -> 5.4%  (5,169 -> 4,901)
+
+Primary predictive values: PPV 0.92, NPV 0.877, sensitivity 0.786, specificity 0.957.
+OXA-48-like porin Fisher OR 0.022; KPC 0.052; NDM 0/32 susceptible.
+
+External validation (step 19) was NOT run here; data/external/ncbi_kp_ast.tsv
+was not provided. Run 19b to include it.
+
+Reconcile the manuscript against results/manuscript_results.json ONLY.

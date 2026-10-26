@@ -1,0 +1,2 @@
+family	R_intact	S_intact	R_disrupted	S_disrupted	odds_ratio	p_value	q_BH
+KPC	81	5	483	4	0.1341614906832298	0.005240532722591648	0.005240532722591648

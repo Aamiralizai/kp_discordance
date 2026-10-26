@@ -1,0 +1,23 @@
+stratum	family	porin	n	n_resistant	resistance_pct	ci_lower	ci_upper	low_support
+family=KPC | porin=intact	KPC	intact	61	57	93.4	84.3	97.4	no
+family=KPC | porin=ompK35_only	KPC	ompK35_only	47	42	89.4	77.4	95.4	no
+family=KPC | porin=ompK36_disrupted	KPC	ompK36_disrupted	114	114	100.0	96.7	100.0	no
+family=KPC | porin=unknown	KPC	unknown	1	1	100.0	20.7	100.0	yes
+family=NDM | porin=intact	NDM	intact	61	57	93.4	84.3	97.4	no
+family=NDM | porin=ompK35_only	NDM	ompK35_only	34	33	97.1	85.1	99.5	no
+family=NDM | porin=ompK36_disrupted	NDM	ompK36_disrupted	13	13	100.0	77.2	100.0	no
+family=NDM | porin=unknown	NDM	unknown	11	11	100.0	74.1	100.0	no
+family=OXA-48-like | porin=intact	OXA-48-like	intact	42	11	26.2	15.3	41.1	no
+family=OXA-48-like | porin=ompK35_only	OXA-48-like	ompK35_only	10	7	70.0	39.7	89.2	no
+family=OXA-48-like | porin=ompK36_disrupted	OXA-48-like	ompK36_disrupted	41	39	95.1	83.9	98.7	no
+family=OXA-48-like | porin=unknown	OXA-48-like	unknown	5	5	100.0	56.6	100.0	yes
+family=VIM | porin=intact	VIM	intact	4	3	75.0	30.1	95.4	yes
+family=multiple | porin=intact	multiple	intact	13	13	100.0	77.2	100.0	no
+family=multiple | porin=ompK35_only	multiple	ompK35_only	3	3	100.0	43.9	100.0	yes
+family=multiple | porin=ompK36_disrupted	multiple	ompK36_disrupted	33	33	100.0	89.6	100.0	no
+family=multiple | porin=unknown	multiple	unknown	29	29	100.0	88.3	100.0	no
+family=none | porin=intact	none	intact	417	10	2.4	1.3	4.4	no
+family=none | porin=ompK35_only	none	ompK35_only	18	2	11.1	3.1	32.8	no
+family=none | porin=ompK36_disrupted	none	ompK36_disrupted	26	15	57.7	38.9	74.5	no
+family=none | porin=unknown	none	unknown	2	2	100.0	34.2	100.0	yes
+family=other | porin=intact	other	intact	1	0	0.0	0.0	79.3	yes

@@ -1,0 +1,4 @@
+family	n	n_susceptible	pct	ci_lo	ci_hi
+OXA-48-like	10	2	20.0	5.7	51.0
+KPC	60	7	11.7	5.8	22.2
+NDM	13	0	0.0	0.0	22.8

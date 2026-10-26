@@ -1,0 +1,4 @@
+cohort	n_calls_with_decidable_mic	mic_agrees_with_biosample	pct_agrees_with_biosample	mic_agrees_with_pathogen_detection	pct_agrees_with_pathogen_detection
+all external	1603	1590	99.2	1102	68.7
+inverted submission	488	488	100.0	0	0.0
+all other submissions	1115	1102	98.8	1102	98.8

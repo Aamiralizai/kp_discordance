@@ -1,0 +1,49 @@
+# Project configuration.
+#
+# This file previously carried settings for an abandoned multi-scale ODE and
+# pyseer GWAS project (an ODE `model:` block, a `gwas:` block, a KPC-3
+# reference enzyme, and genome counts from a superseded dataset). None of it
+# was read by any script in this pipeline, and the stale counts contradicted
+# the manuscript. It has been removed rather than left for a reader of the
+# deposit to trip over. That prototype code is retained, clearly labelled, in
+# archive/mechanistic_model_prototype/ in the repository history.
+#
+# Numbers that enter the manuscript are NOT configured here. They are read from
+# results/manuscript_results.json and the generated tables.
+project: kp-discordance
+
+anchor:
+  organism: Klebsiella pneumoniae
+  mechanism: carbapenem resistance
+  reference_drug: meropenem          # primary analysis
+  validation_drug: imipenem          # cross-drug comparison
+  exploratory_drugs:                 # too sparse to anchor on; not analysed
+    - ceftazidime/avibactam
+    - imipenem/relebactam
+
+paths:
+  genomes: data/raw/genomes
+  phenotypes: data/raw/phenotypes
+  interim: data/interim
+  processed: data/processed
+  external: data/external
+  results: results
+
+# Breakpoints live in config/breakpoints.csv and assembly QC thresholds in
+# config/qc_thresholds.csv. Both are gated on a verified=YES flag and the
+# analysis refuses to run on an unverified row.
+classification:
+  handle_censored: true              # '>=64' / '<0.5' need censoring-aware logic
+  standard: CLSI                     # primary interpretive standard
+  method: Broth dilution             # primary testing method
+
+quality_control:
+  scheme: qualibact-v1.0             # see config/qc_thresholds.csv
+  lenient_comparator: enterobase-v2.3
+
+external_validation:
+  source: NCBI Pathogen Detection
+  organism_group: Klebsiella
+  # Pin the snapshot: NCBI replaces "latest" continuously, and without the
+  # identifier the validation set cannot be reconstructed.
+  snapshot: PDG000000012.2539

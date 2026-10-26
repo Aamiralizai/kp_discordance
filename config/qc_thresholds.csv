@@ -1,0 +1,50 @@
+# ASSEMBLY QUALITY CONTROL THRESHOLDS
+#
+# Species-specific assembly-quality criteria, stored here for the same reason
+# config/breakpoints.csv stores breakpoints: a threshold that lives inside a
+# script cannot be audited, and a reviewer cannot tell which version produced a
+# given result. The QC step REFUSES to run unless the scheme it is asked for is
+# present here with verified=YES.
+#
+# Two schemes are shipped.
+#
+#   qualibact-v1.0   Primary. Species-specific bounds derived by the QualiBact
+#                    project from 67,586 Klebsiella pneumoniae assemblies in
+#                    AllTheBacteria (2024-08) plus 3,288 RefSeq complete
+#                    genomes, with species assignment by Sylph v0.5.1 against
+#                    GTDB r214. FAIL bounds are the 0.5th/99.5th percentiles of
+#                    the Isolation-Forest-filtered distribution (scikit-learn
+#                    1.6.1, seven features); WARN bounds are the 2.5th/97.5th.
+#                    Genome size and GC additionally respect wider
+#                    RefSeq-derived limits. No expert pins apply to
+#                    K. pneumoniae, so these are raw engine output.
+#                    Retrieved 2026-10-01 from
+#                    https://qualibact.org/Klebsiella/Klebsiella_pneumoniae/
+#                    and the machine-readable manifest in
+#                    https://github.com/happykhan/qualibact
+#                    (public/static/species/Klebsiella_pneumoniae/
+#                     qualibact-v1.0/manifest.json, generated 2026-05-28).
+#
+#   enterobase-v2.3  Secondary, deliberately lenient. The long-standing
+#                    EnteroBase assembly-acceptance criteria. Included so that
+#                    the effect of QC stringency on every downstream estimate
+#                    can be reported, rather than asserted.
+#
+# A metric with an empty bound is not evaluated in that direction. Metrics
+# requiring tools beyond the assembly FASTA are marked in needs_tool: the QC
+# script evaluates them only when the corresponding input is supplied, and
+# records every metric it could not evaluate in its output.
+#
+# direction: lower = values BELOW the bound are bad; upper = values ABOVE are bad.
+scheme,metric,fail_lower,warn_lower,warn_upper,fail_upper,needs_tool,verified,source
+qualibact-v1.0,genome_size_bp,4900000,5200000,6000000,6400000,,YES,QualiBact v1.0 Klebsiella_pneumoniae manifest (2026-05-28)
+qualibact-v1.0,gc_content_pct,55.89,56.60,57.52,58.02,,YES,QualiBact v1.0 Klebsiella_pneumoniae manifest (2026-05-28)
+qualibact-v1.0,n50_bp,58000,97000,,,,YES,QualiBact v1.0 Klebsiella_pneumoniae manifest (2026-05-28)
+qualibact-v1.0,n_contigs,,,270,350,,YES,QualiBact v1.0 Klebsiella_pneumoniae manifest (2026-05-28)
+qualibact-v1.0,longest_contig_bp,,195153,1526463,,,YES,QualiBact v1.0 Klebsiella_pneumoniae manifest (2026-05-28); warn-only, no fail bound
+qualibact-v1.0,completeness_pct,95.0,100.0,,,checkm2,YES,QualiBact v1.0 Klebsiella_pneumoniae manifest (2026-05-28); CheckM2 required
+qualibact-v1.0,contamination_pct,,,2.0,5.0,checkm2,YES,QualiBact v1.0 Klebsiella_pneumoniae manifest (2026-05-28); CheckM2 required
+qualibact-v1.0,n_cds,4800,4800,5700,6500,annotation,YES,QualiBact v1.0 Klebsiella_pneumoniae manifest (2026-05-28); gene annotation required
+enterobase-v2.3,genome_size_bp,4300000,,,7300000,,YES,EnteroBase v2.3 assembly criteria via QualiBact manifest
+enterobase-v2.3,n50_bp,20000,,,,,YES,EnteroBase v2.3 assembly criteria via QualiBact manifest
+enterobase-v2.3,n_contigs,,,,800,,YES,EnteroBase v2.3 assembly criteria via QualiBact manifest

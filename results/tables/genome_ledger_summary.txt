@@ -1,0 +1,29 @@
+genome ledger — where every genome left the study
+
+  rows in the ledger                        7,363
+  re-retrieved after the integrity audit    3,493
+    of those, in the complex genotype table 3,491
+    assigned to another species group           2
+    unaccounted                                 0
+  typed, in the K. pneumoniae complex        7,333
+  species retained (complex)                7,245
+  retained after assembly QC                5,342
+  in the primary meropenem binary set       3,193
+
+  where the rest left:
+    no CLSI broth-dilution meropenem record        1,995
+    no QC metrics available                        1,622
+    failed assembly QC                               281
+    linked but not binary-classifiable               154
+    species not in the K. pneumoniae complex          88
+    no Kleborate call                                 25
+    malformed Kleborate row, no genome identifier       3
+    assigned to Escherichia, outside the complex       1
+    assigned to K. oxytoca complex, outside the complex       1
+
+  integrity of the genotyped file:
+    COMPLETE                                       6,555
+    UNVERIFIED                                       805
+    NOT_RETRIEVED                                      3
+
+  included genomes whose file is not verified COMPLETE: 0

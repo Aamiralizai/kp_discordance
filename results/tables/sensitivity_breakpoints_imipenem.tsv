@@ -1,0 +1,3 @@
+standard	S	R	n_binary	n_intermediate	n_ambiguous	gene_pos_n	pct_false_susceptible	fs_lo	fs_hi	gene_neg_n	pct_false_resistant	fr_lo	fr_hi
+CLSI	1.0	4.0	1793	35	0	720	5.3	3.9	7.2	1073	3.4	2.4	4.6
+EUCAST	2.0	4.0	1748	60	20	670	8.7	6.8	11.0	1078	2.4	1.7	3.5

@@ -1,0 +1,298 @@
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.13046", "short_orfs_screened": 1344, "carbapenemase_like": [{"aa_length": 111, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.13093", "short_orfs_screened": 1459, "carbapenemase_like": [{"aa_length": 111, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.13117", "short_orfs_screened": 1382, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.13123", "short_orfs_screened": 1306, "carbapenemase_like": [{"aa_length": 173, "ref_symbol": "blaDHT2-1", "ref_aa_length": 303, "identity": 0.4068, "ref_coverage": 0.1947}, {"aa_length": 116, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}, {"aa_length": 78, "ref_symbol": "blaRSA2-1", "ref_aa_length": 311, "identity": 0.3889, "ref_coverage": 0.2412}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.13198", "short_orfs_screened": 1503, "carbapenemase_like": [{"aa_length": 111, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.13199", "short_orfs_screened": 1484, "carbapenemase_like": [{"aa_length": 111, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.13287", "short_orfs_screened": 1358, "carbapenemase_like": [{"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}, {"aa_length": 116, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.13323", "short_orfs_screened": 1417, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.13342", "short_orfs_screened": 1482, "carbapenemase_like": [{"aa_length": 116, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.13352", "short_orfs_screened": 1424, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.13551", "short_orfs_screened": 1351, "carbapenemase_like": [{"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}, {"aa_length": 116, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.13601", "short_orfs_screened": 1329, "carbapenemase_like": [{"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}, {"aa_length": 116, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.13614", "short_orfs_screened": 1356, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.13639", "short_orfs_screened": 1294, "carbapenemase_like": [{"aa_length": 111, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.13752", "short_orfs_screened": 1416, "carbapenemase_like": [{"aa_length": 173, "ref_symbol": "blaDHT2-1", "ref_aa_length": 303, "identity": 0.4068, "ref_coverage": 0.1947}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.13755", "short_orfs_screened": 1462, "carbapenemase_like": [{"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}, {"aa_length": 111, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.13787", "short_orfs_screened": 1490, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.13795", "short_orfs_screened": 1717, "carbapenemase_like": [{"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}, {"aa_length": 116, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.13840", "short_orfs_screened": 1445, "carbapenemase_like": [{"aa_length": 116, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.14146", "short_orfs_screened": 1448, "carbapenemase_like": [{"aa_length": 111, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.14154", "short_orfs_screened": 1415, "carbapenemase_like": [{"aa_length": 116, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.14175", "short_orfs_screened": 1434, "carbapenemase_like": [{"aa_length": 116, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.14178", "short_orfs_screened": 1438, "carbapenemase_like": [{"aa_length": 116, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.14210", "short_orfs_screened": 1335, "carbapenemase_like": [{"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}, {"aa_length": 116, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.14229", "short_orfs_screened": 1336, "carbapenemase_like": [{"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}, {"aa_length": 111, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.14253", "short_orfs_screened": 1359, "carbapenemase_like": [{"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}, {"aa_length": 111, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.14277", "short_orfs_screened": 1415, "carbapenemase_like": [{"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}, {"aa_length": 116, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.14291", "short_orfs_screened": 1311, "carbapenemase_like": [{"aa_length": 111, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.14307", "short_orfs_screened": 1438, "carbapenemase_like": [{"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}, {"aa_length": 116, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.14320", "short_orfs_screened": 1425, "carbapenemase_like": [{"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}, {"aa_length": 111, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.14435", "short_orfs_screened": 1358, "carbapenemase_like": [{"aa_length": 116, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.14444", "short_orfs_screened": 1445, "carbapenemase_like": [{"aa_length": 116, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.14503", "short_orfs_screened": 1411, "carbapenemase_like": [{"aa_length": 111, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.20456", "short_orfs_screened": 1475, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.20474", "short_orfs_screened": 1396, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.20501", "short_orfs_screened": 1375, "carbapenemase_like": [{"aa_length": 112, "ref_symbol": "blaOXA-58", "ref_aa_length": 281, "identity": 1.0, "ref_coverage": 0.3986}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.20670", "short_orfs_screened": 1333, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.20682", "short_orfs_screened": 1748, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.20742", "short_orfs_screened": 1410, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.20757", "short_orfs_screened": 1408, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.20797", "short_orfs_screened": 1599, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.20802", "short_orfs_screened": 1598, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.20821", "short_orfs_screened": 1425, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.20822", "short_orfs_screened": 1297, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.20896", "short_orfs_screened": 1551, "carbapenemase_like": [{"aa_length": 120, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4261, "ref_coverage": 0.4566}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.20926", "short_orfs_screened": 1614, "carbapenemase_like": [{"aa_length": 90, "ref_symbol": "blaOXA-1089", "ref_aa_length": 290, "identity": 0.3816, "ref_coverage": 0.2655}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.20933", "short_orfs_screened": 1640, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.20938", "short_orfs_screened": 1539, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.20974", "short_orfs_screened": 1479, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.20976", "short_orfs_screened": 1447, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21070", "short_orfs_screened": 1449, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21105", "short_orfs_screened": 1380, "carbapenemase_like": [{"aa_length": 92, "ref_symbol": "blaPAD-1", "ref_aa_length": 298, "identity": 0.5179, "ref_coverage": 0.1913}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21114", "short_orfs_screened": 1348, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21124", "short_orfs_screened": 1519, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21127", "short_orfs_screened": 1501, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21132", "short_orfs_screened": 1514, "carbapenemase_like": [{"aa_length": 84, "ref_symbol": "blaMAB", "ref_aa_length": 290, "identity": 0.3333, "ref_coverage": 0.2207}, {"aa_length": 84, "ref_symbol": "blaRSA2-1", "ref_aa_length": 311, "identity": 0.3205, "ref_coverage": 0.2508}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21133", "short_orfs_screened": 1475, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21135", "short_orfs_screened": 1515, "carbapenemase_like": [{"aa_length": 111, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 125, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4123, "ref_coverage": 0.4415}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21151", "short_orfs_screened": 1352, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21153", "short_orfs_screened": 1477, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21171", "short_orfs_screened": 1489, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21178", "short_orfs_screened": 1436, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21180", "short_orfs_screened": 1420, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21218", "short_orfs_screened": 1336, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21229", "short_orfs_screened": 1524, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21236", "short_orfs_screened": 1433, "carbapenemase_like": [{"aa_length": 111, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 125, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4123, "ref_coverage": 0.4415}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21241", "short_orfs_screened": 1424, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21242", "short_orfs_screened": 1343, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21254", "short_orfs_screened": 1434, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21256", "short_orfs_screened": 1420, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21269", "short_orfs_screened": 1416, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21351", "short_orfs_screened": 1352, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21443", "short_orfs_screened": 1554, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21479", "short_orfs_screened": 1684, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21490", "short_orfs_screened": 1512, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21492", "short_orfs_screened": 1395, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21493", "short_orfs_screened": 1333, "carbapenemase_like": [{"aa_length": 173, "ref_symbol": "blaDHT2-1", "ref_aa_length": 303, "identity": 0.4068, "ref_coverage": 0.1947}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21552", "short_orfs_screened": 1376, "carbapenemase_like": [{"aa_length": 172, "ref_symbol": "blaKPC-16", "ref_aa_length": 294, "identity": 0.6163, "ref_coverage": 0.5884}, {"aa_length": 119, "ref_symbol": "blaKPC-7", "ref_aa_length": 294, "identity": 0.4078, "ref_coverage": 0.3503}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21560", "short_orfs_screened": 1458, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21569", "short_orfs_screened": 1469, "carbapenemase_like": [{"aa_length": 115, "ref_symbol": "blaPAD-1", "ref_aa_length": 298, "identity": 0.525, "ref_coverage": 0.2752}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21570", "short_orfs_screened": 1458, "carbapenemase_like": [{"aa_length": 115, "ref_symbol": "blaPAD-1", "ref_aa_length": 298, "identity": 0.525, "ref_coverage": 0.2752}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21574", "short_orfs_screened": 1463, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21577", "short_orfs_screened": 1500, "carbapenemase_like": [{"aa_length": 160, "ref_symbol": "blaRSA2-1", "ref_aa_length": 311, "identity": 0.4902, "ref_coverage": 0.5016}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21612", "short_orfs_screened": 1474, "carbapenemase_like": [{"aa_length": 125, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4123, "ref_coverage": 0.4415}, {"aa_length": 111, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21620", "short_orfs_screened": 1519, "carbapenemase_like": [{"aa_length": 125, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4123, "ref_coverage": 0.4415}, {"aa_length": 111, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21625", "short_orfs_screened": 1282, "carbapenemase_like": [{"aa_length": 81, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.3788, "ref_coverage": 0.2604}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21646", "short_orfs_screened": 1556, "carbapenemase_like": [{"aa_length": 125, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4123, "ref_coverage": 0.4415}, {"aa_length": 111, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21663", "short_orfs_screened": 1380, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21722", "short_orfs_screened": 1385, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21802", "short_orfs_screened": 1601, "carbapenemase_like": [{"aa_length": 116, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 94, "ref_symbol": "blaOXA-1041", "ref_aa_length": 265, "identity": 0.4066, "ref_coverage": 0.3434}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21879", "short_orfs_screened": 1276, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21936", "short_orfs_screened": 1397, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21943", "short_orfs_screened": 1333, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21944", "short_orfs_screened": 1518, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21949", "short_orfs_screened": 1318, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21955", "short_orfs_screened": 1326, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21958", "short_orfs_screened": 1439, "carbapenemase_like": [{"aa_length": 101, "ref_symbol": "blaKPC-285", "ref_aa_length": 284, "identity": 1.0, "ref_coverage": 0.3556}, {"aa_length": 114, "ref_symbol": "blaRSA2-1", "ref_aa_length": 311, "identity": 0.4673, "ref_coverage": 0.3537}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21963", "short_orfs_screened": 1478, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21964", "short_orfs_screened": 1575, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21967", "short_orfs_screened": 1400, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21970", "short_orfs_screened": 1354, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21973", "short_orfs_screened": 1647, "carbapenemase_like": [{"aa_length": 143, "ref_symbol": "blaVIM-1", "ref_aa_length": 267, "identity": 1.0, "ref_coverage": 0.5356}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21982", "short_orfs_screened": 1245, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21985", "short_orfs_screened": 1389, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21989", "short_orfs_screened": 1325, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21991", "short_orfs_screened": 1327, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21993", "short_orfs_screened": 1380, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.21996", "short_orfs_screened": 1356, "carbapenemase_like": [{"aa_length": 122, "ref_symbol": "blaRSA2-1", "ref_aa_length": 311, "identity": 0.4483, "ref_coverage": 0.3826}, {"aa_length": 157, "ref_symbol": "blaPAD-1", "ref_aa_length": 298, "identity": 0.563, "ref_coverage": 0.406}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.22001", "short_orfs_screened": 1455, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.22003", "short_orfs_screened": 1320, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.22004", "short_orfs_screened": 1363, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.22019", "short_orfs_screened": 1396, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.22020", "short_orfs_screened": 1386, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.22024", "short_orfs_screened": 1390, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.22061", "short_orfs_screened": 1427, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.22067", "short_orfs_screened": 1388, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.22069", "short_orfs_screened": 1487, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.22073", "short_orfs_screened": 1383, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.22075", "short_orfs_screened": 1385, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.22080", "short_orfs_screened": 1418, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.22086", "short_orfs_screened": 1348, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "573.24263", "short_orfs_screened": 1387, "carbapenemase_like": []}
+{"cohort": "B_carbPos_susceptible", "genome_id": "72407.168", "short_orfs_screened": 1472, "carbapenemase_like": [{"aa_length": 116, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}]}
+{"cohort": "B_carbPos_susceptible", "genome_id": "72407.519", "short_orfs_screened": 1352, "carbapenemase_like": [{"aa_length": 168, "ref_symbol": "blaOXA-233", "ref_aa_length": 267, "identity": 0.994, "ref_coverage": 0.6292}]}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.12783", "short_orfs_screened": 1510, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.13063", "short_orfs_screened": 1262, "carbapenemase_like": [{"aa_length": 116, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}]}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.13160", "short_orfs_screened": 1320, "carbapenemase_like": [{"aa_length": 160, "ref_symbol": "blaRSA2-1", "ref_aa_length": 311, "identity": 0.4902, "ref_coverage": 0.5016}]}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.13182", "short_orfs_screened": 1431, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.13183", "short_orfs_screened": 1310, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.13288", "short_orfs_screened": 1325, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.13364", "short_orfs_screened": 1283, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.13441", "short_orfs_screened": 1300, "carbapenemase_like": [{"aa_length": 136, "ref_symbol": "blaPAD-1", "ref_aa_length": 298, "identity": 0.56, "ref_coverage": 0.3423}]}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.13447", "short_orfs_screened": 1405, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.13492", "short_orfs_screened": 1367, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.13544", "short_orfs_screened": 1303, "carbapenemase_like": [{"aa_length": 160, "ref_symbol": "blaRSA2-1", "ref_aa_length": 311, "identity": 0.4902, "ref_coverage": 0.5016}]}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.13552", "short_orfs_screened": 1317, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.13564", "short_orfs_screened": 1356, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.13626", "short_orfs_screened": 1347, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.13796", "short_orfs_screened": 1328, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.13799", "short_orfs_screened": 1459, "carbapenemase_like": [{"aa_length": 159, "ref_symbol": "blaKPC-2", "ref_aa_length": 294, "identity": 0.9494, "ref_coverage": 0.5374}]}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.13866", "short_orfs_screened": 1236, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.13951", "short_orfs_screened": 1356, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.14002", "short_orfs_screened": 1360, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.14066", "short_orfs_screened": 1413, "carbapenemase_like": [{"aa_length": 116, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}]}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.14179", "short_orfs_screened": 1368, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.14212", "short_orfs_screened": 1335, "carbapenemase_like": [{"aa_length": 116, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}]}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.14223", "short_orfs_screened": 1645, "carbapenemase_like": [{"aa_length": 174, "ref_symbol": "blaKPC-211", "ref_aa_length": 290, "identity": 1.0, "ref_coverage": 0.6}, {"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}, {"aa_length": 116, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 121, "ref_symbol": "blaKPC-241", "ref_aa_length": 291, "identity": 1.0, "ref_coverage": 0.4158}]}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.14252", "short_orfs_screened": 1289, "carbapenemase_like": [{"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}, {"aa_length": 116, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}]}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.14276", "short_orfs_screened": 1325, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.14286", "short_orfs_screened": 1322, "carbapenemase_like": [{"aa_length": 143, "ref_symbol": "blaPAD-1", "ref_aa_length": 298, "identity": 0.5607, "ref_coverage": 0.3658}]}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.14294", "short_orfs_screened": 1355, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.14303", "short_orfs_screened": 1315, "carbapenemase_like": [{"aa_length": 111, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}]}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.14308", "short_orfs_screened": 1348, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.14310", "short_orfs_screened": 1316, "carbapenemase_like": [{"aa_length": 160, "ref_symbol": "blaRSA2-1", "ref_aa_length": 311, "identity": 0.4902, "ref_coverage": 0.5016}]}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.14417", "short_orfs_screened": 1323, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.14469", "short_orfs_screened": 1276, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.14506", "short_orfs_screened": 1344, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.15044", "short_orfs_screened": 1494, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.17908", "short_orfs_screened": 1371, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.18088", "short_orfs_screened": 1738, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.20062", "short_orfs_screened": 1577, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.20064", "short_orfs_screened": 1584, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.20673", "short_orfs_screened": 1351, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.20711", "short_orfs_screened": 1353, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.20721", "short_orfs_screened": 1209, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.20722", "short_orfs_screened": 1240, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.20728", "short_orfs_screened": 1509, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.20783", "short_orfs_screened": 1499, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.20947", "short_orfs_screened": 1587, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.20956", "short_orfs_screened": 1589, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.20970", "short_orfs_screened": 1418, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.20979", "short_orfs_screened": 1326, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.20983", "short_orfs_screened": 1331, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.20985", "short_orfs_screened": 1395, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.20995", "short_orfs_screened": 1335, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21003", "short_orfs_screened": 1322, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21084", "short_orfs_screened": 1496, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21138", "short_orfs_screened": 1679, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21206", "short_orfs_screened": 1332, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21217", "short_orfs_screened": 1430, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21299", "short_orfs_screened": 1413, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21307", "short_orfs_screened": 1346, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21327", "short_orfs_screened": 1417, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21338", "short_orfs_screened": 1398, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21369", "short_orfs_screened": 1401, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21387", "short_orfs_screened": 1376, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21391", "short_orfs_screened": 1424, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21393", "short_orfs_screened": 1347, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21395", "short_orfs_screened": 1407, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21405", "short_orfs_screened": 1380, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21406", "short_orfs_screened": 1326, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21415", "short_orfs_screened": 1374, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21438", "short_orfs_screened": 1420, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21450", "short_orfs_screened": 1415, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21453", "short_orfs_screened": 1464, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21454", "short_orfs_screened": 1303, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21542", "short_orfs_screened": 1463, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21551", "short_orfs_screened": 1266, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21562", "short_orfs_screened": 1316, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21566", "short_orfs_screened": 1317, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21572", "short_orfs_screened": 1475, "carbapenemase_like": [{"aa_length": 74, "ref_symbol": "blaNDM-1", "ref_aa_length": 271, "identity": 1.0, "ref_coverage": 0.2731}]}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21622", "short_orfs_screened": 1206, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21638", "short_orfs_screened": 1275, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21662", "short_orfs_screened": 1283, "carbapenemase_like": [{"aa_length": 173, "ref_symbol": "blaDHT2-1", "ref_aa_length": 303, "identity": 0.4068, "ref_coverage": 0.1947}]}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21677", "short_orfs_screened": 1386, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21678", "short_orfs_screened": 1412, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21691", "short_orfs_screened": 1572, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21859", "short_orfs_screened": 1298, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21876", "short_orfs_screened": 1477, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.21948", "short_orfs_screened": 1435, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.22017", "short_orfs_screened": 1462, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.22088", "short_orfs_screened": 1268, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.22090", "short_orfs_screened": 1277, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.24245", "short_orfs_screened": 1251, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.24264", "short_orfs_screened": 1316, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.24267", "short_orfs_screened": 1536, "carbapenemase_like": [{"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}, {"aa_length": 111, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}]}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.24280", "short_orfs_screened": 1538, "carbapenemase_like": [{"aa_length": 78, "ref_symbol": "blaRSA2-1", "ref_aa_length": 311, "identity": 0.3889, "ref_coverage": 0.2412}]}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.24288", "short_orfs_screened": 1320, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.24289", "short_orfs_screened": 1336, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.24291", "short_orfs_screened": 1389, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.24303", "short_orfs_screened": 1345, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.24307", "short_orfs_screened": 1593, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.24309", "short_orfs_screened": 1417, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.24314", "short_orfs_screened": 1511, "carbapenemase_like": [{"aa_length": 83, "ref_symbol": "blaPAD-1", "ref_aa_length": 298, "identity": 0.6867, "ref_coverage": 0.2819}, {"aa_length": 111, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 125, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4123, "ref_coverage": 0.4415}, {"aa_length": 85, "ref_symbol": "blaPAD-1", "ref_aa_length": 298, "identity": 0.6824, "ref_coverage": 0.2886}, {"aa_length": 94, "ref_symbol": "blaRSA2-1", "ref_aa_length": 311, "identity": 0.3256, "ref_coverage": 0.2765}]}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.24376", "short_orfs_screened": 1371, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.24407", "short_orfs_screened": 1343, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.24411", "short_orfs_screened": 1418, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.24431", "short_orfs_screened": 1454, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.24449", "short_orfs_screened": 1318, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "573.7033", "short_orfs_screened": 1413, "carbapenemase_like": [{"aa_length": 111, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}]}
+{"cohort": "A_carbNeg_resistant", "genome_id": "72407.217", "short_orfs_screened": 1495, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "72407.265", "short_orfs_screened": 1389, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "72407.513", "short_orfs_screened": 1217, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "72407.514", "short_orfs_screened": 1412, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "72407.541", "short_orfs_screened": 1528, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "72407.559", "short_orfs_screened": 1574, "carbapenemase_like": [{"aa_length": 125, "ref_symbol": "blaCMH-3", "ref_aa_length": 382, "identity": 0.776, "ref_coverage": 0.3272}]}
+{"cohort": "A_carbNeg_resistant", "genome_id": "72407.578", "short_orfs_screened": 1425, "carbapenemase_like": []}
+{"cohort": "A_carbNeg_resistant", "genome_id": "72407.591", "short_orfs_screened": 1512, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.12894", "short_orfs_screened": 1376, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.12912", "short_orfs_screened": 1488, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.12925", "short_orfs_screened": 1237, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.12952", "short_orfs_screened": 1325, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.13000", "short_orfs_screened": 1386, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.13031", "short_orfs_screened": 1293, "carbapenemase_like": [{"aa_length": 138, "ref_symbol": "blaORR-1", "ref_aa_length": 256, "identity": 0.3084, "ref_coverage": 0.4258}]}
+{"cohort": "D_control_sample", "genome_id": "573.13051", "short_orfs_screened": 1378, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.13066", "short_orfs_screened": 1387, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.13069", "short_orfs_screened": 1542, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.13086", "short_orfs_screened": 1417, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.13265", "short_orfs_screened": 1319, "carbapenemase_like": [{"aa_length": 160, "ref_symbol": "blaRSA2-1", "ref_aa_length": 311, "identity": 0.4902, "ref_coverage": 0.5016}]}
+{"cohort": "D_control_sample", "genome_id": "573.13314", "short_orfs_screened": 1297, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.13371", "short_orfs_screened": 1468, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.13445", "short_orfs_screened": 1343, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.13509", "short_orfs_screened": 1318, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.13538", "short_orfs_screened": 1367, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.13557", "short_orfs_screened": 1318, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.13653", "short_orfs_screened": 1351, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.13779", "short_orfs_screened": 1376, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.13803", "short_orfs_screened": 1323, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.13832", "short_orfs_screened": 1357, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.13893", "short_orfs_screened": 1449, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.13999", "short_orfs_screened": 1407, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.14016", "short_orfs_screened": 1307, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.14018", "short_orfs_screened": 1329, "carbapenemase_like": [{"aa_length": 136, "ref_symbol": "blaPAD-1", "ref_aa_length": 298, "identity": 0.56, "ref_coverage": 0.3423}]}
+{"cohort": "D_control_sample", "genome_id": "573.14027", "short_orfs_screened": 1394, "carbapenemase_like": [{"aa_length": 173, "ref_symbol": "blaDHT2-1", "ref_aa_length": 303, "identity": 0.4068, "ref_coverage": 0.1947}]}
+{"cohort": "D_control_sample", "genome_id": "573.14042", "short_orfs_screened": 1308, "carbapenemase_like": [{"aa_length": 160, "ref_symbol": "blaRSA2-1", "ref_aa_length": 311, "identity": 0.4902, "ref_coverage": 0.5016}]}
+{"cohort": "D_control_sample", "genome_id": "573.14083", "short_orfs_screened": 1324, "carbapenemase_like": [{"aa_length": 141, "ref_symbol": "blaPAD-1", "ref_aa_length": 298, "identity": 0.5524, "ref_coverage": 0.3591}]}
+{"cohort": "D_control_sample", "genome_id": "573.14130", "short_orfs_screened": 1313, "carbapenemase_like": [{"aa_length": 160, "ref_symbol": "blaRSA2-1", "ref_aa_length": 311, "identity": 0.4902, "ref_coverage": 0.5016}]}
+{"cohort": "D_control_sample", "genome_id": "573.14143", "short_orfs_screened": 1323, "carbapenemase_like": [{"aa_length": 136, "ref_symbol": "blaPAD-1", "ref_aa_length": 298, "identity": 0.56, "ref_coverage": 0.3423}]}
+{"cohort": "D_control_sample", "genome_id": "573.14180", "short_orfs_screened": 1381, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.14367", "short_orfs_screened": 1367, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.14451", "short_orfs_screened": 1428, "carbapenemase_like": [{"aa_length": 116, "ref_symbol": "blaOXA-917", "ref_aa_length": 265, "identity": 0.3737, "ref_coverage": 0.3887}, {"aa_length": 119, "ref_symbol": "blaOXA-427", "ref_aa_length": 265, "identity": 0.4019, "ref_coverage": 0.4151}]}
+{"cohort": "D_control_sample", "genome_id": "573.20676", "short_orfs_screened": 1537, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.20684", "short_orfs_screened": 1293, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.20792", "short_orfs_screened": 1432, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.20844", "short_orfs_screened": 1452, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.20996", "short_orfs_screened": 1461, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.21087", "short_orfs_screened": 1463, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.21200", "short_orfs_screened": 1251, "carbapenemase_like": [{"aa_length": 176, "ref_symbol": "blaNWM-1", "ref_aa_length": 311, "identity": 0.4322, "ref_coverage": 0.4598}]}
+{"cohort": "D_control_sample", "genome_id": "573.21278", "short_orfs_screened": 1254, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.21289", "short_orfs_screened": 1235, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.21367", "short_orfs_screened": 1398, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.21376", "short_orfs_screened": 1359, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.21434", "short_orfs_screened": 1219, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.21523", "short_orfs_screened": 1075, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.21529", "short_orfs_screened": 1221, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.21558", "short_orfs_screened": 1154, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.21657", "short_orfs_screened": 1398, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.21727", "short_orfs_screened": 1343, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.21848", "short_orfs_screened": 1320, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.22037", "short_orfs_screened": 1430, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.22059", "short_orfs_screened": 1361, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.22072", "short_orfs_screened": 1427, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "573.24400", "short_orfs_screened": 1287, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "72407.500", "short_orfs_screened": 1296, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "72407.516", "short_orfs_screened": 1407, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "72407.558", "short_orfs_screened": 1372, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "72407.593", "short_orfs_screened": 1347, "carbapenemase_like": []}
+{"cohort": "D_control_sample", "genome_id": "72407.594", "short_orfs_screened": 1272, "carbapenemase_like": []}

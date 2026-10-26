@@ -1,0 +1,1546 @@
+kp-multiscale-amr — clean rebuild
+started Tue Oct 13 13:56:30 CST 2026  |  log: results/logs/run_20261013_135630.log
+python Python 3.13.16  |  env <none>
+
+[1m== 0. regression tests (must pass before anything is generated) ==[0m
+EUCAST meropenem  S <= 2, R > 8
+  PASS  >8  -> R: 'R'
+  PASS  >=8 -> ambiguous: 'ambiguous'
+  PASS  exact 8 -> I: 'I'
+  PASS  exact 16 -> R: 'R'
+  PASS  <=2 -> S: 'S'
+  PASS  <=4 -> ambiguous: 'ambiguous'
+
+EUCAST imipenem  S <= 2, R > 4
+  PASS  >4  -> R: 'R'
+  PASS  exact 4 -> I: 'I'
+  PASS  exact 8 -> R: 'R'
+
+CLSI  S <= 1, R >= 4  (comparator differs from EUCAST)
+  PASS  exact 4 -> R: 'R'
+  PASS  exact 2 -> I: 'I'
+  PASS  <=1 -> S: 'S'
+
+interval intersection
+  PASS  <=1 & exact 4 -> contradictory: None
+  PASS  <=8 & >=2 -> [2,8]: (2.0, 8.0, True, True)
+
+boolean round-trip through TSV (dtype=str)
+  PASS  raw string is truthy (the bug): True
+  PASS  after conversion: False
+
+porin HGVS parsing
+  PASS  loop-3 GD: 'ompK36_loop3'
+  PASS  loop-3 TD: 'ompK36_loop3'
+  PASS  non-loop-3 insertion: 'ompK36_other_variant'
+  PASS  c.25C>T is reduced expression, NOT a stop: 'ompK36_reduced_expression'
+  PASS  frameshift: 'ompK36_loss'
+  PASS  OmpK35 only: 'ompK35_loss'
+  PASS  none: 'none'
+
+carbapenemase family assignment
+  PASS  OXA-162 in OXA-48-like: 'OXA-48-like'
+  PASS  OXA-181 in OXA-48-like: 'OXA-48-like'
+  PASS  OXA-23 not folded in: 'OXA-other'
+  PASS  combined label: 'KPC+NDM'
+
+all tests passed
+  ok   a skipped required stage exits 3
+  ok   ALLOW_SKIPPED=1 exits 0 for a partial run
+  ok   a run with nothing skipped exits 0
+  ok   every reported skip is recorded for the exit gate
+  ok   sourcing the script creates no files
+  ok   stage 0 runs its tests through a wrapper that can abort
+  ok   external validation is guarded by its input file
+
+test_run_all_gate: all checks passed
+   KEEP=1: existing results retained
+
+[1m== 2. record-level analyses — CLSI (primary) ==[0m
+==============================================================================
+RECORD-LEVEL DISCORDANCE ANALYSIS — MEROPENEM
+breakpoints: CLSI (S <= 1.0, R >= 4.0 mg/L)  [CLSI M100 36th ed. (2026)]
+==============================================================================
+phenotype records for meropenem: 7,289
+  excluded 6 disk-diffusion (mm) records
+  records with a numeric value: 5,675
+  standard == CLSI: 5,675 -> 4,550 records
+  method == 'Broth dilution': 4,550 -> 3,685 records
+
+  genomes with >=1 usable record : 3,685
+    resolved by interval intersection : 3,685
+    CONTRADICTORY records (excluded)  : 0
+
+  Kleborate genomes: 5,342 -> 5,342 confirmed K. pneumoniae
+  joined genotype + phenotype: 3,347 genomes
+
+  interpretation:
+    S           1,962
+    I             153
+    R           1,231
+    ambiguous       1
+
+  BINARY analysis set (S or R only): 3,193
+    excluded: 153 intermediate, 1 unresolvable
+    NOTE: PPV/NPV/sensitivity/specificity below are computed on this
+    binary set; intermediate and unresolvable isolates are excluded.
+
+==============================================================================
+DISCORDANCE
+==============================================================================
+carbapenemase-positive : n = 1,241
+   phenotypically susceptible : 124  (10.0%, 95% CI 8.4-11.8)
+carbapenemase-negative : n = 1,952
+   phenotypically resistant   : 114  (5.8%, 95% CI 4.9-7.0)
+
+  contingency (binary set, total 3,193):
+    gene+/R  1,117   gene+/S    124
+    gene-/R    114   gene-/S  1,838
+  PPV 0.900  NPV 0.942  sens 0.907  spec 0.937
+
+==============================================================================
+DISCORDANCE BY CARBAPENEMASE FAMILY
+==============================================================================
+         family   n  n_susceptible  pct  ci_lo  ci_hi
+            VIM  44             21 47.7   33.8   62.1
+    OXA-48-like 181             65 35.9   29.3   43.1
+            KPC 883             36  4.1    3.0    5.6
+            NDM 107              1  0.9    0.2    5.1
+NDM+OXA-48-like  13              0  0.0    0.0   22.8
+
+==============================================================================
+PORIN CLASS WITHIN FAMILY
+==============================================================================
+     family        porin                   label   n  n_susc  pct  ci_lo  ci_hi
+        VIM         none                  intact  32      20 62.5   45.3   77.1
+OXA-48-like         none                  intact  72      51 70.8   59.5   80.1
+OXA-48-like  ompK35_loss       OmpK35 truncation  32      12 37.5   22.9   54.7
+OXA-48-like ompK36_loop3 OmpK36 loop-3 insertion  64       2  3.1    0.9   10.7
+        KPC         none                  intact  64      13 20.3   12.3   31.7
+        KPC  ompK35_loss       OmpK35 truncation 427      17  4.0    2.5    6.3
+        KPC ompK36_loop3 OmpK36 loop-3 insertion 377       5  1.3    0.6    3.1
+        NDM         none                  intact  36       0  0.0    0.0    9.6
+        NDM  ompK35_loss       OmpK35 truncation  52       1  1.9    0.3   10.1
+        NDM ompK36_loop3 OmpK36 loop-3 insertion  18       0  0.0    0.0   17.6
+
+  Fisher exact tests, intact vs OmpK36-disrupted (2x2 built explicitly:
+  rows = [intact, disrupted], cols = [resistant, susceptible];
+  OR < 1 means disruption reduces the odds of susceptibility):
+    OXA-48-like      [[21,51],[75,2]]  OR = 0.011  p = 2.6e-20
+    KPC              [[51,13],[386,6]]  OR = 0.061  p = 3.62e-08
+    NDM              [[36,0],[19,0]]  OR = nan  p = 1
+
+  BH-adjusted q-values written to results/tables/recordlevel_fisher_meropenem_clsi_bmd.tsv
+
+[out] results/tables/recordlevel_*_meropenem_clsi_bmd.tsv
+
+==============================================================================
+PROVENANCE OF THE ANALYSED RECORDS (record-level, post-filter)
+==============================================================================
+  method: Broth dilution (3,347)
+  standard: CLSI (3,347)
+  platform: <not reported> (1,663), BD Phoenix (1,514), VITEK 2 (170)
+  year: 2017 (1,514), 2015 (1,359), <not reported> (253), 2010 (119), 2013 (79), 2016 (23)
+==============================================================================
+RECORD-LEVEL DISCORDANCE ANALYSIS — IMIPENEM
+breakpoints: CLSI (S <= 1.0, R >= 4.0 mg/L)  [CLSI M100 36th ed. (2026)]
+==============================================================================
+phenotype records for imipenem: 3,925
+  excluded 38 disk-diffusion (mm) records
+  records with a numeric value: 3,609
+  standard == CLSI: 3,609 -> 2,831 records
+  method == 'Broth dilution': 2,831 -> 1,998 records
+
+  genomes with >=1 usable record : 1,998
+    resolved by interval intersection : 1,998
+    CONTRADICTORY records (excluded)  : 0
+
+  Kleborate genomes: 5,342 -> 5,342 confirmed K. pneumoniae
+  joined genotype + phenotype: 1,828 genomes
+
+  interpretation:
+    S           1,075
+    I              35
+    R             718
+    ambiguous       0
+
+  BINARY analysis set (S or R only): 1,793
+    excluded: 35 intermediate, 0 unresolvable
+    NOTE: PPV/NPV/sensitivity/specificity below are computed on this
+    binary set; intermediate and unresolvable isolates are excluded.
+
+==============================================================================
+DISCORDANCE
+==============================================================================
+carbapenemase-positive : n = 720
+   phenotypically susceptible : 38  (5.3%, 95% CI 3.9-7.2)
+carbapenemase-negative : n = 1,073
+   phenotypically resistant   : 36  (3.4%, 95% CI 2.4-4.6)
+
+  contingency (binary set, total 1,793):
+    gene+/R    682   gene+/S     38
+    gene-/R     36   gene-/S  1,037
+  PPV 0.947  NPV 0.966  sens 0.950  spec 0.965
+
+==============================================================================
+DISCORDANCE BY CARBAPENEMASE FAMILY
+==============================================================================
+     family   n  n_susceptible  pct  ci_lo  ci_hi
+OXA-48-like  24              2  8.3    2.3   25.8
+        KPC 657             35  5.3    3.9    7.3
+        NDM  26              1  3.8    0.7   18.9
+
+==============================================================================
+PORIN CLASS WITHIN FAMILY
+==============================================================================
+     family        porin                   label   n  n_susc  pct  ci_lo  ci_hi
+OXA-48-like ompK36_loop3 OmpK36 loop-3 insertion  11       0  0.0    0.0   25.9
+        KPC         none                  intact  41       5 12.2    5.3   25.5
+        KPC  ompK35_loss       OmpK35 truncation 395      26  6.6    4.5    9.5
+        KPC ompK36_loop3 OmpK36 loop-3 insertion 209       3  1.4    0.5    4.1
+        NDM  ompK35_loss       OmpK35 truncation  11       1  9.1    1.6   37.7
+        NDM ompK36_loop3 OmpK36 loop-3 insertion  12       0  0.0    0.0   24.2
+
+  Fisher exact tests, intact vs OmpK36-disrupted (2x2 built explicitly:
+  rows = [intact, disrupted], cols = [resistant, susceptible];
+  OR < 1 means disruption reduces the odds of susceptibility):
+    KPC              [[36,5],[217,4]]  OR = 0.133  p = 0.00581
+
+  BH-adjusted q-values written to results/tables/recordlevel_fisher_imipenem_clsi_bmd.tsv
+
+[out] results/tables/recordlevel_*_imipenem_clsi_bmd.tsv
+
+==============================================================================
+PROVENANCE OF THE ANALYSED RECORDS (record-level, post-filter)
+==============================================================================
+  method: Broth dilution (1,828)
+  standard: CLSI (1,828)
+  platform: BD Phoenix (1,516), <not reported> (305), VITEK 2 (7)
+  year: 2017 (1,516), <not reported> (210), 2013 (79), 2016 (23)
+
+[1m== 3. record-level analyses — EUCAST reclassification ==[0m
+==============================================================================
+RECORD-LEVEL DISCORDANCE ANALYSIS — MEROPENEM
+breakpoints: EUCAST (S <= 2.0, R > 8.0 mg/L)  [EUCAST v16.1 (valid from 2026-06-24)]
+==============================================================================
+phenotype records for meropenem: 7,289
+  excluded 6 disk-diffusion (mm) records
+  records with a numeric value: 5,675
+  standard == CLSI: 5,675 -> 4,550 records
+  method == 'Broth dilution': 4,550 -> 3,685 records
+
+  genomes with >=1 usable record : 3,685
+    resolved by interval intersection : 3,685
+    CONTRADICTORY records (excluded)  : 0
+
+  Kleborate genomes: 5,342 -> 5,342 confirmed K. pneumoniae
+  joined genotype + phenotype: 3,347 genomes
+
+  interpretation:
+    S           2,115
+    I             248
+    R             960
+    ambiguous      24
+
+  BINARY analysis set (S or R only): 3,075
+    excluded: 248 intermediate, 24 unresolvable
+    NOTE: PPV/NPV/sensitivity/specificity below are computed on this
+    binary set; intermediate and unresolvable isolates are excluded.
+
+==============================================================================
+DISCORDANCE
+==============================================================================
+carbapenemase-positive : n = 1,128
+   phenotypically susceptible : 209  (18.5%, 95% CI 16.4-20.9)
+carbapenemase-negative : n = 1,947
+   phenotypically resistant   : 41  (2.1%, 95% CI 1.6-2.8)
+
+  contingency (binary set, total 3,075):
+    gene+/R    919   gene+/S    209
+    gene-/R     41   gene-/S  1,906
+  PPV 0.815  NPV 0.979  sens 0.957  spec 0.901
+
+==============================================================================
+DISCORDANCE BY CARBAPENEMASE FAMILY
+==============================================================================
+         family   n  n_susceptible  pct  ci_lo  ci_hi
+            VIM  39             31 79.5   64.5   89.2
+    OXA-48-like 195            110 56.4   49.4   63.2
+            KPC 769             64  8.3    6.6   10.5
+            NDM 103              3  2.9    1.0    8.2
+NDM+OXA-48-like  13              0  0.0    0.0   22.8
+
+==============================================================================
+PORIN CLASS WITHIN FAMILY
+==============================================================================
+     family        porin                   label   n  n_susc  pct  ci_lo  ci_hi
+        VIM         none                  intact  29      27 93.1   78.0   98.1
+OXA-48-like         none                  intact  87      82 94.3   87.2   97.5
+OXA-48-like  ompK35_loss       OmpK35 truncation  35      25 71.4   54.9   83.7
+OXA-48-like ompK36_loop3 OmpK36 loop-3 insertion  61       2  3.3    0.9   11.2
+        KPC         none                  intact  55      21 38.2   26.5   51.4
+        KPC  ompK35_loss       OmpK35 truncation 325      37 11.4    8.4   15.3
+        KPC ompK36_loop3 OmpK36 loop-3 insertion 374       5  1.3    0.6    3.1
+        NDM         none                  intact  36       2  5.6    1.5   18.1
+        NDM  ompK35_loss       OmpK35 truncation  49       1  2.0    0.4   10.7
+        NDM ompK36_loop3 OmpK36 loop-3 insertion  17       0  0.0    0.0   18.4
+
+  Fisher exact tests, intact vs OmpK36-disrupted (2x2 built explicitly:
+  rows = [intact, disrupted], cols = [resistant, susceptible];
+  OR < 1 means disruption reduces the odds of susceptibility):
+    OXA-48-like      [[5,82],[70,3]]  OR = 0.003  p = 3.42e-35
+    KPC              [[34,21],[383,6]]  OR = 0.025  p = 3.23e-16
+    NDM              [[34,2],[18,0]]  OR = 0.000  p = 0.547
+
+  BH-adjusted q-values written to results/tables/recordlevel_fisher_meropenem_clsi_bmd_eucast.tsv
+
+[out] results/tables/recordlevel_*_meropenem_clsi_bmd_eucast.tsv
+
+==============================================================================
+PROVENANCE OF THE ANALYSED RECORDS (record-level, post-filter)
+==============================================================================
+  method: Broth dilution (3,347)
+  standard: CLSI (3,347)
+  platform: <not reported> (1,663), BD Phoenix (1,514), VITEK 2 (170)
+  year: 2017 (1,514), 2015 (1,359), <not reported> (253), 2010 (119), 2013 (79), 2016 (23)
+==============================================================================
+RECORD-LEVEL DISCORDANCE ANALYSIS — IMIPENEM
+breakpoints: EUCAST (S <= 2.0, R > 4.0 mg/L)  [EUCAST v16.1 (valid from 2026-06-24)]
+==============================================================================
+phenotype records for imipenem: 3,925
+  excluded 38 disk-diffusion (mm) records
+  records with a numeric value: 3,609
+  standard == CLSI: 3,609 -> 2,831 records
+  method == 'Broth dilution': 2,831 -> 1,998 records
+
+  genomes with >=1 usable record : 1,998
+    resolved by interval intersection : 1,998
+    CONTRADICTORY records (excluded)  : 0
+
+  Kleborate genomes: 5,342 -> 5,342 confirmed K. pneumoniae
+  joined genotype + phenotype: 1,828 genomes
+
+  interpretation:
+    S           1,110
+    I              60
+    R             638
+    ambiguous      20
+
+  BINARY analysis set (S or R only): 1,748
+    excluded: 60 intermediate, 20 unresolvable
+    NOTE: PPV/NPV/sensitivity/specificity below are computed on this
+    binary set; intermediate and unresolvable isolates are excluded.
+
+==============================================================================
+DISCORDANCE
+==============================================================================
+carbapenemase-positive : n = 670
+   phenotypically susceptible : 58  (8.7%, 95% CI 6.8-11.0)
+carbapenemase-negative : n = 1,078
+   phenotypically resistant   : 26  (2.4%, 95% CI 1.7-3.5)
+
+  contingency (binary set, total 1,748):
+    gene+/R    612   gene+/S     58
+    gene-/R     26   gene-/S  1,052
+  PPV 0.913  NPV 0.976  sens 0.959  spec 0.948
+
+==============================================================================
+DISCORDANCE BY CARBAPENEMASE FAMILY
+==============================================================================
+     family   n  n_susceptible  pct  ci_lo  ci_hi
+OXA-48-like  19             11 57.9   36.3   76.9
+        KPC 613             44  7.2    5.4    9.5
+        NDM  25              1  4.0    0.7   19.5
+
+==============================================================================
+PORIN CLASS WITHIN FAMILY
+==============================================================================
+family        porin                   label   n  n_susc  pct  ci_lo  ci_hi
+   KPC         none                  intact  29       7 24.1   12.2   42.1
+   KPC  ompK35_loss       OmpK35 truncation 367      32  8.7    6.2   12.0
+   KPC ompK36_loop3 OmpK36 loop-3 insertion 206       4  1.9    0.8    4.9
+   NDM  ompK35_loss       OmpK35 truncation  10       1 10.0    1.8   40.4
+   NDM ompK36_loop3 OmpK36 loop-3 insertion  12       0  0.0    0.0   24.2
+
+  Fisher exact tests, intact vs OmpK36-disrupted (2x2 built explicitly:
+  rows = [intact, disrupted], cols = [resistant, susceptible];
+  OR < 1 means disruption reduces the odds of susceptibility):
+    KPC              [[22,7],[212,5]]  OR = 0.074  p = 8.17e-05
+
+  BH-adjusted q-values written to results/tables/recordlevel_fisher_imipenem_clsi_bmd_eucast.tsv
+
+[out] results/tables/recordlevel_*_imipenem_clsi_bmd_eucast.tsv
+
+==============================================================================
+PROVENANCE OF THE ANALYSED RECORDS (record-level, post-filter)
+==============================================================================
+  method: Broth dilution (1,828)
+  standard: CLSI (1,828)
+  platform: BD Phoenix (1,516), <not reported> (305), VITEK 2 (7)
+  year: 2017 (1,516), <not reported> (210), 2013 (79), 2016 (23)
+
+[1m== 4. record-level deduplication (clonality sensitivity) ==[0m
+==============================================================================
+RECORD-LEVEL DISCORDANCE ANALYSIS — MEROPENEM
+breakpoints: CLSI (S <= 1.0, R >= 4.0 mg/L)  [CLSI M100 36th ed. (2026)]
+==============================================================================
+phenotype records for meropenem: 7,289
+  excluded 6 disk-diffusion (mm) records
+  records with a numeric value: 5,675
+  standard == CLSI: 5,675 -> 4,550 records
+  method == 'Broth dilution': 4,550 -> 3,685 records
+
+  genomes with >=1 usable record : 3,685
+    resolved by interval intersection : 3,685
+    CONTRADICTORY records (excluded)  : 0
+
+  Kleborate genomes: 5,342 -> 5,342 confirmed K. pneumoniae
+  joined genotype + phenotype: 3,347 genomes
+  deduplicated (ST x allele x porin): 3,347 -> 641
+
+  interpretation:
+    S             415
+    I              43
+    R             182
+    ambiguous       1
+
+  BINARY analysis set (S or R only): 597
+    excluded: 43 intermediate, 1 unresolvable
+    NOTE: PPV/NPV/sensitivity/specificity below are computed on this
+    binary set; intermediate and unresolvable isolates are excluded.
+
+==============================================================================
+DISCORDANCE
+==============================================================================
+carbapenemase-positive : n = 199
+   phenotypically susceptible : 46  (23.1%, 95% CI 17.8-29.4)
+carbapenemase-negative : n = 398
+   phenotypically resistant   : 29  (7.3%, 95% CI 5.1-10.3)
+
+  contingency (binary set, total 597):
+    gene+/R    153   gene+/S     46
+    gene-/R     29   gene-/S    369
+  PPV 0.769  NPV 0.927  sens 0.841  spec 0.889
+
+==============================================================================
+DISCORDANCE BY CARBAPENEMASE FAMILY
+==============================================================================
+     family  n  n_susceptible  pct  ci_lo  ci_hi
+OXA-48-like 54             25 46.3   33.7   59.4
+        VIM 16              6 37.5   18.5   61.4
+        KPC 81             13 16.0    9.6   25.5
+        NDM 30              1  3.3    0.6   16.7
+
+==============================================================================
+PORIN CLASS WITHIN FAMILY
+==============================================================================
+     family        porin                   label  n  n_susc  pct  ci_lo  ci_hi
+OXA-48-like         none                  intact 31      22 71.0   53.4   83.9
+        VIM         none                  intact 10       5 50.0   23.7   76.3
+        KPC         none                  intact 32       8 25.0   13.3   42.1
+        KPC  ompK35_loss       OmpK35 truncation 22       3 13.6    4.7   33.3
+        KPC ompK36_loop3 OmpK36 loop-3 insertion 16       1  6.2    1.1   28.3
+        NDM  ompK35_loss       OmpK35 truncation 14       1  7.1    1.3   31.5
+
+  Fisher exact tests, intact vs OmpK36-disrupted (2x2 built explicitly:
+  rows = [intact, disrupted], cols = [resistant, susceptible];
+  OR < 1 means disruption reduces the odds of susceptibility):
+    OXA-48-like      [[9,22],[16,0]]  OR = 0.000  p = 1.41e-06
+    KPC              [[24,8],[25,2]]  OR = 0.240  p = 0.0919
+
+  BH-adjusted q-values written to results/tables/recordlevel_fisher_meropenem_clsi_bmd_dedup.tsv
+
+[out] results/tables/recordlevel_*_meropenem_clsi_bmd_dedup.tsv
+
+==============================================================================
+PROVENANCE OF THE ANALYSED RECORDS (record-level, post-filter)
+==============================================================================
+  method: Broth dilution (641)
+  standard: CLSI (641)
+  platform: <not reported> (441), BD Phoenix (162), VITEK 2 (38)
+  year: 2015 (373), 2017 (162), <not reported> (69), 2010 (22), 2013 (10), 2016 (5)
+==============================================================================
+RECORD-LEVEL DISCORDANCE ANALYSIS — IMIPENEM
+breakpoints: CLSI (S <= 1.0, R >= 4.0 mg/L)  [CLSI M100 36th ed. (2026)]
+==============================================================================
+phenotype records for imipenem: 3,925
+  excluded 38 disk-diffusion (mm) records
+  records with a numeric value: 3,609
+  standard == CLSI: 3,609 -> 2,831 records
+  method == 'Broth dilution': 2,831 -> 1,998 records
+
+  genomes with >=1 usable record : 1,998
+    resolved by interval intersection : 1,998
+    CONTRADICTORY records (excluded)  : 0
+
+  Kleborate genomes: 5,342 -> 5,342 confirmed K. pneumoniae
+  joined genotype + phenotype: 1,828 genomes
+  deduplicated (ST x allele x porin): 1,828 -> 278
+
+  interpretation:
+    S             169
+    I              12
+    R              97
+    ambiguous       0
+
+  BINARY analysis set (S or R only): 266
+    excluded: 12 intermediate, 0 unresolvable
+    NOTE: PPV/NPV/sensitivity/specificity below are computed on this
+    binary set; intermediate and unresolvable isolates are excluded.
+
+==============================================================================
+DISCORDANCE
+==============================================================================
+carbapenemase-positive : n = 91
+   phenotypically susceptible : 9  (9.9%, 95% CI 5.3-17.7)
+carbapenemase-negative : n = 175
+   phenotypically resistant   : 15  (8.6%, 95% CI 5.3-13.7)
+
+  contingency (binary set, total 266):
+    gene+/R     82   gene+/S      9
+    gene-/R     15   gene-/S    160
+  PPV 0.901  NPV 0.914  sens 0.845  spec 0.947
+
+==============================================================================
+DISCORDANCE BY CARBAPENEMASE FAMILY
+==============================================================================
+     family  n  n_susceptible  pct  ci_lo  ci_hi
+OXA-48-like 10              2 20.0    5.7   51.0
+        KPC 60              7 11.7    5.8   22.2
+        NDM 13              0  0.0    0.0   22.8
+
+==============================================================================
+PORIN CLASS WITHIN FAMILY
+==============================================================================
+family        porin                   label  n  n_susc  pct  ci_lo  ci_hi
+   KPC         none                  intact 22       2  9.1    2.5   27.8
+   KPC  ompK35_loss       OmpK35 truncation 17       3 17.6    6.2   41.0
+   KPC ompK36_loop3 OmpK36 loop-3 insertion 12       1  8.3    1.5   35.4
+
+  Fisher exact tests, intact vs OmpK36-disrupted (2x2 built explicitly:
+  rows = [intact, disrupted], cols = [resistant, susceptible];
+  OR < 1 means disruption reduces the odds of susceptibility):
+    KPC              [[20,2],[19,2]]  OR = 1.053  p = 1
+
+  BH-adjusted q-values written to results/tables/recordlevel_fisher_imipenem_clsi_bmd_dedup.tsv
+
+[out] results/tables/recordlevel_*_imipenem_clsi_bmd_dedup.tsv
+
+==============================================================================
+PROVENANCE OF THE ANALYSED RECORDS (record-level, post-filter)
+==============================================================================
+  method: Broth dilution (278)
+  standard: CLSI (278)
+  platform: BD Phoenix (195), <not reported> (82), VITEK 2 (1)
+  year: 2017 (195), <not reported> (69), 2013 (10), 2016 (4)
+
+[1m== 5. unstratified analyses (supplementary) ==[0m
+==============================================================================
+RECORD-LEVEL DISCORDANCE ANALYSIS — MEROPENEM
+breakpoints: CLSI (S <= 1.0, R >= 4.0 mg/L)  [CLSI M100 36th ed. (2026)]
+==============================================================================
+phenotype records for meropenem: 7,289
+  excluded 6 disk-diffusion (mm) records
+  records with a numeric value: 5,675
+
+  genomes with >=1 usable record : 5,581
+    resolved by interval intersection : 5,549
+    CONTRADICTORY records (excluded)  : 32
+      -> reported separately; these genomes have records whose
+         intervals do not overlap and cannot be reconciled.
+
+  Kleborate genomes: 5,342 -> 5,342 confirmed K. pneumoniae
+  joined genotype + phenotype: 5,092 genomes
+
+  interpretation:
+    S           2,778
+    I             190
+    R           2,123
+    ambiguous       1
+
+  BINARY analysis set (S or R only): 4,901
+    excluded: 190 intermediate, 1 unresolvable
+    NOTE: PPV/NPV/sensitivity/specificity below are computed on this
+    binary set; intermediate and unresolvable isolates are excluded.
+
+==============================================================================
+DISCORDANCE
+==============================================================================
+carbapenemase-positive : n = 2,109
+   phenotypically susceptible : 146  (6.9%, 95% CI 5.9-8.1)
+carbapenemase-negative : n = 2,792
+   phenotypically resistant   : 160  (5.7%, 95% CI 4.9-6.7)
+
+  contingency (binary set, total 4,901):
+    gene+/R  1,963   gene+/S    146
+    gene-/R    160   gene-/S  2,632
+  PPV 0.931  NPV 0.943  sens 0.925  spec 0.947
+
+==============================================================================
+DISCORDANCE BY CARBAPENEMASE FAMILY
+==============================================================================
+         family    n  n_susceptible  pct  ci_lo  ci_hi
+            VIM   47             21 44.7   31.4   58.8
+    OXA-48-like  216             67 31.0   25.2   37.5
+            IMP   62             12 19.4   11.4   30.9
+            KPC 1415             39  2.8    2.0    3.7
+            NDM  221              3  1.4    0.5    3.9
+        KPC+NDM   58              0  0.0    0.0    6.2
+NDM+OXA-48-like   72              0  0.0    0.0    5.1
+
+==============================================================================
+PORIN CLASS WITHIN FAMILY
+==============================================================================
+         family                     porin                               label   n  n_susc  pct  ci_lo  ci_hi
+            VIM                      none                              intact  34      20 58.8   42.2   73.6
+    OXA-48-like                      none                              intact  77      53 68.8   57.8   78.1
+    OXA-48-like               ompK35_loss                   OmpK35 truncation  39      12 30.8   18.6   46.4
+    OXA-48-like              ompK36_loop3             OmpK36 loop-3 insertion  87       2  2.3    0.6    8.0
+            IMP                      none                              intact  35       3  8.6    3.0   22.4
+            IMP               ompK35_loss                   OmpK35 truncation  20       8 40.0   21.9   61.3
+            KPC                      none                              intact 134      14 10.4    6.3   16.8
+            KPC               ompK35_loss                   OmpK35 truncation 546      18  3.3    2.1    5.2
+            KPC ompK36_reduced_expression OmpK36 c.25C>T (reduced expression)  10       0  0.0    0.0   27.8
+            KPC              ompK36_loop3             OmpK36 loop-3 insertion 709       6  0.8    0.4    1.8
+            KPC               ompK36_loss                   OmpK36 truncation  16       1  6.2    1.1   28.3
+            NDM                      none                              intact  72       1  1.4    0.2    7.5
+            NDM               ompK35_loss                   OmpK35 truncation 129       2  1.6    0.4    5.5
+            NDM              ompK36_loop3             OmpK36 loop-3 insertion  18       0  0.0    0.0   17.6
+        KPC+NDM               ompK35_loss                   OmpK35 truncation  53       0  0.0    0.0    6.8
+NDM+OXA-48-like                      none                              intact  11       0  0.0    0.0   25.9
+NDM+OXA-48-like              ompK36_loop3             OmpK36 loop-3 insertion  56       0  0.0    0.0    6.4
+
+  Fisher exact tests, intact vs OmpK36-disrupted (2x2 built explicitly:
+  rows = [intact, disrupted], cols = [resistant, susceptible];
+  OR < 1 means disruption reduces the odds of susceptibility):
+    OXA-48-like      [[24,53],[98,2]]  OR = 0.009  p = 9.79e-24
+    KPC              [[120,14],[728,7]]  OR = 0.082  p = 1.03e-07
+    NDM              [[71,1],[20,0]]  OR = 0.000  p = 1
+    NDM+OXA-48-like  [[11,0],[57,0]]  OR = nan  p = 1
+
+  BH-adjusted q-values written to results/tables/recordlevel_fisher_meropenem_unstratified.tsv
+
+[out] results/tables/recordlevel_*_meropenem_unstratified.tsv
+
+==============================================================================
+PROVENANCE OF THE ANALYSED RECORDS (record-level, post-filter)
+==============================================================================
+  method: Broth dilution (3,929), MIC (1,080), <not reported> (56), Disk diffusion (27)
+  standard: CLSI (4,065), <not reported> (550), EUCAST (473), EUCAST,CLSI (4)
+  platform: <not reported> (3,170), BD Phoenix (1,514), VITEK 2 (359), E-test (29), Sensititre (20)
+  year: 2017 (1,538), 2015 (1,359), <not reported> (1,019), 2021 (713), 2020 (151), 2010 (119)
+==============================================================================
+RECORD-LEVEL DISCORDANCE ANALYSIS — IMIPENEM
+breakpoints: CLSI (S <= 1.0, R >= 4.0 mg/L)  [CLSI M100 36th ed. (2026)]
+==============================================================================
+phenotype records for imipenem: 3,925
+  excluded 38 disk-diffusion (mm) records
+  records with a numeric value: 3,609
+
+  genomes with >=1 usable record : 3,596
+    resolved by interval intersection : 3,586
+    CONTRADICTORY records (excluded)  : 10
+      -> reported separately; these genomes have records whose
+         intervals do not overlap and cannot be reconciled.
+
+  Kleborate genomes: 5,342 -> 5,342 confirmed K. pneumoniae
+  joined genotype + phenotype: 3,273 genomes
+
+  interpretation:
+    S           2,000
+    I             114
+    R           1,159
+    ambiguous       0
+
+  BINARY analysis set (S or R only): 3,159
+    excluded: 114 intermediate, 0 unresolvable
+    NOTE: PPV/NPV/sensitivity/specificity below are computed on this
+    binary set; intermediate and unresolvable isolates are excluded.
+
+==============================================================================
+DISCORDANCE
+==============================================================================
+carbapenemase-positive : n = 1,174
+   phenotypically susceptible : 73  (6.2%, 95% CI 5.0-7.7)
+carbapenemase-negative : n = 1,985
+   phenotypically resistant   : 58  (2.9%, 95% CI 2.3-3.8)
+
+  contingency (binary set, total 3,159):
+    gene+/R  1,101   gene+/S     73
+    gene-/R     58   gene-/S  1,927
+  PPV 0.938  NPV 0.971  sens 0.950  spec 0.964
+
+==============================================================================
+DISCORDANCE BY CARBAPENEMASE FAMILY
+==============================================================================
+     family    n  n_susceptible  pct  ci_lo  ci_hi
+        IMP   38             27 71.1   55.2   83.0
+        VIM   11              2 18.2    5.1   47.7
+OXA-48-like   29              4 13.8    5.5   30.6
+        KPC 1047             35  3.3    2.4    4.6
+        NDM   32              1  3.1    0.6   15.7
+
+==============================================================================
+PORIN CLASS WITHIN FAMILY
+==============================================================================
+     family                     porin                               label   n  n_susc   pct  ci_lo  ci_hi
+        IMP                      none                              intact  19      13  68.4   46.0   84.6
+        IMP               ompK35_loss                   OmpK35 truncation  12      12 100.0   75.8  100.0
+OXA-48-like               ompK35_loss                   OmpK35 truncation  13       1   7.7    1.4   33.3
+        KPC                      none                              intact  86       5   5.8    2.5   12.9
+        KPC               ompK35_loss                   OmpK35 truncation 474      26   5.5    3.8    7.9
+        KPC ompK36_reduced_expression OmpK36 c.25C>T (reduced expression)  10       0   0.0    0.0   27.8
+        KPC              ompK36_loop3             OmpK36 loop-3 insertion 466       3   0.6    0.2    1.9
+        KPC               ompK36_loss                   OmpK36 truncation  11       1   9.1    1.6   37.7
+        NDM               ompK35_loss                   OmpK35 truncation  13       1   7.7    1.4   33.3
+        NDM              ompK36_loop3             OmpK36 loop-3 insertion  12       0   0.0    0.0   24.2
+
+  Fisher exact tests, intact vs OmpK36-disrupted (2x2 built explicitly:
+  rows = [intact, disrupted], cols = [resistant, susceptible];
+  OR < 1 means disruption reduces the odds of susceptibility):
+    KPC              [[81,5],[483,4]]  OR = 0.134  p = 0.00524
+
+  BH-adjusted q-values written to results/tables/recordlevel_fisher_imipenem_unstratified.tsv
+
+[out] results/tables/recordlevel_*_imipenem_unstratified.tsv
+
+==============================================================================
+PROVENANCE OF THE ANALYSED RECORDS (record-level, post-filter)
+==============================================================================
+  method: Broth dilution (2,226), MIC (742), Agar dilution (222), <not reported> (56), Disk diffusion (27)
+  standard: CLSI (2,560), EUCAST (558), <not reported> (151), EUCAST,CLSI (4)
+  platform: <not reported> (1,608), BD Phoenix (1,516), VITEK 2 (120), E-test (29)
+  year: 2017 (1,520), 2021 (713), <not reported> (455), 2016 (245), 2020 (151), 2012 (81)
+
+[1m== 6. sensitivity analyses ==[0m
+input: results/tables/recordlevel_discordance_meropenem_clsi_bmd.tsv
+binary S/R set: 3,347 -> 3,193 (excluded 154 intermediate/unresolvable under the reference standard)
+============================================================================
+SENSITIVITY ANALYSIS — MEROPENEM
+carbapenemase-positive isolates: 1241
+============================================================================
+
+[1] PROVENANCE / BATCH EFFECTS
+----------------------------------------------------------------------------
+metadata columns found: ['laboratory_typing_method', 'laboratory_typing_method_version', 'laboratory_typing_platform', 'testing_standard', 'testing_standard_year']
+
+  --- laboratory_typing_platform ---
+     level   n  n_susc  pct  lo   hi
+ <missing> 765      90 11.8 9.7 14.2
+BD Phoenix 450      33  7.3 5.3 10.1
+   VITEK 2  26       1  3.8 0.7 18.9
+    chi2 p = 0.026  <-- HETEROGENEOUS
+
+  --- testing_standard_year ---
+    level   n  n_susc  pct   lo   hi
+     2015 510      88 17.3 14.2 20.8
+     2017 450      33  7.3  5.3 10.1
+<missing> 172       1  0.6  0.1  3.2
+     2013  71       1  1.4  0.2  7.6
+     2016  23       0  0.0  0.0 14.3
+     2010  15       1  6.7  1.2 29.8
+    chi2 p = 2.01e-11  <-- HETEROGENEOUS
+
+  Interpretation: strong heterogeneity across labs/standards
+  means part of the discordance is METHODOLOGICAL, not biological.
+
+[2] BREAKPOINT STANDARD (CLSI vs EUCAST)
+    breakpoints applied for meropenem: CLSI S<=1.0 R>=4.0; EUCAST S<=2.0 R>8.0
+----------------------------------------------------------------------------
+  (reclassifying the FULL set under each standard, not the
+   already-binary subset — otherwise the comparison is biased)
+standard   S   R  n_binary  n_intermediate  n_ambiguous  gene_pos_n  pct_false_susceptible  fs_lo  fs_hi  gene_neg_n  pct_false_resistant  fr_lo  fr_hi
+    CLSI 1.0 4.0      3193             153            1        1241                   10.0    8.4   11.8        1952                  5.8    4.9    7.0
+  EUCAST 2.0 8.0      3075             248           24        1128                   18.5   16.4   20.9        1947                  2.1    1.6    2.8
+
+  absolute shift in false-susceptible rate: 8.5 percentage points
+  !! Breakpoint choice materially changes the headline.
+  !! Report BOTH, and state the exact document versions used.
+
+  per-family false-susceptible rate under each standard:
+    CLSI    KPC 4.1% (n=883); NDM 0.9% (n=107); NDM+OXA-48-like 0.0% (n=13); OXA-48-like 35.9% (n=181); VIM 47.7% (n=44)
+    EUCAST  KPC 8.3% (n=769); NDM 2.9% (n=103); NDM+OXA-48-like 0.0% (n=13); OXA-48-like 56.4% (n=195); VIM 79.5% (n=39)
+
+[3] CLONALITY — deduplicating ST x country x year
+----------------------------------------------------------------------------
+  all isolates      : n =  1241  susceptible = 10.0% [8.4-11.8]
+  deduplicated      : n =   224  susceptible = 21.9% [17.0-27.7]
+  dedup key: ['ST', 'year']
+  CI width: 3.3 -> 10.8 percentage points
+  !! Estimate shifts >5pp after dedup — clonal expansion was inflating it.
+
+  per family (deduplicated):
+     family  n  pct   lo   hi
+OXA-48-like 60 48.3 36.2 60.7
+        VIM 18 33.3 16.3 56.3
+        KPC 93 12.9  7.5 21.2
+        NDM 36  2.8  0.5 14.2
+
+[4] LINEAGE ADJUSTMENT — is the porin effect just ST?
+    exposure: OmpK36-level disruption (same as the record-level
+    Fisher test); isolated OmpK35 loss is NOT counted as disrupted
+----------------------------------------------------------------------------
+  OXA-48-like  (intact vs OmpK36-disrupted; 32 OmpK35-only isolates excluded; n = 149 of 181)
+    unadjusted       OR = 0.0110 (95% CI 0.0025-0.0489), p = 3.2e-09, n = 149, events = 53, converged = yes
+    ST-adjusted      ML did not converge (n=149, events=53) — refitting with Firth
+    ST-adjusted      Firth OR = 0.0032 (95% CI 0.0002-0.0571), p = 9.3e-05, n = 149, events = 53
+                     -> adjusted estimate obtained by Firth penalised regression (report as such)
+  KPC  (intact vs OmpK36-disrupted; 427 OmpK35-only isolates excluded; n = 456 of 883)
+    unadjusted       OR = 0.0610 (95% CI 0.0222-0.1675), p = 5.77e-08, n = 456, events = 19, converged = yes
+    ST-adjusted      ML did not converge (n=456, events=19) — refitting with Firth
+    ST-adjusted      Firth OR = 0.1732 (95% CI 0.0317-0.9464), p = 0.043, n = 456, events = 19
+                     -> adjusted estimate obtained by Firth penalised regression (report as such)
+
+[4b] NON-INDEPENDENCE — clustered SEs and leave-one-out
+----------------------------------------------------------------------------
+  OXA-48-like  (intact vs OmpK36-disrupted; 32 OmpK35-only isolates excluded; n = 149)
+  OXA-48-like    coef = -4.512 | naive SE 0.762 -> cluster SE 0.184 (by year, 3 groups), p = 1.89e-132
+                 leave-one-ST-out OR range: 0.000-0.015 over 8 exclusions
+  KPC  (intact vs OmpK36-disrupted; 427 OmpK35-only isolates excluded; n = 456)
+  KPC            coef = -2.797 | naive SE 0.516 -> cluster SE 0.984 (by platform, 2 groups), p = 0.00447
+                 !! SEs inflate substantially — non-independence matters here
+                 leave-one-ST-out OR range: 0.053-0.068 over 8 exclusions
+
+[5] MULTIPLE TESTING (Benjamini-Hochberg FDR)
+    contrast: intact vs OmpK36-disrupted (OmpK35-only excluded),
+    identical to the record-level Fisher tests
+----------------------------------------------------------------------------
+                     test   n    OR      p   q_BH  significant_q05
+        KPC: porin effect 456 0.061 0.0000 0.0000             True
+OXA-48-like: porin effect 149 0.011 0.0000 0.0000             True
+        VIM: porin effect  37 0.000 0.0142 0.0142             True
+
+  3 of 3 survive FDR correction
+    regression estimates -> sensitivity_regression_meropenem_clsi_bmd.tsv (4 rows)
+    leave-one-ST-out    -> sensitivity_leaveoneout_meropenem_clsi_bmd.tsv (16 rows)
+
+[out] results/tables/sensitivity_*_meropenem_clsi_bmd.tsv
+input: results/tables/recordlevel_discordance_imipenem_clsi_bmd.tsv
+binary S/R set: 1,828 -> 1,793 (excluded 35 intermediate/unresolvable under the reference standard)
+============================================================================
+SENSITIVITY ANALYSIS — IMIPENEM
+carbapenemase-positive isolates: 720
+============================================================================
+
+[1] PROVENANCE / BATCH EFFECTS
+----------------------------------------------------------------------------
+metadata columns found: ['laboratory_typing_method', 'laboratory_typing_method_version', 'laboratory_typing_platform', 'testing_standard', 'testing_standard_year']
+
+  --- laboratory_typing_platform ---
+     level   n  n_susc  pct  lo   hi
+BD Phoenix 459      35  7.6 5.5 10.4
+ <missing> 255       3  1.2 0.4  3.4
+    chi2 p = 0.000458  <-- HETEROGENEOUS
+
+  --- testing_standard_year ---
+    level   n  n_susc  pct  lo   hi
+     2017 459      35  7.6 5.5 10.4
+<missing> 165       1  0.6 0.1  3.4
+     2013  73       2  2.7 0.8  9.5
+     2016  23       0  0.0 0.0 14.3
+    chi2 p = 0.00231  <-- HETEROGENEOUS
+
+  Interpretation: strong heterogeneity across labs/standards
+  means part of the discordance is METHODOLOGICAL, not biological.
+
+[2] BREAKPOINT STANDARD (CLSI vs EUCAST)
+    breakpoints applied for imipenem: CLSI S<=1.0 R>=4.0; EUCAST S<=2.0 R>4.0
+----------------------------------------------------------------------------
+  (reclassifying the FULL set under each standard, not the
+   already-binary subset — otherwise the comparison is biased)
+standard   S   R  n_binary  n_intermediate  n_ambiguous  gene_pos_n  pct_false_susceptible  fs_lo  fs_hi  gene_neg_n  pct_false_resistant  fr_lo  fr_hi
+    CLSI 1.0 4.0      1793              35            0         720                    5.3    3.9    7.2        1073                  3.4    2.4    4.6
+  EUCAST 2.0 4.0      1748              60           20         670                    8.7    6.8   11.0        1078                  2.4    1.7    3.5
+
+  absolute shift in false-susceptible rate: 3.4 percentage points
+  !! Breakpoint choice materially changes the headline.
+  !! Report BOTH, and state the exact document versions used.
+
+  per-family false-susceptible rate under each standard:
+    CLSI    KPC 5.3% (n=657); NDM 3.8% (n=26); OXA-48-like 8.3% (n=24)
+    EUCAST  KPC 7.2% (n=613); NDM 4.0% (n=25); OXA-48-like 57.9% (n=19)
+
+[3] CLONALITY — deduplicating ST x country x year
+----------------------------------------------------------------------------
+  all isolates      : n =   720  susceptible = 5.3% [3.9-7.2]
+  deduplicated      : n =    98  susceptible = 7.1% [3.5-14.0]
+  dedup key: ['ST', 'year']
+  CI width: 3.3 -> 10.5 percentage points
+  Estimate stable after deduplication.
+
+  per family (deduplicated):
+     family  n  pct  lo   hi
+OXA-48-like 11 18.2 5.1 47.7
+        KPC 65  7.7 3.3 16.8
+        NDM 13  0.0 0.0 22.8
+
+[4] LINEAGE ADJUSTMENT — is the porin effect just ST?
+    exposure: OmpK36-level disruption (same as the record-level
+    Fisher test); isolated OmpK35 loss is NOT counted as disrupted
+----------------------------------------------------------------------------
+  OXA-48-like: insufficient data after restricting to the intact-vs-OmpK36 contrast (n = 16 of 24)
+  KPC  (intact vs OmpK36-disrupted; 395 OmpK35-only isolates excluded; n = 262 of 657)
+    unadjusted       OR = 0.1327 (95% CI 0.0340-0.5178), p = 0.00364, n = 262, events = 9, converged = yes
+    ST-adjusted      OR = 0.2482 (95% CI 0.0169-3.6506), p = 0.31, n = 262, events = 9, converged = yes
+                     -> association attenuates after lineage adjustment
+
+[4b] NON-INDEPENDENCE — clustered SEs and leave-one-out
+----------------------------------------------------------------------------
+  OXA-48-like: insufficient data after restricting to the intact-vs-OmpK36 contrast (n=16 of 24)
+  KPC  (intact vs OmpK36-disrupted; 395 OmpK35-only isolates excluded; n = 262)
+  KPC            coef = -2.020 | naive SE 0.695 -> cluster SE 1.047 (by platform, 2 groups), p = 0.0538
+                 !! SEs inflate substantially — non-independence matters here
+                 leave-one-ST-out OR range: 0.111-0.197 over 8 exclusions
+
+[5] MULTIPLE TESTING (Benjamini-Hochberg FDR)
+    contrast: intact vs OmpK36-disrupted (OmpK35-only excluded),
+    identical to the record-level Fisher tests
+----------------------------------------------------------------------------
+                     test   n     OR      p   q_BH  significant_q05
+        KPC: porin effect 262 0.1327 0.0058 0.0116             True
+OXA-48-like: porin effect  16 0.0000 0.1875 0.1875            False
+
+  1 of 2 survive FDR correction
+    regression estimates -> sensitivity_regression_imipenem_clsi_bmd.tsv (2 rows)
+    leave-one-ST-out    -> sensitivity_leaveoneout_imipenem_clsi_bmd.tsv (8 rows)
+
+[out] results/tables/sensitivity_*_imipenem_clsi_bmd.tsv
+
+[1m== 7. extension analyses (determinants, predictive value, projection) ==[0m
+  restricted to binary S/R set: 3,347 -> 3,193
+
+drug = meropenem   stratum = _clsi_bmd   n = 3,193
+
+============================================================================
+[A] FALSE-RESISTANT ISOLATES — resistant WITHOUT a carbapenemase
+============================================================================
+carbapenemase-negative : 1952
+  phenotypically resistant : 114 (5.8%)
+
+  resistance rate by mechanism combination:
+  ESBL   porin          n   % resistant            95% CI
+  False  False        584          1.7%           0.9-3.1
+  False  True          41          9.8%          3.9-22.5
+  True   False       1069          3.2%           2.3-4.4
+  True   True         258         25.6%         20.6-31.2
+
+  ESBL x porin interaction: chi2 = 0.66, p = 0.415
+    ESBL alone   OR = 2.26
+    porin alone  OR = 9.80
+
+  of the 114 false-resistant isolates:
+    ESBL present            : 100 (87.7%)
+    porin disrupted         : 70 (61.4%)
+    BOTH                    : 66 (57.9%)
+    NEITHER (unexplained)   : 10 (8.8%)
+
+============================================================================
+[B] INCREMENTAL PREDICTIVE VALUE of porin / allele genotype
+============================================================================
+model                                                   acc    PPV   sens   spec
+carbapenemase only                                    0.925  0.900  0.907  0.937
+carbapenemase OR porin                                0.750  0.610  0.980  0.607
+mechanism-aware (weak enzyme requires porin loss)     0.761  0.625  0.950  0.643
+
+  accuracy gain (mechanism-aware vs carbapenemase-only):
+    -0.164 [95% CI -0.181 to -0.147]
+    -> gain not significant at this sample size
+
+============================================================================
+[C] SURVEILLANCE PPV PROJECTION under shifting enzyme prevalence
+============================================================================
+  *** PROJECTION, not a measured time trend. Year in public AST data
+  *** is confounded with laboratory and testing standard.
+
+  measured per-enzyme discordance (this study, stratified):
+    KPC              4.1%  [3.0-5.6]  n=883
+    NDM              0.9%  [0.2-5.1]  n=107
+    OXA-48-like     35.9%  [29.3-43.1]  n=181
+    VIM             47.7%  [33.8-62.1]  n=44
+
+  projected PPV of 'carbapenemase detected' => resistant:
+  scenario                                           PPV             range
+  KPC-dominant (e.g. historical US/S. Europe)      91.6%         90.2-93.1
+  balanced                                         85.6%         83.1-88.1
+  OXA-48-dominant (e.g. Middle East/N. Africa)     77.6%         73.4-81.8
+
+  Interpretation: as populations shift from KPC- toward OXA-48-dominant,
+  the positive predictive value of genomic carbapenem-resistance
+  surveillance declines, because OXA-48-like enzymes require porin
+  disruption to produce a resistant phenotype.
+
+  Prevalence weights above are ILLUSTRATIVE — replace with values
+  cited from regional surveillance literature before publication.
+
+[out] results/tables/extA_*, extB_*, extC_*
+
+[1m== 8. figures — PNG, PDF and SVG; no captions drawn inside ==[0m
+[out] results/figures/Figure1_study_flow.png / .pdf / .svg
+  note: computed but not placed in the figure: MALFORMED_ROWS, TYPED
+  wrote results/figures/Figure1_study_flow.svg
+    ASSEMBLIES           7,488
+    CALLED               7,335
+    CONFIRMED_KP         7,245
+    GENOMES_PHENO        7,521
+    I_BINARY             1,793
+    I_BMD                1,998
+    I_CLSI               2,831
+    I_I                  35
+    I_LINKED             1,828
+    I_NEG                1,073
+    I_NEG_R              36
+    I_NEG_R_PCT          3.4%
+    I_NONCLSI            778
+    I_NUMERIC            3,609
+    I_OTHERMETHOD        833
+    I_POS                720
+    I_POS_S              38
+    I_POS_S_PCT          5.3%
+    I_R                  718
+    I_RECORDS            3,925
+    I_S                  1,075
+    I_U                  0
+    KLEB_FAIL            2
+    KP_STRICT            7,164
+    KQ                   81
+    MALFORMED_ROWS       3
+    M_BINARY             3,193
+    M_BMD                3,685
+    M_CLSI               4,550
+    M_I                  153
+    M_LINKED             3,347
+    M_NEG                1,952
+    M_NEG_R              114
+    M_NEG_R_PCT          5.8%
+    M_NONCLSI            1,125
+    M_NUMERIC            5,675
+    M_OTHERMETHOD        865
+    M_POS                1,241
+    M_POS_S              124
+    M_POS_S_PCT          10.0%
+    M_R                  1,231
+    M_RECORDS            7,289
+    M_S                  1,962
+    M_U                  1
+    NOT_RETRIEVABLE      33
+    OTHER_GROUP          2
+    QC_DENOM             7,245
+    QC_EXCLUDED          1,903
+    QC_FAILED            151
+    QC_NO_METRICS        1,622
+    QC_PASS              5,342
+    QC_PASS_STRICT       3,259
+    QC_THRESHOLD_FAIL    281
+    QC_WARN              2,083
+    RECORDS              11,214
+    SPECIES_MISMATCH     88
+    SUBMITTED            7,337
+    TYPED                7,333
+    TYPING_EXCL          92
+    results/figures/Figure1_study_flow.png  (chromium)
+    results/figures/Figure1_study_flow.pdf  (chromium)
+    results/figures/Figure1_study_flow.tif  (chromium)
+[out] Figure2_main_meropenem_CLSI.png / .pdf / .svg
+      binary S/R isolates plotted: 3,193 (of 3,347 linked)
+[out] FigureS1_imipenem_CLSI.png / .pdf / .svg
+      binary S/R isolates plotted: 1,793 (of 1,828 linked)
+[out] FigureS4_meropenem_EUCAST.png / .pdf / .svg
+      binary S/R isolates plotted: 3,075 (of 3,347 linked)
+[out] FigureS2_meropenem_unstratified.png / .pdf / .svg
+      binary S/R isolates plotted: 4,901 (of 5,092 linked)
+[out] FigureS3_meropenem_deduplicated.png / .pdf / .svg
+      binary S/R isolates plotted: 597 (of 641 linked)
+
+[1m== 9. results manifest — the single source of truth ==[0m
+[out] results/manuscript_results.json  (6 analyses)
+  primary (CLSI, broth dilution)         binary  3,193  gene+ susceptible 10.0% [8.4-11.8]
+  imipenem (CLSI, broth dilution)        binary  1,793  gene+ susceptible 5.3% [3.9-7.2]
+  meropenem (EUCAST breakpoints)         binary  3,075  gene+ susceptible 18.5% [16.4-20.9]
+  imipenem (EUCAST breakpoints)          binary  1,748  gene+ susceptible 8.7% [6.8-11.0]
+  meropenem deduplicated                 binary    597  gene+ susceptible 23.1% [17.8-29.4]
+  meropenem unstratified                 binary  4,901  gene+ susceptible 6.9% [5.9-8.1]
+
+[1m== 10. Figures 3 and 4 (read from the manifest and record-level tables) ==[0m
+[out] results/figures/Figure3_robustness_meropenem.png / .pdf / .svg
+  CLSI broth dilution           10.0% [8.4-11.8]
+  EUCAST v16.1                  18.5% [16.4-20.9]
+  deduplicated by genotype      23.1% [17.8-29.4]
+  all methods and standards      6.9% [5.9-8.1]
+[out] results/figures/Figure4_carbapenemase_negative_meropenem.png / .pdf / .svg
+  carbapenemase-negative: 1,952; resistant 114 (5.8%)
+  of those, OmpK36-disrupted: 70 (61.4%)
+
+[1m== 11. supplementary tables ==[0m
+  S1_genome_level_data           3,347 rows
+  S2_discordance_by_family          18 rows
+  S3_porin_breakdown                25 rows
+  S4_sensitivity                     9 rows
+  S6_provenance                     48 rows
+  S7_classification_rules            4 rows
+  S8_ppv_projection                  3 rows
+  S9_carbnegative_resistance         4 rows
+  S10_regression_estimates           6 rows
+  S11_leave_one_ST_out              24 rows
+
+[out] results/supplementary/Supplementary_Tables.xlsx
+[out] results/supplementary/*.tsv
+
+[1m== 12. predictive rule derivation ==[0m
+drug            : meropenem
+binary set      : 3,193 genomes (1,231 resistant, 1,962 susceptible)
+sequence types  : 366
+rule threshold  : stratum resistance rate > 50%
+folds           : 5
+
+strata table    : results/tables/rules_strata.tsv  (64 strata)
+performance     : results/tables/rules_performance.tsv
+decision list   : results/tables/rules_decision_list.tsv
+stability       : results/tables/rules_stability.tsv
+subset analysis : results/tables/rules_by_carbapenemase_status.tsv
+comparison      : results/tables/rules_comparison.tsv
+
+==============================================================================
+TIER PERFORMANCE  (%, 95% Wilson CI)
+==============================================================================
+
+T0_gene_only
+  apparent              PPV  90.0 [88.2-91.6]  NPV  94.2 [93.0-95.1]  sens  90.7  spec  93.7  acc  92.5  err  238
+  cv_stratified         PPV  90.0 [88.2-91.6]  NPV  94.2 [93.0-95.1]  sens  90.7  spec  93.7  acc  92.5  err  238
+  cv_grouped_by_ST      PPV  90.0 [88.2-91.6]  NPV  94.2 [93.0-95.1]  sens  90.7  spec  93.7  acc  92.5  err  238
+  cv_grouped_unbalanced PPV  90.0 [88.2-91.6]  NPV  94.2 [93.0-95.1]  sens  90.7  spec  93.7  acc  92.5  err  238
+
+T1_family
+  apparent              PPV  90.0 [88.2-91.6]  NPV  94.2 [93.0-95.1]  sens  90.7  spec  93.7  acc  92.5  err  238
+  cv_stratified         PPV  90.3 [88.5-91.8]  NPV  93.7 [92.5-94.7]  sens  89.9  spec  93.9  acc  92.4  err  243
+  cv_grouped_by_ST      PPV  91.2 [89.4-92.6]  NPV  93.2 [92.0-94.2]  sens  89.0  spec  94.6  acc  92.4  err  242
+  cv_grouped_unbalanced PPV  90.2 [88.4-91.7]  NPV  93.3 [92.1-94.3]  sens  89.3  spec  93.9  acc  92.1  err  252
+
+T2_family_porin
+  apparent              PPV  95.3 [94.0-96.4]  NPV  92.9 [91.7-93.9]  sens  88.1  spec  97.3  acc  93.7  err  200
+  cv_stratified         PPV  95.3 [94.0-96.4]  NPV  92.9 [91.7-93.9]  sens  88.1  spec  97.3  acc  93.7  err  200
+  cv_grouped_by_ST      PPV  95.4 [94.0-96.5]  NPV  92.4 [91.1-93.4]  sens  87.2  spec  97.3  acc  93.4  err  210
+  cv_grouped_unbalanced PPV  94.4 [92.9-95.6]  NPV  92.0 [90.7-93.1]  sens  86.5  spec  96.8  acc  92.8  err  229
+
+T3_family_porin_lineage
+  apparent              PPV  94.3 [92.8-95.5]  NPV  93.7 [92.5-94.7]  sens  89.6  spec  96.6  acc  93.9  err  195
+  cv_stratified         PPV  94.1 [92.6-95.3]  NPV  93.6 [92.4-94.6]  sens  89.4  spec  96.5  acc  93.8  err  199
+  cv_grouped_by_ST      PPV  94.1 [92.6-95.4]  NPV  93.2 [92.0-94.2]  sens  88.8  spec  96.5  acc  93.5  err  206
+  cv_grouped_unbalanced PPV  92.7 [91.1-94.1]  NPV  93.5 [92.3-94.5]  sens  89.4  spec  95.6  acc  93.2  err  217
+
+==============================================================================
+GAIN OVER T0 (gene-only), ST-grouped cross-validation
+==============================================================================
+  T0_gene_only               dPPV   +0.0  dNPV   +0.0  dacc   +0.0  net correctly reclassified    +0
+  T1_family                  dPPV   +1.2  dNPV   -1.0  dacc   -0.1  net correctly reclassified    -4
+  T2_family_porin            dPPV   +5.4  dNPV   -1.8  dacc   +0.9  net correctly reclassified   +28
+  T3_family_porin_lineage    dPPV   +4.1  dNPV   -1.0  dacc   +1.0  net correctly reclassified   +32
+
+==============================================================================
+PERFORMANCE SPLIT BY CARBAPENEMASE STATUS (ST-grouped CV)
+==============================================================================
+
+  carbapenemase_positive  (n = 1,241)
+    T0_gene_only               PPV  90.0 [88.2-91.6]  NPV   nan [ nan- nan]  acc  90.0
+    T1_family                  PPV  90.5 [88.7-92.1]  NPV  16.0 [10.1-24.4]  acc  84.5
+    T2_family_porin            PPV  94.1 [92.6-95.3]  NPV  60.9 [50.7-70.2]  acc  91.6
+    T3_family_porin_lineage    PPV  94.1 [92.6-95.3]  NPV  60.9 [50.7-70.2]  acc  91.6
+
+  carbapenemase_negative  (n = 1,952)
+    T0_gene_only               PPV   nan [ nan- nan]  NPV  94.2 [93.0-95.1]  acc  94.2
+    T1_family                  PPV   nan [ nan- nan]  NPV  94.2 [93.0-95.1]  acc  94.2
+    T2_family_porin            PPV   nan [ nan- nan]  NPV  94.2 [93.0-95.1]  acc  94.2
+    T3_family_porin_lineage    PPV  40.0 [16.8-68.7]  NPV  94.3 [93.2-95.3]  acc  94.1
+
+==============================================================================
+RULE STABILITY ACROSS ST-GROUPED FOLDS (T2)
+==============================================================================
+  every T2 stratum kept its decision in every fold
+
+==============================================================================
+STRATA WITH THE STRONGEST RESISTANCE SIGNAL (T2, n >= 10)
+==============================================================================
+  stratum                                              n     R%  95% CI
+  family=NDM | porin=ompK36_disrupted                 19  100.0  [83.2-100.0]
+  family=NDM | porin=intact                           36  100.0  [90.4-100.0]
+  family=KPC | porin=ompK36_disrupted                392   98.5  [96.7-99.3]
+  family=NDM | porin=ompK35_only                      52   98.1  [89.9-99.7]
+  family=OXA-48-like | porin=ompK36_disrupted         77   97.4  [91.0-99.3]
+  family=KPC | porin=ompK35_only                     427   96.0  [93.7-97.5]
+  family=KPC | porin=intact                           64   79.7  [68.3-87.7]
+  family=OXA-48-like | porin=ompK35_only              32   62.5  [45.3-77.1]
+  family=VIM | porin=intact                           32   37.5  [22.9-54.7]
+  family=OXA-48-like | porin=intact                   72   29.2  [19.9-40.5]
+  family=none | porin=ompK36_disrupted               299   23.4  [19.0-28.5]
+  family=none | porin=ompK35_only                    438    4.3  [2.8-6.7]
+  family=none | porin=intact                        1215    2.1  [1.4-3.0]
+
+21 strata have n < 10 and are flagged low_support in the output. Rules resting on them are not reportable as predictive values.
+drug            : imipenem
+binary set      : 1,789 genomes (714 resistant, 1,075 susceptible)
+sequence types  : 170
+rule threshold  : stratum resistance rate > 50%
+folds           : 5
+
+strata table    : results/tables/rules_strata_imipenem.tsv  (56 strata)
+performance     : results/tables/rules_performance_imipenem.tsv
+decision list   : results/tables/rules_decision_list_imipenem.tsv
+stability       : results/tables/rules_stability_imipenem.tsv
+subset analysis : results/tables/rules_by_carbapenemase_status_imipenem.tsv
+comparison      : results/tables/rules_comparison_imipenem.tsv
+
+==============================================================================
+TIER PERFORMANCE  (%, 95% Wilson CI)
+==============================================================================
+
+T0_gene_only
+  apparent              PPV  94.7 [92.8-96.1]  NPV  96.7 [95.5-97.6]  sens  95.1  spec  96.5  acc  95.9  err   73
+  cv_stratified         PPV  94.7 [92.8-96.1]  NPV  96.7 [95.5-97.6]  sens  95.1  spec  96.5  acc  95.9  err   73
+  cv_grouped_by_ST      PPV  94.7 [92.8-96.1]  NPV  96.7 [95.5-97.6]  sens  95.1  spec  96.5  acc  95.9  err   73
+  cv_grouped_unbalanced PPV  94.7 [92.8-96.1]  NPV  96.7 [95.5-97.6]  sens  95.1  spec  96.5  acc  95.9  err   73
+
+T1_family
+  apparent              PPV  94.7 [92.8-96.1]  NPV  96.7 [95.5-97.6]  sens  95.1  spec  96.5  acc  95.9  err   73
+  cv_stratified         PPV  94.7 [92.8-96.1]  NPV  96.7 [95.5-97.6]  sens  95.1  spec  96.5  acc  95.9  err   73
+  cv_grouped_by_ST      PPV  94.7 [92.8-96.1]  NPV  96.7 [95.5-97.6]  sens  95.1  spec  96.5  acc  95.9  err   73
+  cv_grouped_unbalanced PPV  94.7 [92.8-96.1]  NPV  96.7 [95.5-97.6]  sens  95.1  spec  96.5  acc  95.9  err   73
+
+T2_family_porin
+  apparent              PPV  94.7 [92.8-96.1]  NPV  96.7 [95.5-97.6]  sens  95.1  spec  96.5  acc  95.9  err   73
+  cv_stratified         PPV  94.7 [92.8-96.1]  NPV  96.6 [95.4-97.6]  sens  95.0  spec  96.5  acc  95.9  err   74
+  cv_grouped_by_ST      PPV  94.7 [92.8-96.1]  NPV  96.6 [95.3-97.5]  sens  94.8  spec  96.5  acc  95.8  err   75
+  cv_grouped_unbalanced PPV  94.7 [92.8-96.1]  NPV  96.7 [95.5-97.6]  sens  95.1  spec  96.5  acc  95.9  err   73
+
+T3_family_porin_lineage
+  apparent              PPV  94.7 [92.8-96.1]  NPV  96.7 [95.5-97.6]  sens  95.1  spec  96.5  acc  95.9  err   73
+  cv_stratified         PPV  94.2 [92.2-95.7]  NPV  96.7 [95.5-97.6]  sens  95.1  spec  96.1  acc  95.7  err   77
+  cv_grouped_by_ST      PPV  94.2 [92.2-95.7]  NPV  96.7 [95.5-97.6]  sens  95.1  spec  96.1  acc  95.7  err   77
+  cv_grouped_unbalanced PPV  94.2 [92.2-95.7]  NPV  96.9 [95.7-97.8]  sens  95.4  spec  96.1  acc  95.8  err   75
+
+==============================================================================
+GAIN OVER T0 (gene-only), ST-grouped cross-validation
+==============================================================================
+  T0_gene_only               dPPV   +0.0  dNPV   +0.0  dacc   +0.0  net correctly reclassified    +0
+  T1_family                  dPPV   +0.0  dNPV   +0.0  dacc   +0.0  net correctly reclassified    +0
+  T2_family_porin            dPPV   +0.0  dNPV   -0.1  dacc   -0.1  net correctly reclassified    -2
+  T3_family_porin_lineage    dPPV   -0.5  dNPV   +0.0  dacc   -0.2  net correctly reclassified    -4
+
+==============================================================================
+PERFORMANCE SPLIT BY CARBAPENEMASE STATUS (ST-grouped CV)
+==============================================================================
+
+  carbapenemase_positive  (n = 717)
+    T0_gene_only               PPV  94.7 [92.8-96.1]  NPV   nan [ nan- nan]  acc  94.7
+    T1_family                  PPV  94.7 [92.8-96.1]  NPV   nan [ nan- nan]  acc  94.7
+    T2_family_porin            PPV  94.7 [92.8-96.1]  NPV   nan [ nan- nan]  acc  94.7
+    T3_family_porin_lineage    PPV  94.7 [92.8-96.1]  NPV   nan [ nan- nan]  acc  94.7
+
+  carbapenemase_negative  (n = 1,072)
+    T0_gene_only               PPV   nan [ nan- nan]  NPV  96.7 [95.5-97.6]  acc  96.7
+    T1_family                  PPV   nan [ nan- nan]  NPV  96.7 [95.5-97.6]  acc  96.7
+    T2_family_porin            PPV   nan [ nan- nan]  NPV  96.7 [95.5-97.6]  acc  96.7
+    T3_family_porin_lineage    PPV  33.3 [ 9.7-70.0]  NPV  96.9 [95.7-97.8]  acc  96.5
+
+==============================================================================
+RULE STABILITY ACROSS ST-GROUPED FOLDS (T2)
+==============================================================================
+  stratum                                              n     R%  flips  decision
+  family=OXA-48-like | porin=intact                    3   66.7   1/5   RESISTANT
+
+  A stratum that flips is one whose rate sits near the 50% decision
+  boundary, so which clones are sampled determines the rule's direction.
+  Such a stratum should be reported as its observed rate with a confidence
+  interval, not as a dichotomous rule.
+
+==============================================================================
+STRATA WITH THE STRONGEST RESISTANCE SIGNAL (T2, n >= 10)
+==============================================================================
+  stratum                                              n     R%  95% CI
+  family=NDM | porin=ompK36_disrupted                 12  100.0  [75.8-100.0]
+  family=OXA-48-like | porin=ompK36_disrupted         13  100.0  [77.2-100.0]
+  family=KPC | porin=ompK36_disrupted                219   98.2  [95.4-99.3]
+  family=KPC | porin=ompK35_only                     394   93.4  [90.5-95.5]
+  family=NDM | porin=ompK35_only                      11   90.9  [62.3-98.4]
+  family=KPC | porin=intact                           41   87.8  [74.5-94.7]
+  family=none | porin=ompK36_disrupted               229    8.3  [5.4-12.6]
+  family=none | porin=ompK35_only                    347    2.6  [1.4-4.9]
+  family=none | porin=intact                         496    1.4  [0.7-2.9]
+
+30 strata have n < 10 and are flagged low_support in the output. Rules resting on them are not reportable as predictive values.
+
+[1m== 13. discordance investigation ==[0m
+drug : meropenem
+binary set 3,193 | carbapenemase-negative 1,952 (resistant 114) | carbapenemase-positive 1,241 (susceptible 124)
+
+==============================================================================
+1. LINEAGE ENRICHMENT  —  resistance without a detected carbapenemase
+==============================================================================
+background resistance among carbapenemase-negative isolates: 5.8%  (n = 1,952)
+
+ST                n    R     R%         95% CI      OR        q   ompK36-disrupted%
+ST437            29   10   34.5  [ 19.9- 52.7]    9.21 7.08e-05 *    51.7
+ST340            19    4   21.1  [  8.5- 43.3]    4.42 2.09e-01      10.5
+ST11             79   14   17.7  [ 10.9- 27.6]    3.82 1.75e-03 *    13.9
+ST336            14    2   14.3  [  4.0- 39.9]    2.72 8.08e-01       0.0
+ST14             24    3   12.5  [  4.3- 31.0]    2.34 8.08e-01      12.5
+ST45             54    5    9.3  [  4.0- 19.9]    1.68 8.75e-01       9.3
+ST147            33    3    9.1  [  3.1- 23.6]    1.63 1.00e+00      12.1
+ST111            13    1    7.7  [  1.4- 33.3]    1.35 1.00e+00      15.4
+ST392            14    1    7.1  [  1.3- 31.5]    1.24 1.00e+00       7.1
+ST307-1LV        15    1    6.7  [  1.2- 29.8]    1.15 1.00e+00      33.3
+ST307           356   22    6.2  [  4.1-  9.2]    1.08 1.00e+00      45.2
+ST405            36    2    5.6  [  1.5- 18.1]    0.95 1.00e+00       8.3
+ST258           147    8    5.4  [  2.8- 10.4]    0.92 1.00e+00       4.1
+ST36             19    1    5.3  [  0.9- 24.6]    0.90 1.00e+00       0.0
+ST48             21    1    4.8  [  0.8- 22.7]    0.80 1.00e+00       0.0
+ST20             21    1    4.8  [  0.8- 22.7]    0.80 1.00e+00       0.0
+ST25             28    1    3.6  [  0.6- 17.7]    0.59 1.00e+00       3.6
+ST16             89    3    3.4  [  1.2-  9.4]    0.55 1.00e+00       7.9
+ST15            122    4    3.3  [  1.3-  8.1]    0.53 1.00e+00       4.9
+ST280            30    1    3.3  [  0.6- 16.7]    0.55 1.00e+00       3.3
+ST101            35    1    2.9  [  0.5- 14.5]    0.47 1.00e+00      22.9
+ST17             41    0    0.0  [  0.0-  8.6]    0.00 8.08e-01       4.9
+ST13             26    0    0.0  [  0.0- 12.9]    0.00 1.00e+00      69.2
+ST2975           12    0    0.0  [  0.0- 24.2]    0.00 1.00e+00       0.0
+ST29             18    0    0.0  [  0.0- 17.6]    0.00 1.00e+00       5.6
+ST35             27    0    0.0  [  0.0- 12.5]    0.00 1.00e+00       0.0
+ST37             47    0    0.0  [  0.0-  7.6]    0.00 7.95e-01      14.9
+ST551            11    0    0.0  [  0.0- 25.9]    0.00 1.00e+00       0.0
+ST628            11    0    0.0  [  0.0- 25.9]    0.00 1.00e+00       9.1
+
+-> results/tables/discordance_lineage_enrichment.tsv
+
+2 lineage(s) resistant above background at q < 0.05 without a detected carbapenemase.
+These are the candidates for an unreported mechanism or an unrecovered gene.
+Analysis 4 distinguishes the two.
+
+==============================================================================
+2. BREAKPOINT PROXIMITY  —  susceptibility despite a carbapenemase
+==============================================================================
+n with a numeric upper bound: 124 of 124
+
+  MIC upper (mg/L)     n       %   cum %
+              0.06     6     4.8     4.8
+              0.12     4     3.2     8.0
+              0.25     8     6.5    14.5
+              0.50    19    15.3    29.8
+              1.00    87    70.2   100.0
+
+87 of 124 (70.2%) sit at 1 mg/L, the highest MIC still called susceptible.
+A single doubling dilution would move these out of the susceptible category,
+so they are better described as borderline than as robustly susceptible.
+-> results/tables/discordance_breakpoint_proximity.tsv
+
+==============================================================================
+3. ALLELE-LEVEL STRUCTURE  —  susceptibility rate by allele
+==============================================================================
+family            allele            n    S     S%  95% CI
+KPC               KPC-2           572   28    4.9  [3.4-7.0]
+KPC               KPC-3           306    6    2.0  [0.9-4.2]
+NDM               NDM-1            97    1    1.0  [0.2-5.6]
+NDM               NDM-7            10    0    0.0  [0.0-27.8]
+OXA-48-like       OXA-48          157   63   40.1  [32.8-47.9]
+OXA-48-like       OXA-181          12    0    0.0  [0.0-24.2]
+VIM               VIM-1            21    4   19.0  [7.7-40.0]
+VIM               VIM-4            18   17   94.4  [74.2-99.0]
+
+-> results/tables/discordance_by_allele.tsv  (21 alleles with n < 10 written but not shown)
+
+==============================================================================
+4. ASSEMBLY QUALITY AS A COMPETING EXPLANATION
+==============================================================================
+  matched 3,193 of 3,193 genomes to QC metrics
+
+group                               metric             median disc.  median other         q
+resistant, carbapenemase-negative   n50_bp                 223949.0      202435.0  2.70e-03 *
+resistant, carbapenemase-negative   n_contigs                  94.0         103.0  9.98e-03 *
+resistant, carbapenemase-negative   genome_size_bp        5529196.0     5540335.0  3.84e-01
+resistant, carbapenemase-negative   contamination_pct           0.0           0.0  1.01e-01
+resistant, carbapenemase-negative   completeness_pct          100.0         100.0  3.30e-02 *
+susceptible, carbapenemase-positive n50_bp                 242207.5      200845.0  2.49e-04 *
+susceptible, carbapenemase-positive n_contigs                 103.5         102.0  1.89e-01
+susceptible, carbapenemase-positive genome_size_bp        5616929.0     5535249.0  1.10e-08 *
+susceptible, carbapenemase-positive contamination_pct           0.0           0.0  2.86e-02 *
+susceptible, carbapenemase-positive completeness_pct          100.0         100.0  4.03e-02 *
+
+-> results/tables/discordance_vs_assembly_quality.tsv
+
+  A significantly lower N50 or higher contig count among
+  resistant carbapenemase-negative isolates is evidence that
+  some of that cell is unrecovered genes rather than novel
+  biology. Report it either way.
+
+[1m== 14. external validation ==[0m
+derivation accessions : 1,558 assemblies, 3,346 biosamples
+NCBI isolates scanned : 166,142
+  no meropenem AST      : 164,879
+  in derivation set    : 245  (excluded)
+  call not S or R      : 31  (excluded)
+  duplicate BioSample  : 1  (collapsed, first assembly by accession kept)
+  flagged gene calls not counted as present: 0
+
+external set          : 986 isolates (396 resistant, 590 susceptible)
+  partial QualiBact    : PASS_partial 976, FAIL 10
+
+==========================================================================================
+EXTERNAL SET COMPOSITION BY SUBMISSION
+==========================================================================================
+bioproject      sequenced_by                      n  %set     R%  carb+  carb+ R%  flag
+PRJNA1322038    University of Queensland (Bri   244  24.7   28.7    167       0.6  FLAG
+PRJNA278886     NULL                            126  12.8   13.5     10     100.0  
+PRJNA717739     NULL                             97   9.8   22.7     22      90.9  
+PRJNA1160997    NULL                             84   8.5   70.2     84      70.2  
+PRJNA1271593    NULL                             45   4.6    0.0      0       n/a  
+PRJNA308116     FDA Center for Food Safety an    38   3.9   71.1     30      86.7  
+PRJNA1156689    ACEGID                           38   3.9    0.0      0       n/a  
+PRJNA785542     NULL                             21   2.1   81.0     19      78.9  
+PRJNA1219142    NULL                             19   1.9  100.0     19     100.0  
+PRJNA529587     NULL                             17   1.7    0.0      0       n/a  
+PRJNA635420     NULL                             17   1.7  100.0     17     100.0  
+PRJNA1427745    NULL                             16   1.6   43.8     16      43.8  
+
+1 BioProject(s) flagged: among their carbapenemase-positive isolates fewer than
+20% are reported resistant. Together they are 244 isolates (24.7% of
+the external set). Results are reported with and without them; neither is
+suppressed.
+
+Gain from the family-specific porin rule, BioProject cluster bootstrap:
+  all_external                     accuracy   68.9 ->  70.7  difference  +1.8 (95% CI -1.5 to +6.6, 124 BioProjects)
+  all_external                     PPV        58.5 ->  61.2  difference  +2.7 (95% CI -1.1 to +12.5, 124 BioProjects)
+  excluding_flagged_bioprojects    accuracy   90.3 ->  92.7  difference  +2.4 (95% CI -2.0 to +8.0, 123 BioProjects)
+  excluding_flagged_bioprojects    PPV        85.7 ->  93.6  difference  +7.9 (95% CI +0.7 to +13.8, 123 BioProjects)
+
+==========================================================================================
+STRATUM RESISTANCE RATE: DERIVATION vs EXTERNAL
+==========================================================================================
+stratum                                                 derivation              external  agree
+family=NDM | porin=intact                     100.0 [ 90.4-100.0] n=36      91.5 [ 80.1- 96.6] n=47     yes
+family=NDM | porin=ompK36_disrupted           100.0 [ 83.2-100.0] n=19     100.0 [ 74.1-100.0] n=11     yes
+family=KPC | porin=ompK36_disrupted            98.5 [ 96.7- 99.3] n=392    100.0 [ 93.4-100.0] n=54     yes
+family=NDM | porin=ompK35_only                 98.1 [ 89.9- 99.7] n=52      96.2 [ 81.1- 99.3] n=26     yes
+family=OXA-48-like | porin=ompK36_disrupted    97.4 [ 91.0- 99.3] n=77      93.5 [ 79.3- 98.2] n=31     yes
+family=KPC | porin=ompK35_only                 96.0 [ 93.7- 97.5] n=427     89.1 [ 77.0- 95.3] n=46     yes
+family=KPC | porin=intact                      79.7 [ 68.3- 87.7] n=64      89.2 [ 75.3- 95.7] n=37     yes
+family=OXA-48-like | porin=ompK35_only         62.5 [ 45.3- 77.1] n=32      70.0 [ 39.7- 89.2] n=10     yes
+family=OXA-48-like | porin=intact              29.2 [ 19.9- 40.5] n=72      25.0 [ 14.2- 40.2] n=40     yes
+family=none | porin=ompK36_disrupted           23.4 [ 19.0- 28.5] n=299     76.5 [ 52.7- 90.4] n=17     NO
+family=none | porin=ompK35_only                 4.3 [  2.8-  6.7] n=438     14.3 [  4.0- 39.9] n=14     yes
+family=none | porin=intact                      2.1 [  1.4-  3.0] n=1215     1.7 [  0.8-  3.6] n=355    yes
+
+confidence intervals overlap in 11 of 12 strata with n >= 10 in both sets.
+
+==========================================================================================
+EXTERNAL PREDICTIVE VALUES  —  meropenem, rules fitted on BV-BRC, applied unchanged
+==========================================================================================
+
+all_external   (n = 986)
+  T0_gene_only       PPV  58.5 [54.2-62.7]   NPV  80.6 [76.7-83.9]   sens  77.3  spec  63.2  acc  68.9
+  T1_family          PPV  58.5 [54.2-62.7]   NPV  80.6 [76.7-83.9]   sens  77.3  spec  63.2  acc  68.9
+  T2_family_porin    PPV  61.2 [56.8-65.5]   NPV  79.6 [75.8-82.8]   sens  73.7  spec  68.6  acc  70.7
+
+excluding_flagged_bioprojects   (n = 742)
+  T0_gene_only       PPV  85.7 [81.7-88.9]   NPV  94.6 [91.8-96.4]   sens  93.6  spec  87.7  acc  90.3
+  T1_family          PPV  85.7 [81.7-88.9]   NPV  94.6 [91.8-96.4]   sens  93.6  spec  87.7  acc  90.3
+  T2_family_porin    PPV  93.6 [90.3-95.8]   NPV  92.1 [89.2-94.3]   sens  89.6  spec  95.2  acc  92.7
+
+excluding_partial_qc_failures   (n = 976)
+  T0_gene_only       PPV  58.7 [54.4-62.9]   NPV  80.4 [76.6-83.8]   sens  77.1  spec  63.5  acc  69.0
+  T1_family          PPV  58.7 [54.4-62.9]   NPV  80.4 [76.6-83.8]   sens  77.1  spec  63.5  acc  69.0
+  T2_family_porin    PPV  61.5 [57.0-65.8]   NPV  79.4 [75.7-82.7]   sens  73.5  spec  69.0  acc  70.8
+
+==========================================================================================
+LEAVE-ONE-BIOPROJECT-OUT  —  range of each statistic across dropped submissions
+==========================================================================================
+tier                       PPV min-max       NPV min-max    accuracy min-max   projects
+T0_gene_only            84.9-90.4         93.8-95.1           89.4-92.9        17
+T1_family               84.9-90.4         93.8-95.1           89.4-92.9        17
+T2_family_porin         93.2-94.5         91.2-92.6           92.3-93.3        17
+
+submission whose removal lowers accuracy most (i.e. the one propping it up):
+  T0_gene_only         PRJNA278886      (n = 126)  accuracy without it 89.4
+  T1_family            PRJNA278886      (n = 126)  accuracy without it 89.4
+  T2_family_porin      PRJNA1271593     (n = 45)  accuracy without it 92.3
+
+-> results/tables/external_performance.tsv
+-> results/tables/external_bioprojects.tsv
+
+NOTE: this set is method-heterogeneous and genotyped with AMRFinderPlus rather
+than Kleborate, its susceptibility testing is not standardised, and only three
+of the seven QualiBact metrics are published for it. These differences limit
+direct comparison with the derivation estimates. Their net effect on measured
+performance could run in either direction, so this is not a bound on
+transferability in either sense.
+
+[1m== 15. provenance, integrity and release reporting ==[0m
+  genomes            : 7,360
+  re-retrieved copies: 3,493
+  COMPLETE   : 6,555
+  INCOMPLETE : 0
+  UNVERIFIED : 805
+
+  [out] results/qc_concordance/fasta_integrity_effective.tsv
+genome ledger — where every genome left the study
+
+  rows in the ledger                        7,363
+  re-retrieved after the integrity audit    3,493
+    of those, in the complex genotype table 3,491
+    assigned to another species group           2
+    unaccounted                                 0
+  typed, in the K. pneumoniae complex        7,333
+  species retained (complex)                7,245
+  retained after assembly QC                5,342
+  in the primary meropenem binary set       3,193
+
+  where the rest left:
+    no CLSI broth-dilution meropenem record        1,995
+    no QC metrics available                        1,622
+    failed assembly QC                               281
+    linked but not binary-classifiable               154
+    species not in the K. pneumoniae complex          88
+    no Kleborate call                                 25
+    malformed Kleborate row, no genome identifier       3
+    assigned to Escherichia, outside the complex       1
+    assigned to K. oxytoca complex, outside the complex       1
+
+  integrity of the genotyped file:
+    COMPLETE                                       6,555
+    UNVERIFIED                                       805
+    NOT_RETRIEVED                                      3
+
+  included genomes whose file is not verified COMPLETE: 0
+
+  wrote results/tables/genome_ledger.tsv
+  binary set 3,193 genomes, 366 sequence types
+
+  Fold sensitivity across 20 grouped-CV splits:
+    PPV gain       median +4.3  range +4.0 to +5.4  splits favouring the porin rule 20/20
+    accuracy gain  median +0.8  range +0.3 to +1.2  splits favouring the porin rule 20/20
+
+  Gain from the family-specific porin rule, derivation set:
+    accuracy   92.5 ->  93.4  difference  +0.9 (95% CI -0.2 to +2.4)
+    PPV        90.0 ->  95.4  difference  +5.4 (95% CI +2.4 to +13.5)
+
+  wrote results/tables/derivation_gain_bootstrap.tsv
+
+carbapenemase families of the non-pneumoniae genomes (17 of 3193):
+      10  none
+       6  KPC
+       1  IMP
+   isolates in a family containing OXA-48-like or VIM: 244, of which non-pneumoniae 0
+   every OXA-48-like and VIM producer is K. pneumoniae sensu stricto, so the family and porin analysis is identical under either species definition
+[out] results/supplementary/S18b_non_pneumoniae_composition.tsv
+species composition of the primary binary set:
+    3176  Klebsiella pneumoniae
+      13  Klebsiella quasipneumoniae subsp. similipneumoniae
+       4  Klebsiella quasipneumoniae subsp. quasipneumoniae
+
+assembly-integrity verdict of the primary binary set:
+    3193  COMPLETE
+
+[out] results/supplementary/S18_species_integrity_sensitivity.tsv
+   primary (K. pneumoniae species complex, as reported) n=3193  carb+ 124/1241 = 10.0%  carb- 114/1952 = 5.8%  acc 0.925
+   K. pneumoniae sensu stricto                          n=3176  carb+ 123/1234 = 10.0%  carb- 114/1942 = 5.9%  acc 0.925
+[out] results/EXTERNAL_VALIDATION_SUMMARY.txt
+
+[1m== DONE ==[0m
+
+summary written to results/logs/summary_20261013_135630.txt

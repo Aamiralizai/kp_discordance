@@ -1,0 +1,57 @@
+tier	stratum	n	n_resistant	resistance_pct	decision	folds_present	folds_decision_flipped	stable
+T0_gene_only	carb_pos=0	1072	35	3.3	SUSCEPTIBLE	5	0	yes
+T0_gene_only	carb_pos=1	717	679	94.7	RESISTANT	5	0	yes
+T1_family	family=none	1072	35	3.3	SUSCEPTIBLE	5	0	yes
+T1_family	family=KPC	654	619	94.6	RESISTANT	5	0	yes
+T1_family	family=NDM	26	25	96.2	RESISTANT	5	0	yes
+T1_family	family=OXA-48-like	24	22	91.7	RESISTANT	5	0	yes
+T1_family	family=VIM	7	7	100.0	RESISTANT	5	0	yes
+T1_family	family=multiple	5	5	100.0	RESISTANT	4	0	yes
+T1_family	family=other	1	1	100.0	RESISTANT	4	0	yes
+T2_family_porin	family=OXA-48-like | porin=intact	3	2	66.7	RESISTANT	5	1	no
+T2_family_porin	family=none | porin=intact	496	7	1.4	SUSCEPTIBLE	5	0	yes
+T2_family_porin	family=KPC | porin=ompK35_only	394	368	93.4	RESISTANT	5	0	yes
+T2_family_porin	family=none | porin=ompK35_only	347	9	2.6	SUSCEPTIBLE	5	0	yes
+T2_family_porin	family=none | porin=ompK36_disrupted	229	19	8.3	SUSCEPTIBLE	5	0	yes
+T2_family_porin	family=KPC | porin=ompK36_disrupted	219	215	98.2	RESISTANT	5	0	yes
+T2_family_porin	family=KPC | porin=intact	41	36	87.8	RESISTANT	5	0	yes
+T2_family_porin	family=OXA-48-like | porin=ompK36_disrupted	13	13	100.0	RESISTANT	5	0	yes
+T2_family_porin	family=NDM | porin=ompK36_disrupted	12	12	100.0	RESISTANT	5	0	yes
+T2_family_porin	family=NDM | porin=ompK35_only	11	10	90.9	RESISTANT	5	0	yes
+T2_family_porin	family=OXA-48-like | porin=ompK35_only	8	7	87.5	RESISTANT	4	0	yes
+T2_family_porin	family=NDM | porin=intact	3	3	100.0	RESISTANT	5	0	yes
+T2_family_porin	family=VIM | porin=intact	3	3	100.0	RESISTANT	5	0	yes
+T2_family_porin	family=VIM | porin=ompK36_disrupted	3	3	100.0	RESISTANT	4	0	yes
+T2_family_porin	family=multiple | porin=ompK36_disrupted	3	3	100.0	RESISTANT	4	0	yes
+T2_family_porin	family=VIM | porin=ompK35_only	1	1	100.0	RESISTANT	4	0	yes
+T2_family_porin	family=multiple | porin=intact	1	1	100.0	RESISTANT	4	0	yes
+T2_family_porin	family=multiple | porin=ompK35_only	1	1	100.0	RESISTANT	4	0	yes
+T2_family_porin	family=other | porin=ompK36_disrupted	1	1	100.0	RESISTANT	4	0	yes
+T3_family_porin_lineage	family=none | porin=ompK36_disrupted | lineage=CG258	6	3	50.0	SUSCEPTIBLE	5	1	no
+T3_family_porin_lineage	family=OXA-48-like | porin=intact | lineage=non-CG258	3	2	66.7	RESISTANT	5	1	no
+T3_family_porin_lineage	family=none | porin=intact | lineage=CG258	2	1	50.0	SUSCEPTIBLE	5	1	no
+T3_family_porin_lineage	family=none | porin=intact | lineage=non-CG258	494	6	1.2	SUSCEPTIBLE	5	0	yes
+T3_family_porin_lineage	family=KPC | porin=ompK35_only | lineage=CG258	330	310	93.9	RESISTANT	5	0	yes
+T3_family_porin_lineage	family=none | porin=ompK36_disrupted | lineage=non-CG258	223	16	7.2	SUSCEPTIBLE	5	0	yes
+T3_family_porin_lineage	family=none | porin=ompK35_only | lineage=non-CG258	207	4	1.9	SUSCEPTIBLE	5	0	yes
+T3_family_porin_lineage	family=KPC | porin=ompK36_disrupted | lineage=non-CG258	160	157	98.1	RESISTANT	5	0	yes
+T3_family_porin_lineage	family=none | porin=ompK35_only | lineage=CG258	140	5	3.6	SUSCEPTIBLE	5	0	yes
+T3_family_porin_lineage	family=KPC | porin=ompK35_only | lineage=non-CG258	64	58	90.6	RESISTANT	5	0	yes
+T3_family_porin_lineage	family=KPC | porin=ompK36_disrupted | lineage=CG258	59	58	98.3	RESISTANT	5	0	yes
+T3_family_porin_lineage	family=KPC | porin=intact | lineage=non-CG258	34	29	85.3	RESISTANT	5	0	yes
+T3_family_porin_lineage	family=NDM | porin=ompK36_disrupted | lineage=non-CG258	12	12	100.0	RESISTANT	5	0	yes
+T3_family_porin_lineage	family=OXA-48-like | porin=ompK36_disrupted | lineage=non-CG258	11	11	100.0	RESISTANT	5	0	yes
+T3_family_porin_lineage	family=OXA-48-like | porin=ompK35_only | lineage=non-CG258	8	7	87.5	RESISTANT	4	0	yes
+T3_family_porin_lineage	family=KPC | porin=intact | lineage=CG258	7	7	100.0	RESISTANT	4	0	yes
+T3_family_porin_lineage	family=NDM | porin=ompK35_only | lineage=non-CG258	7	6	85.7	RESISTANT	5	0	yes
+T3_family_porin_lineage	family=NDM | porin=ompK35_only | lineage=CG258	4	4	100.0	RESISTANT	4	0	yes
+T3_family_porin_lineage	family=VIM | porin=intact | lineage=non-CG258	3	3	100.0	RESISTANT	5	0	yes
+T3_family_porin_lineage	family=VIM | porin=ompK36_disrupted | lineage=non-CG258	3	3	100.0	RESISTANT	4	0	yes
+T3_family_porin_lineage	family=multiple | porin=ompK36_disrupted | lineage=non-CG258	3	3	100.0	RESISTANT	4	0	yes
+T3_family_porin_lineage	family=NDM | porin=intact | lineage=non-CG258	2	2	100.0	RESISTANT	5	0	yes
+T3_family_porin_lineage	family=OXA-48-like | porin=ompK36_disrupted | lineage=CG258	2	2	100.0	RESISTANT	4	0	yes
+T3_family_porin_lineage	family=NDM | porin=intact | lineage=CG258	1	1	100.0	RESISTANT	4	0	yes
+T3_family_porin_lineage	family=VIM | porin=ompK35_only | lineage=non-CG258	1	1	100.0	RESISTANT	4	0	yes
+T3_family_porin_lineage	family=multiple | porin=intact | lineage=CG258	1	1	100.0	RESISTANT	4	0	yes
+T3_family_porin_lineage	family=multiple | porin=ompK35_only | lineage=non-CG258	1	1	100.0	RESISTANT	4	0	yes
+T3_family_porin_lineage	family=other | porin=ompK36_disrupted | lineage=non-CG258	1	1	100.0	RESISTANT	4	0	yes

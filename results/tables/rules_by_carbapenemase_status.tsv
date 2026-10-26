@@ -1,0 +1,17 @@
+subset	tier	estimate	n	TP	FP	TN	FN	PPV	PPV_lo	PPV_hi	PPV_denom	NPV	NPV_lo	NPV_hi	NPV_denom	sensitivity	sensitivity_lo	sensitivity_hi	sensitivity_denom	specificity	specificity_lo	specificity_hi	specificity_denom	accuracy	accuracy_lo	accuracy_hi	accuracy_denom
+carbapenemase_positive	T0_gene_only	cv_grouped_by_ST	1241	1117	124	0	0	90.0	88.2	91.6	1241				0	100.0	99.7	100.0	1117	0.0	0.0	3.0	124	90.0	88.2	91.6	1241
+carbapenemase_positive	T0_gene_only	apparent	1241	1117	124	0	0	90.0	88.2	91.6	1241				0	100.0	99.7	100.0	1117	0.0	0.0	3.0	124	90.0	88.2	91.6	1241
+carbapenemase_negative	T0_gene_only	cv_grouped_by_ST	1952	0	0	1838	114				0	94.2	93.0	95.1	1952	0.0	0.0	3.3	114	100.0	99.8	100.0	1838	94.2	93.0	95.1	1952
+carbapenemase_negative	T0_gene_only	apparent	1952	0	0	1838	114				0	94.2	93.0	95.1	1952	0.0	0.0	3.3	114	100.0	99.8	100.0	1838	94.2	93.0	95.1	1952
+carbapenemase_positive	T1_family	cv_grouped_by_ST	1241	1033	108	16	84	90.5	88.7	92.1	1141	16.0	10.1	24.4	100	92.5	90.8	93.9	1117	12.9	8.1	19.9	124	84.5	82.4	86.4	1241
+carbapenemase_positive	T1_family	apparent	1241	1117	124	0	0	90.0	88.2	91.6	1241				0	100.0	99.7	100.0	1117	0.0	0.0	3.0	124	90.0	88.2	91.6	1241
+carbapenemase_negative	T1_family	cv_grouped_by_ST	1952	0	0	1838	114				0	94.2	93.0	95.1	1952	0.0	0.0	3.3	114	100.0	99.8	100.0	1838	94.2	93.0	95.1	1952
+carbapenemase_negative	T1_family	apparent	1952	0	0	1838	114				0	94.2	93.0	95.1	1952	0.0	0.0	3.3	114	100.0	99.8	100.0	1838	94.2	93.0	95.1	1952
+carbapenemase_positive	T2_family_porin	cv_grouped_by_ST	1241	1081	68	56	36	94.1	92.6	95.3	1149	60.9	50.7	70.2	92	96.8	95.6	97.7	1117	45.2	36.7	53.9	124	91.6	89.9	93.0	1241
+carbapenemase_positive	T2_family_porin	apparent	1241	1084	53	71	33	95.3	94.0	96.4	1137	68.3	58.8	76.4	104	97.0	95.9	97.9	1117	57.3	48.5	65.6	124	93.1	91.5	94.4	1241
+carbapenemase_negative	T2_family_porin	cv_grouped_by_ST	1952	0	0	1838	114				0	94.2	93.0	95.1	1952	0.0	0.0	3.3	114	100.0	99.8	100.0	1838	94.2	93.0	95.1	1952
+carbapenemase_negative	T2_family_porin	apparent	1952	0	0	1838	114				0	94.2	93.0	95.1	1952	0.0	0.0	3.3	114	100.0	99.8	100.0	1838	94.2	93.0	95.1	1952
+carbapenemase_positive	T3_family_porin_lineage	cv_grouped_by_ST	1241	1081	68	56	36	94.1	92.6	95.3	1149	60.9	50.7	70.2	92	96.8	95.6	97.7	1117	45.2	36.7	53.9	124	91.6	89.9	93.0	1241
+carbapenemase_positive	T3_family_porin_lineage	apparent	1241	1083	51	73	34	95.5	94.1	96.6	1134	68.2	58.9	76.3	107	97.0	95.8	97.8	1117	58.9	50.1	67.1	124	93.2	91.6	94.4	1241
+carbapenemase_negative	T3_family_porin_lineage	cv_grouped_by_ST	1952	4	6	1832	110	40.0	16.8	68.7	10	94.3	93.2	95.3	1942	3.5	1.4	8.7	114	99.7	99.3	99.9	1838	94.1	92.9	95.0	1952
+carbapenemase_negative	T3_family_porin_lineage	apparent	1952	20	16	1822	94	55.6	39.6	70.5	36	95.1	94.0	96.0	1916	17.5	11.7	25.6	114	99.1	98.6	99.5	1838	94.4	93.3	95.3	1952

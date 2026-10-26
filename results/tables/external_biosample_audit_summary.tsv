@@ -1,0 +1,10 @@
+quantity	n	pct
+external isolates	986	
+with a BioSample antibiogram	986	100.0
+comparable susceptibility calls, all drugs	18606	
+concordant with Pathogen Detection	12698	68.2
+meropenem comparable	986	100.0
+meropenem disagrees	244	24.7
+submissions with a wholly inverted record	1	
+isolates in those submissions	244	24.7
+meropenem calls taken from the BioSample record	244	24.7

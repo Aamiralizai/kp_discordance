@@ -1,0 +1,4 @@
+cohort	genomes	profile_hits_any	profile_hits_per_genome	strong_hits_bits_ge_100	strong_per_genome	strong_in_carbapenemase_family	strong_named_by_pairwise	strong_not_named_by_pairwise	not_named_specific_profile	not_named_specific_per_genome	not_named_broad_profile	top_families
+A_carbNeg_resistant	114	1082	9.49	414	3.63	5	395	19	10	0.088	9	blaSHV 121; blaCTX-M 97; blaTEM 87; blaOXA-1_fam 58; blaOXA-PR 17; blaDHA 11
+B_carbPos_susceptible	124	1295	10.44	545	4.4	62	498	47	13	0.105	34	blaSHV 124; blaTEM 91; blaCTX-M 85; blaOXA-48_fam 67; blaOXA-1_fam 61; blaOXA-PR 41
+D_control_sample	60	506	8.43	158	2.63	0	151	7	6	0.1	1	blaSHV 60; blaCTX-M 37; blaTEM 32; blaOXA-1_fam 21; blaOXA-PR 4; blaFOX 1

@@ -1,0 +1,4 @@
+cohort	genomes	proteins_screened_main_band	short_orfs_screened	genomes_with_catalogued_carbapenemase_main_band	genomes_with_novel_candidate_carbapenemase	genomes_with_carbapenemase_split_by_assembly_break	genomes_with_internally_truncated_carbapenemase	background_ceiling_median_pct	background_ceiling_max_pct
+A_carbNeg_resistant	114	362499	158534	1	0	4	0	40.6	42.2
+B_carbPos_susceptible	124	397352	177317	124	0	3	1	40.6	42.8
+D_control_sample	60	188950	81060	0	0	0	0	40.6	41.9

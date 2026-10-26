@@ -1,0 +1,5 @@
+drug	family	n	largest_stratum	n_in_largest	pct_in_largest
+meropenem	KPC	883	2017	437	49.5
+meropenem	NDM	107	2015	65	60.7
+meropenem	OXA-48-like	181	2015	153	84.5
+meropenem	VIM	44	2015	37	84.1

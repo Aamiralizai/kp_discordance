@@ -1,0 +1,6 @@
+term	adjusted_OR	ci_lo	ci_hi	p	n	events
+OmpK36 disruption	10.295	6.801	15.585	2.96e-28	1952	114
+Acquired ESBL	2.541	1.391	4.642	0.00242	1952	114
+Acquired AmpC	4.752	2.408	9.380	7.03e-06	1952	114
+# mutually adjusted logistic regression of meropenem resistance
+# among carbapenemase-negative isolates of the primary stratum

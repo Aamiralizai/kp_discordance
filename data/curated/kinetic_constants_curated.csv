@@ -1,0 +1,15 @@
+enzyme,variant,substrate,kcat_s-1,Km_uM,kcat_Km_uM-1s-1,source,status,curation_note
+KPC,KPC-2,meropenem,8.078,16.263,0.497,mSphere 2020;5:e00775-20 (PMC7449627 Table 2),verified,Full kᴄᴀᴛ and Kᴍ pair. Differs approximately 3.5-fold from the J Biol Chem value below; both are reported here as a range.
+KPC,KPC-2,meropenem,,,0.14,J Biol Chem 2021 (S0021925820001489),verified,"Reported as 1.4 × 10⁵ M⁻¹s⁻¹. With the mSphere value, this gives a range of 0.14–0.50 µM⁻¹s⁻¹."
+KPC,KPC-2,imipenem,28.797,98.350,0.293,mSphere 2020;5:e00775-20 (PMC7449627 Table 2),verified,Full kᴄᴀᴛ and Kᴍ pair.
+KPC,KPC-2,imipenem,,,0.16,J Biol Chem 2021 (S0021925820001489),verified,"Reported as 1.6 × 10⁵ M⁻¹s⁻¹; with the value above, this gives a range of 0.16–0.29 µM⁻¹s⁻¹."
+KPC,KPC-3,imipenem,,,1.94,AAC 2005;49:4760-4762 (PMID 16251324),verified,"The abstract and the body of this source (Alba et al. 2005, Antimicrob Agents Chemother 49:4760–4762) assign the imipenem and meropenem values in opposite order; the values used here follow the body of the paper."
+KPC,KPC-3,meropenem,,,1.40,AAC 2005;49:4760-4762 (PMID 16251324),verified,As above. KPC-3 catalytic efficiency exceeds that of KPC-2 in this source (1.40 versus 0.14–0.50); assay conditions differ between studies.
+OXA-48,OXA-48,imipenem,2.8,,,PMC8571991 Mechanistic Basis OXA-48-like,verified,"kᴄᴀᴛ 2.8 s⁻¹; deacylation is rate-limiting (k₃ approximately 3.0 s⁻¹, close to kᴄᴀᴛ)."
+OXA-48,OXA-48,imipenem,2.0/5.0*,,,CMR 2020;33:e00102-19,range across sources,The narrative text reports 2.0 s⁻¹ and Table 2 reports 5.0 s⁻¹; both values are shown as a range.
+OXA-48,OXA-48,meropenem,~0.1,,,DERIVED from PMC8571991,derived,Not directly reported. The source states that imipenem turnover is approximately 28-fold higher than for meropenem; the value shown is derived from that ratio and is not an independent measurement. Deacylation is approximately 20-fold slower than for imipenem.
+OXA-48,OXA-181,imipenem,,,0.55,Microorganisms 2022;10:258,verified,"Reported as 550 mM⁻¹s⁻¹, the highest of 30 OXA-48-like variants tested."
+OXA-48,OXA-232,imipenem,0.2,9,0.02,"CMR 2020;33:e00102-19, T2",verified,"Reported as 20 mM⁻¹s⁻¹, approximately 27-fold lower than OXA-181, arising from the single residue change R214S."
+NDM,NDM-1,meropenem,,23.49-98.29,,"Sci Rep 2017;7:9207, T6",conditional,The source quotes a Kᴍ range of 20–200 µM covering both imipenem and meropenem; no meropenem-specific value is reported.
+NDM,NDM-1,Carbapenems general,,,1-5,Nat Commun 2018;9:4524,verified,kᴄᴀᴛ/Kᴍ approximately 1–5 × 10⁶ M⁻¹s⁻¹ for penicillins and carbapenems.
+NDM,NDM-1,Betalactams general,,,0.03-1.28,PLoS One 2013;8:e62955,verified,kᴄᴀᴛ/Kᴍ range across substrates; kᴄᴀᴛ exceeds 1 s⁻¹ for all carbapenems and 10 s⁻¹ for imipenem. Assayed at pH 6.8 with 100 µM Zn.

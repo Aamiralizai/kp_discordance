@@ -1,0 +1,9 @@
+drug	stratum	reporting_year	platform	n
+meropenem	clsi_bmd	2010	VITEK 2	15
+meropenem	clsi_bmd	2013	<not reported>	71
+meropenem	clsi_bmd	2015	<not reported>	510
+meropenem	clsi_bmd	2016	<not reported>	23
+meropenem	clsi_bmd	2017	BD Phoenix	450
+meropenem	clsi_bmd	<not reported>	<not reported>	161
+meropenem	clsi_bmd	<not reported>	VITEK 2	11
+meropenem	clsi_bmd	ALL	ALL	platform nested within every reported year: True; nested within all year groups including not-reported: False

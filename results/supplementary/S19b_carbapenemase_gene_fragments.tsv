@@ -1,0 +1,12 @@
+cohort	genome_id	published_carbapenemase_call	reference_allele	percent_identity	aligned_residues	reference_residue_range	reference_length	contig_length_bp	orf_start	orf_end	strand	partial_at_orf_start	partial_at_orf_end	bases_to_contig_start	bases_to_contig_end	interpretation
+A_carbNeg_resistant	573.13799	none	blaKPC-2	94.9	158	136-293	293	1070	591	1070	-	no	yes	590	0	assembly_break
+A_carbNeg_resistant	573.14223	none	blaKPC-211	100.0	174	1-174	289	11688	1	522	-	yes	no	0	11166	assembly_break
+A_carbNeg_resistant	573.14223	none	blaKPC-211	100.0	115	175-289	289	4885	4519	4884	-	no	yes	4518	1	assembly_break
+A_carbNeg_resistant	573.21572	none	blaNDM-1	100.0	74	1-74	270	333	2	223	-	yes	no	1	110	assembly_break
+A_carbNeg_resistant	573.21677	none	blaNDM-1	100.0	184	1-184	270	5697	3	554	-	yes	no	2	5143	assembly_break
+A_carbNeg_resistant	72407.559	none	blaCMH-3	77.6	125	1-125	381	30108	29733	30107	+	no	yes	29732	1	divergent_chromosomal_homologue
+A_carbNeg_resistant	72407.559	none	blaCMH-3	76.4	258	124-381	381	8111	7333	8109	-	no	yes	7332	2	divergent_chromosomal_homologue
+B_carbPos_susceptible	573.20501	OXA-48	blaOXA-58	100.0	112	169-280	280	756	417	755	-	no	yes	416	1	assembly_break
+B_carbPos_susceptible	573.21958	OXA-48	blaKPC-285	100.0	101	49-149	283	305	2	304	+	yes	yes	1	1	assembly_break
+B_carbPos_susceptible	573.21973	KPC-2;OXA-48	blaVIM-1	100.0	143	108-250	266	430	2	430	+	yes	yes	1	0	assembly_break
+B_carbPos_susceptible	72407.519	NDM-1	blaOXA-233	99.4	168	99-266	266	4109	2665	3171	+	no	no	2664	938	internal_truncation

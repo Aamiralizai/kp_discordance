@@ -1,0 +1,586 @@
+{
+  "note": "Every value here is computed from the record-level tables. Reconcile all manuscript text against this file.",
+  "analyses": [
+    {
+      "analysis": "primary (CLSI, broth dilution)",
+      "drug": "meropenem",
+      "tag": "_clsi_bmd",
+      "linked_genomes": 3347,
+      "susceptible": 1962,
+      "intermediate": 153,
+      "resistant": 1231,
+      "unresolvable": 1,
+      "binary_set": 3193,
+      "carbapenemase_positive_n": 1241,
+      "carbapenemase_positive_susceptible_n": 124,
+      "carbapenemase_positive_susceptible_pct_ci": [
+        10.0,
+        8.4,
+        11.8
+      ],
+      "carbapenemase_negative_n": 1952,
+      "carbapenemase_negative_resistant_n": 114,
+      "carbapenemase_negative_resistant_pct_ci": [
+        5.8,
+        4.9,
+        7.0
+      ],
+      "PPV": 0.9,
+      "NPV": 0.942,
+      "sensitivity": 0.907,
+      "specificity": 0.937,
+      "by_family": {
+        "KPC": {
+          "n": 883,
+          "susceptible": 36,
+          "pct_ci": [
+            4.1,
+            3.0,
+            5.6
+          ]
+        },
+        "NDM": {
+          "n": 107,
+          "susceptible": 1,
+          "pct_ci": [
+            0.9,
+            0.2,
+            5.1
+          ]
+        },
+        "NDM+OXA-48-like": {
+          "n": 13,
+          "susceptible": 0,
+          "pct_ci": [
+            0.0,
+            0,
+            22.8
+          ]
+        },
+        "OXA-48-like": {
+          "n": 181,
+          "susceptible": 65,
+          "pct_ci": [
+            35.9,
+            29.3,
+            43.1
+          ]
+        },
+        "VIM": {
+          "n": 44,
+          "susceptible": 21,
+          "pct_ci": [
+            47.7,
+            33.8,
+            62.1
+          ]
+        }
+      },
+      "fisher_intact_vs_ompK36": [
+        {
+          "family": "OXA-48-like",
+          "R_intact": 21,
+          "S_intact": 51,
+          "R_disrupted": 75,
+          "S_disrupted": 2,
+          "odds_ratio": 0.0109803921568627,
+          "p_value": 2.604163613536376e-20,
+          "q_BH": 7.812490840609129e-20
+        },
+        {
+          "family": "KPC",
+          "R_intact": 51,
+          "S_intact": 13,
+          "R_disrupted": 386,
+          "S_disrupted": 6,
+          "odds_ratio": 0.0609804703068951,
+          "p_value": 3.621919411439636e-08,
+          "q_BH": 5.4328791171594554e-08
+        },
+        {
+          "family": "NDM",
+          "R_intact": 36,
+          "S_intact": 0,
+          "R_disrupted": 19,
+          "S_disrupted": 0,
+          "odds_ratio": NaN,
+          "p_value": 1.0,
+          "q_BH": 1.0
+        }
+      ]
+    },
+    {
+      "analysis": "imipenem (CLSI, broth dilution)",
+      "drug": "imipenem",
+      "tag": "_clsi_bmd",
+      "linked_genomes": 1828,
+      "susceptible": 1075,
+      "intermediate": 35,
+      "resistant": 718,
+      "unresolvable": 0,
+      "binary_set": 1793,
+      "carbapenemase_positive_n": 720,
+      "carbapenemase_positive_susceptible_n": 38,
+      "carbapenemase_positive_susceptible_pct_ci": [
+        5.3,
+        3.9,
+        7.2
+      ],
+      "carbapenemase_negative_n": 1073,
+      "carbapenemase_negative_resistant_n": 36,
+      "carbapenemase_negative_resistant_pct_ci": [
+        3.4,
+        2.4,
+        4.6
+      ],
+      "PPV": 0.947,
+      "NPV": 0.966,
+      "sensitivity": 0.95,
+      "specificity": 0.965,
+      "by_family": {
+        "KPC": {
+          "n": 657,
+          "susceptible": 35,
+          "pct_ci": [
+            5.3,
+            3.9,
+            7.3
+          ]
+        },
+        "NDM": {
+          "n": 26,
+          "susceptible": 1,
+          "pct_ci": [
+            3.8,
+            0.7,
+            18.9
+          ]
+        },
+        "OXA-48-like": {
+          "n": 24,
+          "susceptible": 2,
+          "pct_ci": [
+            8.3,
+            2.3,
+            25.8
+          ]
+        }
+      },
+      "fisher_intact_vs_ompK36": [
+        {
+          "family": "KPC",
+          "R_intact": 36,
+          "S_intact": 5,
+          "R_disrupted": 217,
+          "S_disrupted": 4,
+          "odds_ratio": 0.1327188940092166,
+          "p_value": 0.0058078085056384,
+          "q_BH": 0.0058078085056384
+        }
+      ]
+    },
+    {
+      "analysis": "meropenem (EUCAST breakpoints)",
+      "drug": "meropenem",
+      "tag": "_clsi_bmd_eucast",
+      "linked_genomes": 3347,
+      "susceptible": 2115,
+      "intermediate": 248,
+      "resistant": 960,
+      "unresolvable": 24,
+      "binary_set": 3075,
+      "carbapenemase_positive_n": 1128,
+      "carbapenemase_positive_susceptible_n": 209,
+      "carbapenemase_positive_susceptible_pct_ci": [
+        18.5,
+        16.4,
+        20.9
+      ],
+      "carbapenemase_negative_n": 1947,
+      "carbapenemase_negative_resistant_n": 41,
+      "carbapenemase_negative_resistant_pct_ci": [
+        2.1,
+        1.6,
+        2.8
+      ],
+      "PPV": 0.815,
+      "NPV": 0.979,
+      "sensitivity": 0.957,
+      "specificity": 0.901,
+      "by_family": {
+        "KPC": {
+          "n": 769,
+          "susceptible": 64,
+          "pct_ci": [
+            8.3,
+            6.6,
+            10.5
+          ]
+        },
+        "NDM": {
+          "n": 103,
+          "susceptible": 3,
+          "pct_ci": [
+            2.9,
+            1.0,
+            8.2
+          ]
+        },
+        "NDM+OXA-48-like": {
+          "n": 13,
+          "susceptible": 0,
+          "pct_ci": [
+            0.0,
+            0,
+            22.8
+          ]
+        },
+        "OXA-48-like": {
+          "n": 195,
+          "susceptible": 110,
+          "pct_ci": [
+            56.4,
+            49.4,
+            63.2
+          ]
+        },
+        "VIM": {
+          "n": 39,
+          "susceptible": 31,
+          "pct_ci": [
+            79.5,
+            64.5,
+            89.2
+          ]
+        }
+      },
+      "fisher_intact_vs_ompK36": [
+        {
+          "family": "OXA-48-like",
+          "R_intact": 5,
+          "S_intact": 82,
+          "R_disrupted": 70,
+          "S_disrupted": 3,
+          "odds_ratio": 0.0026132404181184,
+          "p_value": 3.415380566272581e-35,
+          "q_BH": 1.0246141698817742e-34
+        },
+        {
+          "family": "KPC",
+          "R_intact": 34,
+          "S_intact": 21,
+          "R_disrupted": 383,
+          "S_disrupted": 6,
+          "odds_ratio": 0.0253636702722864,
+          "p_value": 3.230569556708945e-16,
+          "q_BH": 4.84585433506342e-16
+        },
+        {
+          "family": "NDM",
+          "R_intact": 34,
+          "S_intact": 2,
+          "R_disrupted": 18,
+          "S_disrupted": 0,
+          "odds_ratio": 0.0,
+          "p_value": 0.5471698113207547,
+          "q_BH": 0.5471698113207547
+        }
+      ]
+    },
+    {
+      "analysis": "imipenem (EUCAST breakpoints)",
+      "drug": "imipenem",
+      "tag": "_clsi_bmd_eucast",
+      "linked_genomes": 1828,
+      "susceptible": 1110,
+      "intermediate": 60,
+      "resistant": 638,
+      "unresolvable": 20,
+      "binary_set": 1748,
+      "carbapenemase_positive_n": 670,
+      "carbapenemase_positive_susceptible_n": 58,
+      "carbapenemase_positive_susceptible_pct_ci": [
+        8.7,
+        6.8,
+        11.0
+      ],
+      "carbapenemase_negative_n": 1078,
+      "carbapenemase_negative_resistant_n": 26,
+      "carbapenemase_negative_resistant_pct_ci": [
+        2.4,
+        1.7,
+        3.5
+      ],
+      "PPV": 0.913,
+      "NPV": 0.976,
+      "sensitivity": 0.959,
+      "specificity": 0.948,
+      "by_family": {
+        "KPC": {
+          "n": 613,
+          "susceptible": 44,
+          "pct_ci": [
+            7.2,
+            5.4,
+            9.5
+          ]
+        },
+        "NDM": {
+          "n": 25,
+          "susceptible": 1,
+          "pct_ci": [
+            4.0,
+            0.7,
+            19.5
+          ]
+        },
+        "OXA-48-like": {
+          "n": 19,
+          "susceptible": 11,
+          "pct_ci": [
+            57.9,
+            36.3,
+            76.9
+          ]
+        }
+      },
+      "fisher_intact_vs_ompK36": [
+        {
+          "family": "KPC",
+          "R_intact": 22,
+          "S_intact": 7,
+          "R_disrupted": 212,
+          "S_disrupted": 5,
+          "odds_ratio": 0.0741239892183288,
+          "p_value": 8.16856863923477e-05,
+          "q_BH": 8.16856863923477e-05
+        }
+      ]
+    },
+    {
+      "analysis": "meropenem deduplicated",
+      "drug": "meropenem",
+      "tag": "_clsi_bmd_dedup",
+      "linked_genomes": 641,
+      "susceptible": 415,
+      "intermediate": 43,
+      "resistant": 182,
+      "unresolvable": 1,
+      "binary_set": 597,
+      "carbapenemase_positive_n": 199,
+      "carbapenemase_positive_susceptible_n": 46,
+      "carbapenemase_positive_susceptible_pct_ci": [
+        23.1,
+        17.8,
+        29.4
+      ],
+      "carbapenemase_negative_n": 398,
+      "carbapenemase_negative_resistant_n": 29,
+      "carbapenemase_negative_resistant_pct_ci": [
+        7.3,
+        5.1,
+        10.3
+      ],
+      "PPV": 0.769,
+      "NPV": 0.927,
+      "sensitivity": 0.841,
+      "specificity": 0.889,
+      "by_family": {
+        "KPC": {
+          "n": 81,
+          "susceptible": 13,
+          "pct_ci": [
+            16.0,
+            9.6,
+            25.5
+          ]
+        },
+        "NDM": {
+          "n": 30,
+          "susceptible": 1,
+          "pct_ci": [
+            3.3,
+            0.6,
+            16.7
+          ]
+        },
+        "OXA-48-like": {
+          "n": 54,
+          "susceptible": 25,
+          "pct_ci": [
+            46.3,
+            33.7,
+            59.4
+          ]
+        },
+        "VIM": {
+          "n": 16,
+          "susceptible": 6,
+          "pct_ci": [
+            37.5,
+            18.5,
+            61.4
+          ]
+        }
+      },
+      "fisher_intact_vs_ompK36": [
+        {
+          "family": "OXA-48-like",
+          "R_intact": 9,
+          "S_intact": 22,
+          "R_disrupted": 16,
+          "S_disrupted": 0,
+          "odds_ratio": 0.0,
+          "p_value": 1.4086895049932677e-06,
+          "q_BH": 2.817379009986535e-06
+        },
+        {
+          "family": "KPC",
+          "R_intact": 24,
+          "S_intact": 8,
+          "R_disrupted": 25,
+          "S_disrupted": 2,
+          "odds_ratio": 0.24,
+          "p_value": 0.0918904355379506,
+          "q_BH": 0.0918904355379506
+        }
+      ]
+    },
+    {
+      "analysis": "meropenem unstratified",
+      "drug": "meropenem",
+      "tag": "_unstratified",
+      "linked_genomes": 5092,
+      "susceptible": 2778,
+      "intermediate": 190,
+      "resistant": 2123,
+      "unresolvable": 1,
+      "binary_set": 4901,
+      "carbapenemase_positive_n": 2109,
+      "carbapenemase_positive_susceptible_n": 146,
+      "carbapenemase_positive_susceptible_pct_ci": [
+        6.9,
+        5.9,
+        8.1
+      ],
+      "carbapenemase_negative_n": 2792,
+      "carbapenemase_negative_resistant_n": 160,
+      "carbapenemase_negative_resistant_pct_ci": [
+        5.7,
+        4.9,
+        6.7
+      ],
+      "PPV": 0.931,
+      "NPV": 0.943,
+      "sensitivity": 0.925,
+      "specificity": 0.947,
+      "by_family": {
+        "IMP": {
+          "n": 62,
+          "susceptible": 12,
+          "pct_ci": [
+            19.4,
+            11.4,
+            30.9
+          ]
+        },
+        "KPC": {
+          "n": 1415,
+          "susceptible": 39,
+          "pct_ci": [
+            2.8,
+            2.0,
+            3.7
+          ]
+        },
+        "KPC+NDM": {
+          "n": 58,
+          "susceptible": 0,
+          "pct_ci": [
+            0.0,
+            0,
+            6.2
+          ]
+        },
+        "NDM": {
+          "n": 221,
+          "susceptible": 3,
+          "pct_ci": [
+            1.4,
+            0.5,
+            3.9
+          ]
+        },
+        "NDM+OXA-48-like": {
+          "n": 72,
+          "susceptible": 0,
+          "pct_ci": [
+            0.0,
+            0,
+            5.1
+          ]
+        },
+        "OXA-48-like": {
+          "n": 216,
+          "susceptible": 67,
+          "pct_ci": [
+            31.0,
+            25.2,
+            37.5
+          ]
+        },
+        "VIM": {
+          "n": 47,
+          "susceptible": 21,
+          "pct_ci": [
+            44.7,
+            31.4,
+            58.8
+          ]
+        }
+      },
+      "fisher_intact_vs_ompK36": [
+        {
+          "family": "OXA-48-like",
+          "R_intact": 24,
+          "S_intact": 53,
+          "R_disrupted": 98,
+          "S_disrupted": 2,
+          "odds_ratio": 0.0092414324220254,
+          "p_value": 9.785506961749088e-24,
+          "q_BH": 3.9142027846996353e-23
+        },
+        {
+          "family": "KPC",
+          "R_intact": 120,
+          "S_intact": 14,
+          "R_disrupted": 728,
+          "S_disrupted": 7,
+          "odds_ratio": 0.0824175824175824,
+          "p_value": 1.0272285475294629e-07,
+          "q_BH": 2.0544570950589255e-07
+        },
+        {
+          "family": "NDM",
+          "R_intact": 71,
+          "S_intact": 1,
+          "R_disrupted": 20,
+          "S_disrupted": 0,
+          "odds_ratio": 0.0,
+          "p_value": 1.0,
+          "q_BH": 1.0
+        },
+        {
+          "family": "NDM+OXA-48-like",
+          "R_intact": 11,
+          "S_intact": 0,
+          "R_disrupted": 57,
+          "S_disrupted": 0,
+          "odds_ratio": NaN,
+          "p_value": 1.0,
+          "q_BH": 1.0
+        }
+      ]
+    }
+  ]
+}

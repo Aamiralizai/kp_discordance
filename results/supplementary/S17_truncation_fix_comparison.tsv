@@ -1,0 +1,96 @@
+analysis	quantity	incomplete_assemblies	verified_assemblies
+primary (CLSI, broth dilution)	binary set n	3193	3193
+primary (CLSI, broth dilution)	carbapenemase-positive n	1051	1241
+primary (CLSI, broth dilution)	carbapenemase-positive susceptible % (95% CI)	8.0 (6.5–9.8)	10.0 (8.4–11.8)
+primary (CLSI, broth dilution)	carbapenemase-negative n	2142	1952
+primary (CLSI, broth dilution)	carbapenemase-negative resistant % (95% CI)	12.3 (11.0–13.8)	5.8 (4.9–7.0)
+primary (CLSI, broth dilution)	PPV	0.920	0.900
+primary (CLSI, broth dilution)	NPV	0.877	0.942
+primary (CLSI, broth dilution)	sensitivity	0.786	0.907
+primary (CLSI, broth dilution)	specificity	0.957	0.937
+primary (CLSI, broth dilution)	KPC: susceptible % (95% CI), n	4.5 (3.3–6.2) n=818	4.1 (3.0–5.6) n=883
+primary (CLSI, broth dilution)	NDM: susceptible % (95% CI), n	0.0 (0.0–4.1) n=89	0.9 (0.2–5.1) n=107
+primary (CLSI, broth dilution)	NDM+OXA-48-like: susceptible % (95% CI), n		0.0 (0.0–22.8) n=13
+primary (CLSI, broth dilution)	OXA-48-like: susceptible % (95% CI), n	36.1 (27.7–45.5) n=108	35.9 (29.3–43.1) n=181
+primary (CLSI, broth dilution)	VIM: susceptible % (95% CI), n	36.4 (19.7–57.0) n=22	47.7 (33.8–62.1) n=44
+primary (CLSI, broth dilution)	OXA-48-like: porin contrast, intact vs OmpK36-disrupted	OR 0.022, p = 1.4e-10 (intact S/R 28/13, disrupted S/R 2/43)	OR 0.011, p = 2.6e-20 (intact S/R 51/21, disrupted S/R 2/75)
+primary (CLSI, broth dilution)	KPC: porin contrast, intact vs OmpK36-disrupted	OR 0.052, p = 3.7e-09 (intact S/R 14/44, disrupted S/R 6/360)	OR 0.061, p = 3.6e-08 (intact S/R 13/51, disrupted S/R 6/386)
+primary (CLSI, broth dilution)	NDM: porin contrast, intact vs OmpK36-disrupted	not estimable (intact S/R 0/32, disrupted S/R 0/17)	not estimable (intact S/R 0/36, disrupted S/R 0/19)
+imipenem (CLSI, broth dilution)	binary set n	1793	1793
+imipenem (CLSI, broth dilution)	carbapenemase-positive n	653	720
+imipenem (CLSI, broth dilution)	carbapenemase-positive susceptible % (95% CI)	5.8 (4.3–7.9)	5.3 (3.9–7.2)
+imipenem (CLSI, broth dilution)	carbapenemase-negative n	1140	1073
+imipenem (CLSI, broth dilution)	carbapenemase-negative resistant % (95% CI)	9.0 (7.5–10.8)	3.4 (2.4–4.6)
+imipenem (CLSI, broth dilution)	PPV	0.942	0.947
+imipenem (CLSI, broth dilution)	NPV	0.910	0.966
+imipenem (CLSI, broth dilution)	sensitivity	0.857	0.950
+imipenem (CLSI, broth dilution)	specificity	0.965	0.965
+imipenem (CLSI, broth dilution)	KPC: susceptible % (95% CI), n	5.8 (4.2–8.0) n=602	5.3 (3.9–7.3) n=657
+imipenem (CLSI, broth dilution)	NDM: susceptible % (95% CI), n	4.3 (0.8–21.0) n=23	3.8 (0.7–18.9) n=26
+imipenem (CLSI, broth dilution)	OXA-48-like: susceptible % (95% CI), n	10.5 (2.9–31.4) n=19	8.3 (2.3–25.8) n=24
+imipenem (CLSI, broth dilution)	KPC: porin contrast, intact vs OmpK36-disrupted	OR 0.116, p = 3.7e-03 (intact S/R 5/29, disrupted S/R 4/200)	OR 0.133, p = 5.8e-03 (intact S/R 5/36, disrupted S/R 4/217)
+meropenem (EUCAST breakpoints)	binary set n	3075	3075
+meropenem (EUCAST breakpoints)	carbapenemase-positive n	929	1128
+meropenem (EUCAST breakpoints)	carbapenemase-positive susceptible % (95% CI)	14.6 (12.5–17.1)	18.5 (16.4–20.9)
+meropenem (EUCAST breakpoints)	carbapenemase-negative n	2146	1947
+meropenem (EUCAST breakpoints)	carbapenemase-negative resistant % (95% CI)	7.8 (6.7–9.0)	2.1 (1.6–2.8)
+meropenem (EUCAST breakpoints)	PPV	0.854	0.815
+meropenem (EUCAST breakpoints)	NPV	0.922	0.979
+meropenem (EUCAST breakpoints)	sensitivity	0.826	0.957
+meropenem (EUCAST breakpoints)	specificity	0.936	0.901
+meropenem (EUCAST breakpoints)	KPC: susceptible % (95% CI), n	8.2 (6.4–10.5) n=705	8.3 (6.6–10.5) n=769
+meropenem (EUCAST breakpoints)	NDM: susceptible % (95% CI), n	2.4 (0.6–8.2) n=85	2.9 (1.0–8.2) n=103
+meropenem (EUCAST breakpoints)	NDM+OXA-48-like: susceptible % (95% CI), n		0.0 (0.0–22.8) n=13
+meropenem (EUCAST breakpoints)	OXA-48-like: susceptible % (95% CI), n	56.2 (47.0–65.1) n=112	56.4 (49.4–63.2) n=195
+meropenem (EUCAST breakpoints)	VIM: susceptible % (95% CI), n	81.2 (57.0–93.4) n=16	79.5 (64.5–89.2) n=39
+meropenem (EUCAST breakpoints)	OXA-48-like: porin contrast, intact vs OmpK36-disrupted	OR 0.009, p = 1.2e-16 (intact S/R 44/5, disrupted S/R 3/39)	OR 0.003, p = 3.4e-35 (intact S/R 82/5, disrupted S/R 3/70)
+meropenem (EUCAST breakpoints)	KPC: porin contrast, intact vs OmpK36-disrupted	OR 0.031, p = 4.9e-13 (intact S/R 17/31, disrupted S/R 6/357)	OR 0.025, p = 3.2e-16 (intact S/R 21/34, disrupted S/R 6/383)
+meropenem (EUCAST breakpoints)	NDM: porin contrast, intact vs OmpK36-disrupted	OR 0.000, p = 5.5e-01 (intact S/R 2/30, disrupted S/R 0/16)	OR 0.000, p = 5.5e-01 (intact S/R 2/34, disrupted S/R 0/18)
+imipenem (EUCAST breakpoints)	binary set n	1748	1748
+imipenem (EUCAST breakpoints)	carbapenemase-positive n	613	670
+imipenem (EUCAST breakpoints)	carbapenemase-positive susceptible % (95% CI)	9.0 (7.0–11.5)	8.7 (6.8–11.0)
+imipenem (EUCAST breakpoints)	carbapenemase-negative n	1135	1078
+imipenem (EUCAST breakpoints)	carbapenemase-negative resistant % (95% CI)	7.0 (5.7–8.7)	2.4 (1.7–3.5)
+imipenem (EUCAST breakpoints)	PPV	0.910	0.913
+imipenem (EUCAST breakpoints)	NPV	0.930	0.976
+imipenem (EUCAST breakpoints)	sensitivity	0.875	0.959
+imipenem (EUCAST breakpoints)	specificity	0.950	0.948
+imipenem (EUCAST breakpoints)	KPC: susceptible % (95% CI), n	7.6 (5.7–10.0) n=568	7.2 (5.4–9.5) n=613
+imipenem (EUCAST breakpoints)	NDM: susceptible % (95% CI), n	4.5 (0.8–21.8) n=22	4.0 (0.7–19.5) n=25
+imipenem (EUCAST breakpoints)	OXA-48-like: susceptible % (95% CI), n	64.3 (38.8–83.7) n=14	57.9 (36.3–76.9) n=19
+imipenem (EUCAST breakpoints)	KPC: porin contrast, intact vs OmpK36-disrupted	OR 0.094, p = 6.1e-04 (intact S/R 6/22, disrupted S/R 5/195)	OR 0.074, p = 8.2e-05 (intact S/R 7/22, disrupted S/R 5/212)
+meropenem deduplicated	binary set n	675	597
+meropenem deduplicated	carbapenemase-positive n	172	199
+meropenem deduplicated	carbapenemase-positive susceptible % (95% CI)	20.9 (15.5–27.6)	23.1 (17.8–29.4)
+meropenem deduplicated	carbapenemase-negative n	503	398
+meropenem deduplicated	carbapenemase-negative resistant % (95% CI)	15.1 (12.2–18.5)	7.3 (5.1–10.3)
+meropenem deduplicated	PPV	0.791	0.769
+meropenem deduplicated	NPV	0.849	0.927
+meropenem deduplicated	sensitivity	0.642	0.841
+meropenem deduplicated	specificity	0.922	0.889
+meropenem deduplicated	KPC: susceptible % (95% CI), n	16.0 (9.6–25.5) n=81	16.0 (9.6–25.5) n=81
+meropenem deduplicated	NDM: susceptible % (95% CI), n	0.0 (0.0–11.7) n=29	3.3 (0.6–16.7) n=30
+meropenem deduplicated	OXA-48-like: susceptible % (95% CI), n	46.2 (31.6–61.4) n=39	46.3 (33.7–59.4) n=54
+meropenem deduplicated	VIM: susceptible % (95% CI), n	38.5 (17.7–64.5) n=13	37.5 (18.5–61.4) n=16
+meropenem deduplicated	OXA-48-like: porin contrast, intact vs OmpK36-disrupted	OR 0.000, p = 5.1e-04 (intact S/R 15/8, disrupted S/R 0/10)	OR 0.000, p = 1.4e-06 (intact S/R 22/9, disrupted S/R 0/16)
+meropenem deduplicated	KPC: porin contrast, intact vs OmpK36-disrupted	OR 0.221, p = 8.4e-02 (intact S/R 8/23, disrupted S/R 2/26)	OR 0.240, p = 9.2e-02 (intact S/R 8/24, disrupted S/R 2/25)
+meropenem unstratified	binary set n	4901	4901
+meropenem unstratified	carbapenemase-positive n	1879	2109
+meropenem unstratified	carbapenemase-positive susceptible % (95% CI)	5.4 (4.5–6.5)	6.9 (5.9–8.1)
+meropenem unstratified	carbapenemase-negative n	3022	2792
+meropenem unstratified	carbapenemase-negative resistant % (95% CI)	11.4 (10.4–12.6)	5.7 (4.9–6.7)
+meropenem unstratified	PPV	0.946	0.931
+meropenem unstratified	NPV	0.886	0.943
+meropenem unstratified	sensitivity	0.837	0.925
+meropenem unstratified	specificity	0.963	0.947
+meropenem unstratified	IMP: susceptible % (95% CI), n	21.7 (12.3–35.6) n=46	19.4 (11.4–30.9) n=62
+meropenem unstratified	KPC: susceptible % (95% CI), n	3.0 (2.2–4.1) n=1335	2.8 (2.0–3.7) n=1415
+meropenem unstratified	KPC+NDM: susceptible % (95% CI), n	0.0 (0.0–6.2) n=58	0.0 (0.0–6.2) n=58
+meropenem unstratified	NDM: susceptible % (95% CI), n	1.0 (0.3–3.5) n=202	1.4 (0.5–3.9) n=221
+meropenem unstratified	NDM+OXA-48-like: susceptible % (95% CI), n	0.0 (0.0–5.6) n=65	0.0 (0.0–5.1) n=72
+meropenem unstratified	OXA-48-like: susceptible % (95% CI), n	29.5 (22.5–37.5) n=139	31.0 (25.2–37.5) n=216
+meropenem unstratified	VIM: susceptible % (95% CI), n	32.0 (17.2–51.6) n=25	44.7 (31.4–58.8) n=47
+meropenem unstratified	OXA-48-like: porin contrast, intact vs OmpK36-disrupted	OR 0.015, p = 7.4e-14 (intact S/R 30/15, disrupted S/R 2/65)	OR 0.009, p = 9.8e-24 (intact S/R 53/24, disrupted S/R 2/98)
+meropenem unstratified	KPC: porin contrast, intact vs OmpK36-disrupted	OR 0.074, p = 1.5e-08 (intact S/R 15/109, disrupted S/R 7/692)	OR 0.082, p = 1.0e-07 (intact S/R 14/120, disrupted S/R 7/728)
+meropenem unstratified	NDM: porin contrast, intact vs OmpK36-disrupted	OR 0.000, p = 1.0e+00 (intact S/R 1/67, disrupted S/R 0/18)	OR 0.000, p = 1.0e+00 (intact S/R 1/71, disrupted S/R 0/20)
+meropenem unstratified	NDM+OXA-48-like: porin contrast, intact vs OmpK36-disrupted		not estimable (intact S/R 0/11, disrupted S/R 0/57)

@@ -1,0 +1,7 @@
+drug	stratum	variable	level	n	n_susceptible	pct	ci_lo	ci_hi	chi2	chi2_df	p_value	heterogeneous
+imipenem	clsi_bmd	laboratory_typing_platform	BD Phoenix	459	35	7.6253	5.5336	10.4203	12.2799	1	0.00045787122473589883	True
+imipenem	clsi_bmd	laboratory_typing_platform	<missing>	255	3	1.1765	0.4009	3.4012	12.2799	1	0.00045787122473589883	True
+imipenem	clsi_bmd	testing_standard_year	2017	459	35	7.6253	5.5336	10.4203	14.4851	3	0.002313944352840175	True
+imipenem	clsi_bmd	testing_standard_year	<missing>	165	1	0.6061	0.1071	3.3527	14.4851	3	0.002313944352840175	True
+imipenem	clsi_bmd	testing_standard_year	2013	73	2	2.7397	0.7546	9.4501	14.4851	3	0.002313944352840175	True
+imipenem	clsi_bmd	testing_standard_year	2016	23	0	0.0	0.0	14.3117	14.4851	3	0.002313944352840175	True
