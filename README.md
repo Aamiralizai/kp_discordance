@@ -38,14 +38,7 @@ The pipeline runs the regression tests first and aborts if any fail, empties
 ## Design rules
 
 
-0. **Downloaded assembly.** This project learned it the hard way. 3,453 of 7,360
-   assemblies (46.9%) were truncated FTPS transfers: the download stopped
-   mid-sequence and the client still exited 0. Each file was a parseable FASTA,
-   so the structural check passed, and the deposited QualiBact metrics passed
-   too, because those describe the assembly as submitted to the archive and not
-   the copy on disk. Kleborate typed the incomplete files and missed the genes
-   on the contigs that never arrived, which understated carbapenemase and ESBL
-   detection and inverted one reported association.
+0. **Downloaded assembly.** 
 
    `00f_check_download_integrity.py` compares every local FASTA with the
    BV-BRC genome_length and contig count and flags a missing final newline.
