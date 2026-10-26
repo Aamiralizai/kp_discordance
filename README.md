@@ -218,20 +218,6 @@ answer.
     scripts/31_allele_search_summary.py  Supplementary Table S19a
     scripts/32_allele_search_tables.py   Supplementary Tables S19b and S19c
 
-Two length windows are screened, and the second one is the point. A complete
-carbapenemase is 265 to 300 residues, so a window of 180 to 500 finds an
-uncatalogued enzyme but excludes every gene an assembly has broken, which is
-one of the two things the search exists to detect. The first version of this
-analysis ran only that window and reported nothing. The 60 to 180 window found
-four genomes carrying a carbapenemase at 94.9 to 100 percent identity to a
-catalogued allele, each fragment abutting a contig boundary.
-
-A hit is therefore not interpreted from identity alone. Every alignment is
-located on its contig, and an open reading frame that abuts a boundary or that
-the gene caller marks incomplete is recorded as an assembly break rather than a
-biological truncation. The distinction is the whole result, so the coordinates
-are published in Supplementary Table S19b rather than summarised.
-
 Identity is tested before coverage, in scripts/allele_classify.py. Testing them
 together, as the first version did, labels a protein matching a catalogued
 allele at 100 percent identity over 95 percent of its length as a novel allele,
